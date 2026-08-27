@@ -1,0 +1,379 @@
+================================================================================
+PLAN DE INVESTIGACIÓN CIENTÍFICA Y MICROSIMULACIÓN DINÁMICA
+Patrimonio Financiero Individual, Migración y Sostenibilidad de la Jubilación en Alemania (2025–2070)
+Versión de Trabajo: Agosto de 2026 | Documento Metodológico y Operativo Integral
+================================================================================
+
+1. PREGUNTA DE INVESTIGACIÓN FORMAL Y FORMULACIÓN ANALÍTICA
+--------------------------------------------------------------------------------
+1.1. Pregunta Principal de Investigación:
+"Bajo distintos escenarios de integración sociolaboral, años de residencia en Alemania, acumulación de activos financieros e inmobiliarios, cotizaciones al sistema de seguridad social (SGB VI), previsión ocupacional (bAV), ahorro privado, costes de vivienda, estructura familiar, longevidad y dinámicas demográficas proyectadas hasta 2070 (Destatis 16. BVB), ¿cuál es la probabilidad y la distribución del ingreso de jubilación disponible que permite a la población alemana de referencia, migrantes económicos, refugiados de diversas cohortes, refugiados ucranianos (§ 24 AufenthG) y migrantes ucranianos alcanzar umbrales definidos de suficiencia económica y evitar la dependencia de la asistencia social en la vejez (Grundsicherung im Alter nach SGB XII)?"
+
+1.2. Preguntas Secundarias Específicas:
+1) ¿Cómo se distribuye el patrimonio financiero individual (desagregado en depósitos líquidos, activos de renta fija/variable y vehículos de previsión) según cohorte de edad, quintil de ingresos y duración de residencia en Alemania?
+2) ¿Cuál es la magnitud y persistencia de la brecha patrimonial de origen migratorio al controlar econométricamente por dotación de capital humano (educación formal, reconocimiento de títulos BQFG, competencia lingüística CEFR), horas trabajadas, sector de actividad y transferencias transfronterizas (remesas/Rücküberweisungen)?
+3) ¿Cómo interactúa el perfil sociodemográfico específico de los refugiados ucranianos llegados a partir de 2022 (alta proporción de mujeres con menores a cargo y elevado nivel educativo formal) con las barreras de inserción laboral y acumulación de derechos de pensión en comparación con flujos migratorios previos?
+4) ¿En qué medida los activos financieros y los derechos de pensión transfronterizos (reconocidos o no mediante convenios bilaterales de seguridad social) compensan o atenúan los déficits de jubilación en Alemania?
+5) ¿Qué nivel de tasa de reemplazo neta (Net Replacement Rate - NRR) y qué probabilidad de recurrir a la Grundsicherung im Alter (SGB XII) enfrentan los diferentes grupos bajo la edad legal de jubilación (67 años a partir de 2031) y bajo eventuales retrasos en la edad de retiro?
+6) ¿Cuál es el esfuerzo de ahorro mensual marginal requerido (Required Additional Monthly Savings, S*) para que un individuo con trayectoria migratoria tardía alcance una tasa de reemplazo mínima del 60% del último salario neto?
+7) ¿De qué manera la contracción demográfica proyectada hacia 2070 y el factor de sostenibilidad (Nachhaltigkeitsfaktor) de la Gesetzliche Rentenversicherung condicionan el valor del punto de pensión (Aktueller Rentenwert) y la viabilidad del nivel de pensión legal fijado por ley (Haltelinie 48% / Rentenpaket II)?
+
+1.3. Hipótesis Científicas Formales:
+- H1 (Brecha Patrimonial Inicial): Los migrantes de primera generación presentan una riqueza financiera líquida e invertida significativamente menor que los nativos de similar edad y cualificación al llegar a Alemania (p < 0.01).
+- H2 (Convergencia por Asimilación Temporal): La brecha de patrimonio financiero se reduce a una tasa logarítmica con respecto a los años de residencia (Years in Germany), pero no converge a cero para cohortes que llegan después de los 35 años de edad.
+- H3 (Penalización por Refugio y Descalificación): Los refugiados experimentan una brecha de acumulación inicial más severa debido a periodos prolongados de inactividad obligada, falta de liquidez a la llegada y desajuste de cualificación (occupational deskilling), atenuada únicamente tras la homologación oficial de cualificaciones (Anerkennungsgesetz).
+- H4 (Trayectoria Ucraniana Diferencial): Los refugiados ucranianos (§ 24 AufenthG) exhiben una mayor elasticidad de participación laboral ante la adquisición del idioma (B2+) que cohortes previas de refugiados, pero su acumulación patrimonial neta está constreñida a corto plazo por la carga de cuidado de dependientes monoparental y remesas hacia Ucrania.
+- H5 (Vulnerabilidad Extrema por Arribo Tardío): Individuos con llegada a Alemania a partir de los 45 años presentan una probabilidad > 65% de requerir Grundsicherung im Alter al jubilarse, a menos que cuenten con derechos de pensión foráneos plenamente transferibles o patrimonio externo liquidable.
+- H6 (Efecto Inmueble y Alquiler): La persistencia en el régimen de alquiler residencial (Mieterstatus) en Alemania incrementa el riesgo de pobreza en la vejez en un 40% frente a propietarios libres de hipoteca ante el encarecimiento proyectado de costes de vivienda (Kosten der Unterkunft).
+- H7 (Efecto del Factor de Sostenibilidad Macro): El ajuste demográfico automático del sistema de reparto reduce el valor real del punto de pensión en un 12-18% hacia 2050 en escenarios de baja natalidad y baja migración, amplificando la brecha de suficiencia en todos los grupos.
+
+
+2. MARCO INSTITUCIONAL Y LEGAL ALEMÁN (BASE REGULATORIA Y FORMAL)
+--------------------------------------------------------------------------------
+El modelo debe incorporar con absoluta fidelidad las normas estatutarias del Código Social Alemán (Sozialgesetzbuch - SGB) y la legislación fiscal vigente.
+
+2.1. Primer Pilar: Gesetzliche Rentenversicherung (GRV - SGB VI) y Regímenes Análogos
+- Fórmula de Cálculo de la Pensión Mensual Bruta (Monatliche Rente):
+  Rente_brutto = Sum(EP) * ZF * AR * RAF
+  donde:
+  * EP (Entgeltpunkte / Puntos de pensión): Calculados anualmente como:
+    EP_t = min(Bruttoarbeitsentgelt_t, BBG_t) / Durchschnittsentgelt_t
+    (donde BBG_t es la Beitragsbemessungsgrenze anual y Durchschnittsentgelt_t es el salario medio oficial del régimen general).
+  * ZF (Zugangsfaktor / Factor de acceso): 1.0 para retiro a la edad estándar de jubilación (Regelaltersgrenze: 67 años a partir de 2031 para nacidos desde 1964). Deducción de 0.3% por cada mes de jubilación anticipada (hasta un máximo de 14.4%) y bonificación de 0.5% por cada mes de retraso voluntario.
+  * AR (Aktueller Rentenwert / Valor actual del punto de pensión): Actualizado anualmente el 1 de julio según la fórmula de ajuste de pensiones (§ 68 SGB VI), que integra la variación de los salarios brutos (Lohnentwicklung), el factor de sostenibilidad (Nachhaltigkeitsfaktor, que mide la relación entre cotizantes y pensionistas) y el factor de contribución (Beitragssatzfaktor).
+  * RAF (Rentenartfaktor / Factor de tipo de pensión): 1.0 para pensión de vejez ordinaria (Regelaltersrente), 0.55/0.60 para pensión de viudedad grande (Große Witwen-/Witwerrente), 1.0 para pensión por incapacidad laboral permanente (Erwerbsminderungsrente).
+- Complemento de Pensión Básica (Grundrente nach § 76g SGB VI):
+  * Requisito: Al menos 33 años de periodos computables (Grundrentenzeiten: empleo cotizado, crianza de hijos, cuidado de dependientes).
+  * Mecanismo: Incremento escalonado de los puntos de pensión adquiridos por salarios bajos (entre 0.3 y 0.8 EP por año), sujeto a comprobación de ingresos completa (Einkommensprüfung).
+- Rentenpaket II y Cláusula de Salvaguarda:
+  * Garantía de nivel mínimo de pensión (Haltelinie) del 48% hasta 2039.
+  * Creación del Fondo de Capital Generacional (Generationenkapital) para mitigar el incremento futuro de la tasa de cotización (Beitragssatz).
+
+2.2. Segundo Pilar: Betriebliche Altersversorgung (bAV) y Riester-Rente
+- Vías de implementación de la bAV (BetrAVG):
+  1) Direktversicherung (seguro directo contratado por el empleador).
+  2) Pensionskasse (caja de pensiones sectorial o empresarial).
+  3) Pensionsfonds (fondos de pensiones con mayor exposición a renta variable).
+  4) Unterstützungskasse (caja de apoyo sin derecho directo asegurado).
+  5) Direktzusage / Pensionszusage (compromiso directo del balance corporativo).
+- Obligación de subsidio patronal (§ 1a Abs. 1a BetrAVG): Contribución obligatoria del empleador del 15% del monto de conversión salarial (Entgeltumwandlung) por ahorro de cuotas de seguridad social.
+- Riester-Rente: Subsidios estatales directos (Grundzulage + Kinderzulage) y deducción fiscal por gastos especiales (§ 10a EStG), sujeta a tributación plena en fase de retiro.
+
+2.3. Tercer Pilar: Previsión Privada (Private Vorsorge)
+- Basisrente / Rürup-Rente: Planes de pensiones privados certificados, deducibles del IRPF alemán hasta el límite máximo (§ 10 Abs. 1 Nr. 2 Buchst. b EStG), ilíquidos, no rescatables como capital único.
+- Ahorro e Inversión Libre: Acciones individuales, ETFs globales, fondos de inversión en renta fija y variable, bienes raíces directos, bonos y depósitos bancarios.
+- Impuesto sobre Rendimientos del Capital (Abgeltungsteuer): 25% + 5.5% Solidaritätszuschlag (+ Kirchensteuer si aplica), con exención del Sparer-Pauschbetrag (1.000 € individual / 2.000 € en tributación conjunta de parejas).
+
+2.4. Red de Seguridad y Mínimo de Subsistencia: Grundsicherung im Alter (SGB XII, 4. Kapitel)
+- Función institucional: Para individuos cuyos derechos acumulados de pensión e ingresos propios no alcanzan el mínimo de subsistencia sociomaterial:
+  Bedarf_SGB_XII = Regelbedarf (Stufe 1 oder 2) + Kosten_der_Unterkunft_und_Heizung (KdU) + Mehrbedarfe
+- Regla de activación:
+  Grundsicherungsleistung = max(0, Bedarf_SGB_XII - Anrechenbares_Einkommen)
+- Límite de Patrimonio Protegido (Schonvermögen nach § 90 SGB XII):
+  * Exención de activos líquidos de 10.000 € para personas solteras (20.000 € para parejas).
+  * Exención de la vivienda propia ocupada de dimensiones razonables (angemessene selbstgenutzte Immobilie).
+- Exención Parcial de Pensión Contributiva (§ 82a SGB XII):
+  * Quienes cuenten con al menos 33 años de periodos computables de la GRV disfrutan de una franquicia exenta en la Grundsicherung de hasta el 50% del Regelbedarf Stufe 1 (máx. ~281 €/mes en 2026).
+
+2.5. Cargas Fiscales y de Seguridad Social en la Fase Pasiva (Netto-Renteneinkommen)
+- Fiscalidad Diferida (Nachgelagerte Besteuerung nach Alterseinkünftegesetz / § 22 EStG):
+  * Determinación de la parte gravable de la pensión pública (Besteuerungsanteil), convergiendo hacia el 100% de tributación según el año de acceso a la jubilación.
+- Deducciones Obligatorias de Seguro de Salud y Cuidados:
+  * Krankenversicherung der Rentner (KVdR): Deducción del 7.3% (mitad de la tasa general) + 50% del Zusatzbeitrag individual de la Krankenkasse.
+  * Pflegeversicherung (PV): Deducción íntegra a cargo del pensionista (3.4% para personas con hijos, hasta 4.0% para personas sin hijos a partir de los 23 años).
+
+
+3. TAXONOMÍA POBLACIONAL Y VARIABLES MIGRATORIAS ESTRATIFICADAS
+--------------------------------------------------------------------------------
+3.1. Grupos Analíticos Principales (Disjuntos y Rigurosamente Mapeados):
+1. Grupo A - Población de Referencia Alemana: Nacidos en Alemania, nacionalidad alemana sin experiencia migratoria directa ni padres nacidos en el extranjero.
+2. Grupo B - Migrantes Económicos / UE / Terceros Países (1.ª Generación): Nacidos en el extranjero, arribo con permiso de residencia laboral, reagrupación o libre circulación comunitaria.
+3. Grupo C - Migrantes de 2.ª Generación: Nacidos en Alemania con al menos un progenitor nacido en el extranjero.
+4. Grupo D - Refugiados Históricos (Cohortes 2015/2016 y previas): Solicitantes de asilo y personas con estatus de protección internacional reconocidas (Siria, Afganistán, Irak, etc.).
+5. Grupo E - Refugiados Ucranianos (Arribo 2022+): Titulares de protección temporal según § 24 AufenthG / Directiva de Protección Temporal de la UE, con transición a prestaciones SGB II (Bürgergeld) desde junio de 2022.
+6. Grupo F - Migrantes Ucranianos Previos a 2022: Residentes de nacionalidad u origen ucraniano con residencia laboral, académica o comunitaria anterior al 24 de febrero de 2022.
+
+3.2. Variables Críticas de Heterogeneidad y Capital Humano:
+- Duración de Residencia: years_in_germany = current_year - arrival_year.
+- Edad al Arribo (Age at Arrival): [0-17, 18-24, 25-34, 35-44, 45-54, 55+].
+- Reconocimiento Formal de Cualificaciones (Anerkennung nach BQFG):
+  * Totalmente reconocido (Voll anerkannt).
+  * Parcialmente reconocido con necesidad de adaptación (Teilweise anerkannt).
+  * No reconocido / En trámite / Sin homologación solicitada.
+- Desajuste Ocupacional / Descalificación (Deskilling Index):
+  * Discrepancia entre el nivel ISCED de origen y el nivel KldB 2010 del puesto de trabajo real desempeñado en Alemania.
+- Nivel de Dominio del Idioma Alemán: Escala CEFR estandarizada [A1, A2, B1, B2, C1, C2].
+- Transferencias Transfronterizas (Remesas / Rücküberweisungen):
+  * Porcentaje y monto absoluto mensual transferido a dependientes en el país de origen: Remittance_Share_t.
+- Tasa de Riesgo de Retorno / Remigración (Return Migration Hazard):
+  * Probabilidad anual condicional de retorno al país de origen o emigración secundaria: P(Remigration_t | Status, Family, Origin, Duration).
+- Derechos y Activos Transfronterizos:
+  * Portabilidad de derechos de seguridad social reconocidos bajo acuerdos bilaterales vs. pérdidas de derechos no transferibles.
+
+
+4. CONTABILIZACIÓN Y ESTRUCTURA DEL PATRIMONIO
+--------------------------------------------------------------------------------
+4.1. Vector de Activos Financieros y Reales:
+W_vector = [
+  D_liq   : Depósitos a la vista, cuentas de ahorro, efectivo, depósitos a plazo.
+  S_inv   : Acciones directas, ETFs, fondos de inversión en renta fija y variable, bonos.
+  P_priv  : Valor de rescate acumulado en seguros de vida/planes de jubilación privados (Riester, Rürup, fondos de pensiones).
+  O_fin   : Otros créditos financieros, derechos contractuales privados.
+  RE_own  : Valor de mercado de la vivienda principal en propiedad.
+  RE_inv  : Valor de mercado de segundas residencias o inmuebles de inversión en alquiler.
+  B_act   : Valor neto de participaciones empresariales y negocios propios.
+  A_for   : Activos líquidos, inmobiliarios o empresariales mantenidos en el país de origen.
+  L_hyp   : Pasivo exigible por deudas hipotecarias sobre vivienda propia e inversión.
+  L_cons  : Pasivo exigible por créditos al consumo, préstamos personales y descubiertos.
+]
+
+4.2. Definiciones de Riqueza Formales:
+1. Patrimonio Financiero Bruto (Gross Financial Wealth):
+   GFW = D_liq + S_inv + P_priv + O_fin + (A_for_financial)
+2. Patrimonio Financiero Neto (Net Financial Wealth):
+   NFW = GFW - L_cons
+3. Patrimonio Real Bruto (Gross Real Wealth):
+   GRW = RE_own + RE_inv + B_act + (A_for_real)
+4. Patrimonio Neto Total (Total Net Wealth):
+   TNW = (GFW + GRW) - (L_hyp + L_cons)
+
+4.3. Reglas Metodológicas de Individualización del Patrimonio del Hogar:
+- Cuando la fuente primaria sea a nivel de hogar (Bundesbank PHF, Destatis EVS):
+  a) Hogares Unipersonales: Asignación directa y benchmark puro sin sesgo de distribución.
+  b) Hogares Multipersonales en Microdatos Individuales (SOEP): Emplear las variables de patrimonio individualizado autodeclarado (SOEP wealth modules).
+  c) Desagregación Imputada en Fuentes de Hogar: Emplear la Escala Modificada de la OCDE combinada con modelos de asignación intra-hogar basados en el peso relativo del ingreso laboral de cada cónyuge:
+     Individual_Share_i = 0.5 * Baseline + 0.5 * (Labor_Income_i / Total_Household_Labor_Income)
+  d) Régimen de Bienes Matrimonial: Incorporar las normas alemanas de compensación de ganancias (Zugewinngemeinschaft) y división de pensiones en divorcio (Versorgungsausgleich).
+
+
+5. FUENTES DE DATOS PRIMARIAS Y CATÁLOGO DE ARMONIZACIÓN
+--------------------------------------------------------------------------------
+5.1. Fuentes de Microdatos Estadísticos:
+A. SOEP-Core y Muestras de Migración/Refugiados (DIW Berlin / SOEP):
+   - Módulos longitudinales individuales desde 1984 hasta la ola más reciente (v39/v40).
+   - Muestras M1/M2 (Migración), M3/M4/M5 (Refugiados 2013-2016) y M6/M7/M8 (Ucranianos 2022+).
+   - Variables clave: Ingresos individuales brutos/netos, empleo, horas, historial biográfico de cotizaciones, patrimonio individual cada 5 años, estatus legal, idioma, remesas, salud y expectativas de jubilación.
+B. IAB-BAMF-SOEP Survey of Refugees & IAB-SMART (IAB Nürnberg):
+   - Panel especializado en la integración sociolaboral de refugiados en Alemania.
+   - Datos longitudinales de inserción en el mercado de trabajo, cursos de integración, reconocimiento de títulos y trayectorias salariales.
+C. Deutsche Bundesbank — Panel on Household Finances (PHF) y Distributional Wealth Accounts (DWA):
+   - PHF: Microdatos de alta precisión sobre la cartera completa de activos, balances financieros, aversión al riesgo y planes de jubilación de los hogares alemanes.
+   - DWA: Cuentas macro-distributivas de la riqueza patrimonial que concilian las encuestas con las Cuentas Nacionales Financieras del Eurosistema.
+D. Destatis — Einkommens- und Verbrauchsstichprobe (EVS) y Microcenso (Mikrozensus):
+   - EVS: Presupuestos familiares, pautas de consumo, ahorro monetario y activos reales.
+   - Mikrozensus: Representatividad poblacional de la estructura demográfica, educación, profesión y trasfondo migratorio (Migrationshintergrund).
+E. Deutsche Rentenversicherung (Forschungsdatenzentrum FDZ-RV):
+   - Muestras de cuentas de asegurados (Versicherungskontenstichprobe - VSKT) y estadísticas de altas de pensiones (Rentenatlas / Rentenzugang).
+F. Destatis — 16.ª Proyección Coordinada de Población (16. koordinierte Bevölkerungsvorausberechnung - 16. BVB, 2024–2070):
+   - Tablas demográficas por edad simple, sexo y variantes de natalidad (G1-G3), esperanza de vida (L1-L3) y saldo migratorio neto (W1-W3).
+G. Bases de Datos Internacionales (OECD Tax-Benefit Models, Eurostat EU-SILC, Pension Adequacy Reports de la Comisión Europea).
+
+5.2. Protocolo de Gobernanza de Datos y Reproducibilidad:
+- Los microdatos de acceso restringido (SOEP, IAB, PHF) se procesarán bajo contratos formales de Scientific Use File (SUF).
+- Para garantizar la reproducibilidad pública y de código abierto sin vulnerar acuerdos de no divulgación de microdatos, se incluirá un generador estocástico de datos sintéticos (Synthetic Data Generator) que preserve la matriz de covarianza y la estructura distribucional de los datos reales.
+
+
+6. ARQUITECTURA METODOLÓGICA Y MODELOS ECONOMÉTRICOS
+--------------------------------------------------------------------------------
+6.1. Tratamiento de Asimetría, Ceros y Valores Negativos en Patrimonio:
+- Se prohíbe el uso de la transformación logarítmica estándar log(w) para el patrimonio total, dado que elimina observaciones con riqueza nula o deudas netas negativas.
+- Transformación de Seno Hiperbólico Inverso (Inverse Hyperbolic Sine - IHS):
+  IHS(w, theta) = ln(theta * w + sqrt((theta * w)^2 + 1)) / theta
+  (con parámetro de escala theta calibrado, típicamente theta = 1).
+- Modelos de Dos Partes / Hurdle Models:
+  1) Ecuación de Participación: Probabilidad de poseer activos de riesgo (ETFs/acciones/inmuebles):
+     P(Asset_j > 0 | X) = Phi(X * gamma)   (Modelo Probit / Logit)
+  2) Ecuación de Nivel Condicional: Valor del activo condicionado a ser positivo:
+     E[IHS(Asset_j) | Asset_j > 0, X] = X * beta
+
+6.2. Identificación Causal y Control de Selección:
+- Corrección de Selección de Heckman: Para modelar salarios y participación laboral en grupos migratorios con tasas de inactividad heterogéneas.
+- Double Machine Learning (DML) / Estimadores de Efectos Parciales:
+  Para estimar el efecto puro del origen migratorio sobre la acumulación patrimonial aislando factores de confusión de alta dimensión (educación, sector, región geográfica, estado de salud).
+
+6.3. Microsimulación Dinámica Estocástica del Ciclo de Vida:
+A. Módulo de Carrera Salarial y Transiciones de Estado (Markov Transition Model):
+   - Matriz de probabilidades de transición entre estados laborales en t+1 condicionados a t:
+     S_t in {Empleo a Tiempo Completo, Empleo a Tiempo Parcial, Minijob/Geringfügig, Desempleo (SGB II/III), Formación/Cursos, Inactividad/Cuidado, Incapacidad/Erwerbsminderung}.
+   - Ecuación salarial tipo Mincer con corrección por descalificación:
+     ln(Gross_Wage_it) = alpha_0 + alpha_1 * Exp_de_it + alpha_2 * Exp_de_it^2 + alpha_3 * Exp_foreign_it + alpha_4 * Language_it + alpha_5 * Deskilling_Penalty_it + alpha_6 * Firm_Size_it + u_i + epsilon_it
+
+B. Módulo de Acumulación Intertemporal y Ahorro:
+   - Ingreso Disponible:
+     Net_Income_it = Gross_Wage_it - Income_Tax_it - Social_Security_Contributions_it + Social_Transfers_it (Kindergeld, Wohngeld, etc.)
+   - Flujo de Ahorro Neto:
+     Savings_it = Net_Income_it - Living_Consumption_it - Rent_or_Housing_Cost_it - Remittances_it
+   - Asignación de Cartera:
+     * Fracción depositada en liquidez (s_liq).
+     * Fracción invertida en renta variable/ETFs (s_eq).
+     * Fracción en previsión privada bAV/Riester/Rürup (s_priv).
+   - Ecuación de Dinámica Patrimonial:
+     GFW_i,t+1 = (D_liq_it * (1 + r_cash_t)) + (S_inv_it * (1 + r_eq_t - fee_eq - tax_cap_t)) + (P_priv_it * (1 + r_priv_t)) + Savings_it
+
+C. Módulo de Derechos de Seguridad Social:
+   - Acumulación de Entgeltpunkte:
+     EP_tot_i = Sum_{t=arrival_age}^{retirement_age} (min(Gross_Wage_it, BBG_t) / Durchschnittsentgelt_t) + EP_childcare_i + EP_caregiving_i
+   - Evaluación del Derecho a Grundrente (§ 76g SGB VI) y Zuschläge.
+
+D. Módulo de Desacumulación y Fase Pasiva:
+   - Determinación de la Pensión Bruta Total:
+     Pension_gross_i = (EP_tot_i * ZF_i * AR_ret_year * RAF) + bAV_payout_i + Private_Annuity_i
+   - Deducciones de Salud y Cuidados (KVdR/PV) + Retención Fiscal IRPF (§ 22 EStG).
+   - Tasa de Desahorro Privado: Reglas de retiro sistemático (Safe Withdrawal Rate, p. ej. 3.5%-4% real) ajustadas por longevidad estocástica.
+   - Activación de la Grundsicherung im Alter (SGB XII) si el ingreso total disponible < Bedarf_SGB_XII (tras aplicar Schonvermögen y Freibetrag § 82a).
+
+6.4. Simulación Monte Carlo e Incertidumbre Macroeconómica:
+- Proyecciones estocásticas (10.000 iteraciones por perfil sintético):
+  * Retornos reales de activos financieros modelados mediante distribuciones multivariadas correlacionadas con colas pesadas (t-Student copulas): renta variable global (MSCI World / FTSE All-World), bonos soberanos alemanes, depósitos e inflación.
+  * Trayectorias de longevidad individual calibradas con tablas de mortalidad actuarial de la Deutschen Aktuarvereinigung (DAV 2004 R).
+
+
+7. INTEGRACIÓN DEMOGRÁFICA Y ESCENARIOS MACROECONÓMICOS (2025–2070)
+--------------------------------------------------------------------------------
+7.1. Modelo Demográfico de Componentes de Cohorte:
+Poblacion(t+1, edad+1, sexo, origen) =
+  Poblacion(t, edad, sexo, origen)
+  - Defunciones(t, edad, sexo)
+  + Migracion_Neta(t, edad, sexo, origen)
+  + (Nacimientos(t, sexo) solo para edad = 0)
+
+7.2. Ratios Estructurales Clave:
+- Old-Age Dependency Ratio (OADR):
+  OADR_t = Poblacion_67plus_t / Poblacion_20_66_t
+- Pensioner-to-Contributor Ratio (System Dependency Ratio - SDR):
+  SDR_t = Numero_Total_Pensionistas_GRV_t / Numero_Total_Cotizantes_Activos_GRV_t
+
+7.3. Matriz de Escenarios Demográficos Destatis (16. BVB):
+- Escenario 1 (Base Central / Moderado): Variantes G2 (Fecundidad ~1.47), L2 (Esperanza de vida media), W2 (Saldo migratorio neto medio ~250.000/año).
+- Escenario 2 (Envejecimiento Acelerado / Adverso): G1 (Fecundidad ~1.29), L3 (Alta longevidad), W1 (Baja migración ~150.000/año).
+- Escenario 3 (Expansión y Rejuvenecimiento / Favorable): G3 (Fecundidad ~1.65), L2, W3 (Alta migración ~400.000/año).
+- Escenario 4 (Shock Geopolítico y Flujo Ucraniano): Incorporación de escenarios de estabilización de la población ucraniana en Alemania (tasas de permanencia del 40%, 65% y 80%).
+
+
+8. MÉTRICAS DE EVALUACIÓN DE SUFICIENCIA EN LA JUBILACIÓN
+--------------------------------------------------------------------------------
+8.1. Tasa de Reemplazo Neta (Net Replacement Rate - NRR):
+NRR_i = Net_Retirement_Income_i / Net_PreRetirement_Income_i (media últimos 5 años activos)
+
+8.2. Umbrales de Suficiencia Económica Estandarizados:
+1. Nivel 1: Evitación de Asistencia Social (Poverty / SGB XII Avoidance):
+   Net_Retirement_Income_i > Bedarf_SGB_XII_i
+2. Nivel 2: Suficiencia Básica / Modesta (Basic Adequacy):
+   NRR_i >= 0.60 (al menos el 60% del último ingreso neto, estándar internacional OCDE).
+3. Nivel 3: Mantenimiento del Nivel de Vida (Comfortable Living Standard):
+   NRR_i >= 0.75 - 0.80, con reserva líquida equivalente a 12 meses de consumo para contingencias médicas o de cuidado.
+
+8.3. Brecha de Ingreso de Jubilación (Retirement Income Gap - RIG):
+RIG_i = max(0, Target_Retirement_Income_i - Projected_Retirement_Income_i)
+
+8.4. Ahorro Mensual Adicional Requerido (Required Additional Monthly Savings - S*):
+Monto mensual constante que el individuo debe invertir desde la edad actual (t_0) hasta la jubilación (t_R) con un rendimiento real esperado r para cerrar la brecha de ingresos:
+S*_i = RIG_i * a_R(longevity, r_post) / s_{t_R - t_0}(r_pre)
+donde a_R es el factor de anualidad en retiro y s_n es el factor de acumulación de valor futuro.
+
+
+9. ESTRUCTURA DEL PROYECTO Y PIPELINE COMPUTACIONAL REPRODUCIBLE
+--------------------------------------------------------------------------------
+La estructura de código y datos se organiza en un paquete modular estructurado:
+
+germany_wealth_migration_retirement/
+|-- 00_admin/
+|   |-- research_question.md
+|   |-- scope_and_definitions.md
+|   |-- assumptions_log.csv
+|   |-- data_dictionary.md
+|   |-- legal_framework_sgb.md
+|   |-- changelog.md
+|
+|-- 01_sources/
+|   |-- source_catalog.csv
+|   |-- licenses_and_suf_agreements.md
+|   |-- data_download_scripts/
+|
+|-- 02_raw_data/
+|   |-- soep/ (acceso restringido SUF)
+|   |-- iab_bamf_soep/ (acceso restringido SUF)
+|   |-- bundesbank_phf/ (acceso restringido SUF)
+|   |-- destatis_evs_genesis/
+|   |-- destatis_16_bvb/
+|   |-- drv_rentenatlas/
+|
+|-- 03_synthetic_data/
+|   |-- generator_synthetic_microdata.py
+|   |-- synthetic_soep_individuals.parquet
+|   |-- synthetic_phf_wealth.parquet
+|   |-- synthetic_iab_refugees.parquet
+|
+|-- 04_processed/
+|   |-- individual_harmonized.parquet
+|   |-- household_harmonized.parquet
+|   |-- migration_cohorts_clean.parquet
+|   |-- demographic_projections_2070.parquet
+|
+|-- 05_engine/
+|   |-- __init__.py
+|   |-- config.py (Pydantic settings)
+|   |-- schemas.py (Pandera data validation)
+|   |-- markov_labor_transitions.py
+|   |-- wage_equations.py
+|   |-- grv_pension_calculator.py (SGB VI & Grundrente)
+|   |-- sgb_xii_safety_net.py (Grundsicherung & Schonvermögen)
+|   |-- wealth_accumulation.py (IHS, tax, portfolio dynamics)
+|   |-- demographic_projection.py (16. BVB Cohort Component)
+|   |-- monte_carlo_simulator.py (Stochastic risk engine)
+|   |-- adequacy_evaluator.py (NRR, RIG, Required Savings S*)
+|
+|-- 06_models_econometrics/
+|   |-- ihs_wealth_regressions.py
+|   |-- hurdle_asset_participation.py
+|   |-- heckman_wage_selection.py
+|   |-- double_ml_migration_gap.py
+|
+|-- 07_tests/
+|   |-- test_grv_pension_rules.py
+|   |-- test_sgb_xii_safety_net.py
+|   |-- test_wealth_accumulation_budget_constraint.py
+|   |-- test_demographic_conservation.py
+|   |-- test_pandera_schemas.py
+|
+|-- 08_outputs/
+|   |-- tables/ (LaTeX, CSV, Excel)
+|   |-- figures/ (Vector PDF, PNG)
+|   |-- policy_briefs/
+|   |-- interactive_dashboards/ (Streamlit / Dash application)
+|
+|-- 09_reproducibility/
+|   |-- environment.yml
+|   |-- requirements.txt
+|   |-- pyproject.toml
+|   |-- Snakefile / pipeline_runner.py
+|   |-- README.md
+
+
+10. MATRIZ DE GOBERNANZA DE RIESGOS Y LIMITACIONES METODOLÓGICAS
+--------------------------------------------------------------------------------
+10.1. Limitaciones que Deben Ser Declaradas Explícitamente en los Informes:
+- Observabilidad de Activos en el Extranjero: Subdeclaración potencial de bienes raíces y depósitos en países de origen en las encuestas convencionales.
+- Incertidumbre Jurídico-Política en Pensiones: Las reformas legislativas futuras (modificación de la edad de jubilación a 68-70 años, ajustes en la fórmula de sostenibilidad) no son predecibles con certeza determinista y se evalúan como escenarios.
+- Dinámica de Retorno y Reemigración: Dificultad para modelar con precisión la tasa de retorno de refugiados ucranianos condicionada al desenlace del conflicto bélico.
+- Desglose Intra-hogar: Aunque se utilicen escalas de equivalencia y modelos de negociación, la distribución interna real de activos en parejas convivientes no es completamente observable.
+
+10.2. Criterios de Calidad Científica y Validación:
+- Todo resultado cuantitativo reportado debe acompañarse de su intervalo de confianza al 95% o percentiles de distribución estocástica (P10, P25, P50, P75, P90).
+- Queda prohibido presentar valores proyectados o simulados bajo la misma identidad gráfica que datos empíricos observados.
+- Toda regla de cálculo debe contar con su correspondiente test unitario parametrizado basado en los ejemplos de cálculo oficiales de la Deutsche Rentenversicherung y el Ministerio Federal de Trabajo y Asuntos Sociales (BMAS).
+
+
+11. PLAN DE EJECUCIÓN POR HITOS (ROADMAP OPERATIVO)
+--------------------------------------------------------------------------------
+- Hito 1 (Semanas 1-2): Configuración del entorno, data dictionary, esquemas Pandera y generador de datos sintéticos.
+- Hito 2 (Semanas 3-4): Ingesta y armonización de fuentes empíricas (SOEP, IAB, Destatis, Bundesbank).
+- Hito 3 (Semanas 5-6): Implementación y validación del motor institucional de pensiones (SGB VI) y red de seguridad (SGB XII).
+- Hito 4 (Semanas 7-8): Calibración econométrica de ecuaciones salariales, descalificación y modelos de acumulación patrimonial (IHS).
+- Hito 5 (Semanas 9-10): Construcción del motor de cohortes demográficas 2025–2070 (Destatis 16. BVB) e integración macro.
+- Hito 6 (Semanas 11-12): Ejecución de simulaciones Monte Carlo completas, análisis de sensibilidad y computación de indicadores de suficiencia (NRR, RIG, S*).
+- Hito 7 (Semanas 13-14): Generación de dashboards interactivos, compilación de informes técnicos y publicación de código reproducible.
+
+================================================================================
+FIN DEL DOCUMENTO DE PLANIFICACIÓN METODOLÓGICA
+================================================================================

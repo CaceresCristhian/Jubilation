@@ -1,0 +1,16 @@
+group,years_since_arrival,employment_rate_pct,qualified_job_pct,median_gross_wage_eur,remittance_share_net_pct
+General_Refugee,1,11.5,18.0,1650,14.0
+General_Refugee,3,37.0,31.0,2100,11.0
+General_Refugee,5,56.0,42.0,2450,9.5
+General_Refugee,8,69.0,51.0,2800,7.0
+General_Refugee,12,74.0,58.0,3150,5.5
+Ukrainian_Refugee_2022plus,1,18.0,28.0,1950,18.5
+Ukrainian_Refugee_2022plus,3,46.0,49.0,2650,13.5
+Ukrainian_Refugee_2022plus,5,63.0,62.0,3100,10.0
+Ukrainian_Refugee_2022plus,8,73.0,70.0,3550,7.0
+Ukrainian_Migrant_Pre2022,1,52.0,50.0,2700,12.0
+Ukrainian_Migrant_Pre2022,5,78.0,68.0,3500,7.5
+Ukrainian_Migrant_Pre2022,10,83.0,76.0,4100,4.5
+General_Migrant,1,48.0,45.0,2500,11.0
+General_Migrant,5,76.0,66.0,3400,6.5
+General_Migrant,10,81.0,73.0,3900,4.0

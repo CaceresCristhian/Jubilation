@@ -1,0 +1,8 @@
+group,avg_contribution_years,avg_ep_accumulated,median_gross_pension_eur,median_net_pension_eur,share_below_poverty_line_pct
+German_Men,38.5,36.8,1551.0,1378.0,8.4
+German_Women,29.2,24.5,1033.0,918.0,19.8
+General_Migrant_Men,25.1,22.4,944.0,839.0,28.5
+General_Migrant_Women,18.4,14.8,624.0,554.0,46.2
+Ukrainian_Migrant_Pre2022,21.5,18.9,797.0,708.0,34.0
+General_Refugee_LateArrival,9.5,7.2,303.0,269.0,88.5
+Ukrainian_Refugee_2022plus_LateArrival,4.5,3.8,160.0,142.0,96.0

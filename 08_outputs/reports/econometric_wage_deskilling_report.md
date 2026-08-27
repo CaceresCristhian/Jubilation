@@ -1,0 +1,20 @@
+# Econometric Results: Wage Dynamics, Qualification Deskilling & Language Premiums
+
+| Variable | Coefficient | Robust_SE | pValue | Pct_Wage_Effect |
+| --- | --- | --- | --- | ---|
+| const | 10.2975 | 0.0131 | <0.0001 | - |
+| group_General_Migrant | -0.0063 | 0.0062 | 0.3146 | -0.63% |
+| group_General_Refugee | -0.0023 | 0.0108 | 0.8282 | -0.23% |
+| group_Ukrainian_Refugee_2022plus | 0.016 | 0.0187 | 0.3936 | +1.61% |
+| group_Ukrainian_Migrant_Pre2022 | 0.0039 | 0.0123 | 0.7510 | +0.39% |
+| exp_de | 0.0363 | 0.0008 | <0.0001 | +3.70% |
+| exp_de_sq | -0.0527 | 0.0015 | <0.0001 | -5.13% |
+| edu_tertiary | 0.3577 | 0.006 | <0.0001 | +43.00% |
+| edu_vocational | 0.1552 | 0.0057 | <0.0001 | +16.79% |
+| lang_advanced_b2_c2 | -0.0144 | 0.008 | 0.0718 | -1.43% |
+| deskilling_penalty | -1.0632 | 0.0889 | <0.0001 | -65.46% |
+| is_female | -0.1211 | 0.0035 | <0.0001 | -11.41% |
+
+- Dependent Variable: ln(Annual Gross Wage)
+- Sample Size (N): 40,500 employed individuals
+- Model R-squared: 0.2896

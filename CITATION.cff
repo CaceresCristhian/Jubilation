@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this research framework, dynamic microsimulation pipeline, or dataset calibrations in your academic work, please cite it as below."
+title: "Wealth, Migration, and Retirement Sustainability in Germany: A Dynamic Microdata and Policy Simulation Framework (2025–2070)"
+authors:
+  - family-names: "Research Project"
+    given-names: "German Retirement, Wealth & Migration Team"
+date-released: 2026-08-22
+version: "1.0.0"
+license: "MIT"
+repository-code: "https://github.com/your-username/Jubilacion"
+keywords:
+  - "German Pension System"
+  - "SGB VI"
+  - "SGB XII"
+  - "Retirement Adequacy"
+  - "Wealth Inequality"
+  - "Immigration & Refugees"
+  - "Destatis 16. BVB"
+  - "Microsimulation"
+  - "Econometrics"
