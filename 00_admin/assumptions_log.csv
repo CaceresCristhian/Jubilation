@@ -3,7 +3,7 @@ ASM_01,Institutional,Regelaltersgrenze,67,SGB VI § 35 / § 235,"Standard retire
 ASM_02,Institutional,Early_Retirement_Deduction_per_Month,0.003,SGB VI § 77,"0.3% deduction per month before standard age (max 14.4%)"
 ASM_03,Institutional,Delayed_Retirement_Bonus_per_Month,0.005,SGB VI § 77,"0.5% surcharge per month after standard age"
 ASM_04,Institutional,Beitragssatz_GRV,0.186,SGB VI § 158,"Statutory pension contribution rate 18.6% (split equally between employer/employee)"
-ASM_05,Institutional,Aktueller_Rentenwert_2026,42.15,BMAS / DRV,"Projected pension point value for 2026 in unified Germany"
+ASM_05,Institutional,Aktueller_Rentenwert_2026,42.52,BMAS / DRV,"Official pension point value from July 2026 in unified Germany"
 ASM_06,Institutional,Durchschnittsentgelt_2026,49200,SGB VI Anlage 1,"Reference annual earnings for 1.0 Entgeltpunkt in 2026"
 ASM_07,Institutional,Grundrente_Min_Years,33,SGB VI § 76g,"Minimum Grundrentenzeiten required for basic pension uplift"
 ASM_08,Social_Safety_Net,Regelbedarf_Stufe1_2026,578,BMAS / SGB XII,"Monthly standard subsistence allowance for single adult"

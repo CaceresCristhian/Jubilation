@@ -122,7 +122,7 @@
 ### 3.1. GRV (Gesetzliche Rentenversicherung - SGB VI)
 * **Definition:** The 1st pillar statutory pay-as-you-go public pension in Germany.
 * **Formula:** $\text{Gross Pension} = \sum \text{EP} \times \text{ZF} \times \text{AR} \times \text{RAF}$.
-* **Key Benchmarks:** Reference Average Wage = €49,200 (2026); Pension Point Value ($\text{AR}$) = €42.15 (2026); Standard deductions for retiree health ($\text{KVdR} \approx 8.35\%$) and long-term care ($\text{PV} = 3.4\%\text{--}4.0\%$).
+* **Key Benchmarks:** Reference Average Wage = €51,944 (2026); Pension Point Value ($\text{AR}$) = €42.52 (2026); Standard deductions for retiree health ($\text{KVdR} = 8.75\%$) and long-term care ($\text{PV} = 3.60\%\text{--}4.20\%$).
 
 ### 3.2. NRR (Net Replacement Rate / Nettoersatzquote)
 * **Definition:** Ratio of total net disposable retirement income relative to pre-retirement net labor earnings.

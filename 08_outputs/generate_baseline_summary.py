@@ -36,7 +36,7 @@ for grp, df_g in df_working.groupby("population_group"):
         "Stock/ETF Investor %": f"{(df_g['investment_assets_eur'] > 0).mean() * 100:.1f}%",
         "Homeownership %": f"{(df_g['housing_real_estate_eur'] > 0).mean() * 100:.1f}%",
         "Median Pension EP": round(df_g["pension_ep_accumulated"].median(), 1),
-        "Est. Pension at 67 (EUR/mo)": f"€{df_g['pension_ep_accumulated'].median() * 42.15:,.0f}"
+        "Est. Pension at 67 (EUR/mo)": f"€{df_g['pension_ep_accumulated'].median() * 42.52:,.0f}"
     })
 
 df_summary = pd.DataFrame(summary_rows)
@@ -63,7 +63,7 @@ with open("08_outputs/reports/baseline_summary_report.md", "w", encoding="utf-8"
     f.write("# 5-Way Comparative Baseline Summary: German x Migrant x Refugee x Ukrainian Refugee x Ukrainian Migrant\n\n")
     f.write("**Population Subset:** Working-Age Adults (Ages 25–64) | **Data Source:** Harmonized German Empirical Microdata & Calibration Benchmarks\n\n")
     f.write(md_table + "\n\n")
-    f.write("> **Note:** All figures are expressed in constant 2026 Euros. Statutory pension estimations assume €42.15/Entgeltpunkt (AR 2026).\n")
+    f.write("> **Note:** All figures are expressed in constant 2026 Euros. Statutory pension estimations assume €42.52/Entgeltpunkt (AR 2026 post-July).\n")
 
 print("Generated 5-Way comparative baseline summary table successfully:\n")
 print(md_table)

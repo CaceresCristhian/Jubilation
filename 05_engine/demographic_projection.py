@@ -25,7 +25,7 @@ class DemographicProjectionEngine:
         """
         df_v = self.df_demog[self.df_demog["variant"] == variant].sort_values("year").copy()
         
-        ar_series = [42.15] # 2026 baseline
+        ar_series = [42.52] # 2026 baseline (post-July 2026)
         years = df_v["year"].tolist()
         
         # Start projecting from 2027
