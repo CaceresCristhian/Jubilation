@@ -1013,6 +1013,8 @@
 
             // Update Chart 1 Data
             if (chartIncome) {
+                chartIncome.options.scales.y.min = 0;
+                chartIncome.options.scales.y.max = 3000;
                 chartIncome.data.datasets[0].data = [
                     data.German_Native.pension,
                     data.General_Migrant.pension,
@@ -1091,7 +1093,13 @@
                         },
                         y: {
                             beginAtZero: true,
-                            ticks: { color: '#64748B' },
+                            min: 0,
+                            max: 3000,
+                            ticks: { 
+                                color: '#64748B',
+                                stepSize: 500,
+                                callback: function(value) { return '€' + value.toLocaleString(); }
+                            },
                             grid: { color: '#E2E8F0' },
                             title: { display: true, text: 'EUR / Month' }
                         }
