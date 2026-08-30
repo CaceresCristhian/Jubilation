@@ -75,31 +75,104 @@
         <!-- KPI Metric Cards (Dynamically Updated by Gender) -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
             <div class="bg-white dark:bg-slate-900 p-5 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition">
-                <div class="text-xs font-medium text-slate-500 dark:text-slate-400 uppercase" data-i18n="card_german">German Native</div>
-                <div id="kpiIncomeGerman" class="text-2xl font-bold text-slate-900 dark:text-white mt-1">€2,631 <span class="text-xs font-normal text-slate-500 dark:text-slate-400" data-i18n="per_mo">/mo</span></div>
-                <div id="kpiSubGerman" class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold mt-1">NRR: 87.5% &bull; Pension: €2,108</div>
+                <div class="text-xs font-medium text-slate-500 dark:text-slate-400 uppercase" data-i18n="card_german">German Native Reference</div>
+                <div id="kpiIncomeGerman" class="text-2xl font-bold text-slate-900 dark:text-white mt-1">€2,547 <span class="text-xs font-normal text-slate-500 dark:text-slate-400" data-i18n="per_mo">/mo</span></div>
+                <div id="kpiSubGerman" class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold mt-1">NRR: 85.0% &bull; Pension: €2,003</div>
             </div>
             <div class="bg-white dark:bg-slate-900 p-5 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition">
                 <div class="text-xs font-medium text-slate-500 dark:text-slate-400 uppercase" data-i18n="card_gen_migrant">General Migrant</div>
-                <div id="kpiIncomeMigrant" class="text-2xl font-bold text-slate-900 dark:text-white mt-1">€2,018 <span class="text-xs font-normal text-slate-500 dark:text-slate-400" data-i18n="per_mo">/mo</span></div>
-                <div id="kpiSubMigrant" class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-1">NRR: 79.6% &bull; Pension: €1,552</div>
+                <div id="kpiIncomeMigrant" class="text-2xl font-bold text-slate-900 dark:text-white mt-1">€1,959 <span class="text-xs font-normal text-slate-500 dark:text-slate-400" data-i18n="per_mo">/mo</span></div>
+                <div id="kpiSubMigrant" class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-1">NRR: 77.2% &bull; Pension: €1,496</div>
             </div>
             <div class="bg-white dark:bg-slate-900 p-5 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition">
                 <div class="text-xs font-medium text-slate-500 dark:text-slate-400 uppercase" data-i18n="card_gen_refugee">General Refugee</div>
-                <div id="kpiIncomeRefugee" class="text-2xl font-bold text-slate-900 dark:text-white mt-1">€1,596 <span class="text-xs font-normal text-slate-500 dark:text-slate-400" data-i18n="per_mo">/mo</span></div>
-                <div id="kpiSubRefugee" class="text-xs text-amber-600 dark:text-amber-400 font-semibold mt-1">NRR: 74.8% &bull; Pension: €1,272</div>
+                <div id="kpiIncomeRefugee" class="text-2xl font-bold text-slate-900 dark:text-white mt-1">€1,564 <span class="text-xs font-normal text-slate-500 dark:text-slate-400" data-i18n="per_mo">/mo</span></div>
+                <div id="kpiSubRefugee" class="text-xs text-amber-600 dark:text-amber-400 font-semibold mt-1">NRR: 72.9% &bull; Pension: €1,241</div>
             </div>
             <div class="bg-white dark:bg-slate-900 p-5 rounded-xl border border-red-200 dark:border-red-900/50 bg-red-50/30 dark:bg-red-950/20 shadow-sm hover:shadow-md transition">
                 <div class="text-xs font-medium text-red-600 dark:text-red-400 uppercase font-semibold" data-i18n="card_ukr_refugee">Ukrainian Refugee (2022+)</div>
-                <div id="kpiIncomeUkrRef" class="text-2xl font-bold text-red-700 dark:text-red-400 mt-1">€1,061 <span class="text-xs font-normal text-red-500 dark:text-red-400" data-i18n="per_mo">/mo</span></div>
-                <div id="kpiSubUkrRef" class="text-xs text-red-600 dark:text-red-400 font-semibold mt-1" data-i18n="card_ukr_refugee_sub">NRR: 50.7% &bull; High Poverty Risk</div>
+                <div id="kpiIncomeUkrRef" class="text-2xl font-bold text-red-700 dark:text-red-400 mt-1">€1,025 <span class="text-xs font-normal text-red-500 dark:text-red-400" data-i18n="per_mo">/mo</span></div>
+                <div id="kpiSubUkrRef" class="text-xs text-red-600 dark:text-red-400 font-semibold mt-1" data-i18n="card_ukr_refugee_sub">NRR: 48.8% &bull; High Subsistence Gap Risk (<€1,113)</div>
             </div>
             <div class="bg-white dark:bg-slate-900 p-5 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition">
                 <div class="text-xs font-medium text-slate-500 dark:text-slate-400 uppercase" data-i18n="card_ukr_migrant">Ukrainian Migrant (Pre-2022)</div>
-                <div id="kpiIncomeUkrMig" class="text-2xl font-bold text-slate-900 dark:text-white mt-1">€1,967 <span class="text-xs font-normal text-slate-500 dark:text-slate-400" data-i18n="per_mo">/mo</span></div>
-                <div id="kpiSubUkrMig" class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold mt-1">NRR: 76.4% &bull; Pension: €1,480</div>
+                <div id="kpiIncomeUkrMig" class="text-2xl font-bold text-slate-900 dark:text-white mt-1">€1,905 <span class="text-xs font-normal text-slate-500 dark:text-slate-400" data-i18n="per_mo">/mo</span></div>
+                <div id="kpiSubUkrMig" class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold mt-1">NRR: 73.9% &bull; Pension: €1,424</div>
             </div>
         </div>
+
+        <!-- Model Assumptions & Statutory Parameter Registry Panel -->
+        <section class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800 gap-2">
+                <div class="flex items-center space-x-2.5">
+                    <i class="fa-solid fa-sliders text-blue-600 dark:text-blue-400 text-lg"></i>
+                    <h2 class="text-base font-bold text-slate-900 dark:text-white" data-i18n="assump_title">Model Architecture, Statutory Parameters & Assumptions Registry</h2>
+                </div>
+                <span class="text-xs bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 px-3 py-1 rounded-full font-semibold self-start sm:self-auto" data-i18n="assump_badge">Status: Calibrated 2026 Baseline</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs leading-relaxed">
+                <!-- 1. Observed Statutory Parameters -->
+                <div class="p-3.5 rounded-xl border border-blue-100 dark:border-blue-900/40 bg-blue-50/30 dark:bg-blue-950/20 space-y-1.5">
+                    <div class="font-bold text-blue-900 dark:text-blue-300 flex items-center text-xs">
+                        <i class="fa-solid fa-landmark text-blue-600 mr-1.5"></i>
+                        <span data-i18n="assump_stat_title">1. Statutory Rules (2026)</span>
+                    </div>
+                    <ul class="space-y-1 text-slate-600 dark:text-slate-300">
+                        <li><strong>Aktueller Rentenwert:</strong> €42.52 / EP</li>
+                        <li><strong>Avg Earnings (DE):</strong> €51,944 / yr</li>
+                        <li><strong>Ceiling (BBG):</strong> €101,400 (max 1.952 EP)</li>
+                        <li><strong>Deductions:</strong> KVdR 8.75% + PV 3.6%/4.2%</li>
+                        <li><strong>Subsistence Floor:</strong> €1,113 / mo benchmark</li>
+                    </ul>
+                </div>
+
+                <!-- 2. Econometrically Estimated Parameters -->
+                <div class="p-3.5 rounded-xl border border-emerald-100 dark:border-emerald-900/40 bg-emerald-50/30 dark:bg-emerald-950/20 space-y-1.5">
+                    <div class="font-bold text-emerald-900 dark:text-emerald-300 flex items-center text-xs">
+                        <i class="fa-solid fa-square-root-variable text-emerald-600 mr-1.5"></i>
+                        <span data-i18n="assump_est_title">2. Econometric Estimates (OLS)</span>
+                    </div>
+                    <ul class="space-y-1 text-slate-600 dark:text-slate-300">
+                        <li><strong>Experience Return:</strong> +3.7% / yr (concave)</li>
+                        <li><strong>Deskilling Disadvantage:</strong> –65.5% gross</li>
+                        <li><strong>Tertiary Premium:</strong> +43.0% wage boost</li>
+                        <li><strong>Gender Wage Gap:</strong> –11.4% conditional</li>
+                        <li><strong>Asset Assimilation:</strong> +13.2% IHS wealth/yr</li>
+                    </ul>
+                </div>
+
+                <!-- 3. Baseline Simulation Assumptions -->
+                <div class="p-3.5 rounded-xl border border-purple-100 dark:border-purple-900/40 bg-purple-50/30 dark:bg-purple-950/20 space-y-1.5">
+                    <div class="font-bold text-purple-900 dark:text-purple-300 flex items-center text-xs">
+                        <i class="fa-solid fa-calculator text-purple-600 mr-1.5"></i>
+                        <span data-i18n="assump_sim_title">3. Lifecycle Assumptions</span>
+                    </div>
+                    <ul class="space-y-1 text-slate-600 dark:text-slate-300">
+                        <li><strong>Retirement Horizon:</strong> 20 yrs (ages 67–87)</li>
+                        <li><strong>Real Portfolio Returns:</strong> Equity 4.5% / Cash –0.5%</li>
+                        <li><strong>Decumulation:</strong> Stylized 4% annual drawdown</li>
+                        <li><strong>Target Adequacy:</strong> 60% net (€1,113–€1,800)</li>
+                        <li><strong>Foreign Pensions:</strong> Excluded (data limit)</li>
+                    </ul>
+                </div>
+
+                <!-- 4. Counterfactual Scenarios -->
+                <div class="p-3.5 rounded-xl border border-amber-100 dark:border-amber-900/40 bg-amber-50/30 dark:bg-amber-950/20 space-y-1.5">
+                    <div class="font-bold text-amber-900 dark:text-amber-300 flex items-center text-xs">
+                        <i class="fa-solid fa-lightbulb text-amber-600 mr-1.5"></i>
+                        <span data-i18n="assump_policy_title">4. Policy Counterfactuals</span>
+                    </div>
+                    <ul class="space-y-1 text-slate-600 dark:text-slate-300">
+                        <li><strong>Fast-Track Credentials:</strong> +€381/mo pension</li>
+                        <li><strong>78.4% Adequacy Rate:</strong> Reaches >= €1,113</li>
+                        <li><strong>Required Savings S*:</strong> Drops €180 &rarr; €35/mo</li>
+                        <li><strong>Return Migration:</strong> Modulates municipal risk</li>
+                        <li><strong>SGB XII Disregard §82a:</strong> Preserves savings</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
         <!-- Interactive Simulator & Charts Section -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -318,7 +391,7 @@
                         <h3 class="font-bold text-sm text-slate-900 dark:text-white" data-i18n="def_nrr_title">Net Replacement Rate (NRR)</h3>
                     </div>
                     <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="def_nrr_text">
-                        Measures total net retirement income as a percentage of pre-retirement net labor earnings. OECD guidelines establish 60% as the threshold for basic living standard maintenance, and 75%+ for comfortable living.
+                        Measures total net retirement income as a percentage of pre-retirement net labor earnings. Common academic pension adequacy benchmarks evaluate 60% as standard baseline maintenance, and 75%+ as a comfortable standard of living.
                     </p>
                 </div>
 
@@ -328,7 +401,7 @@
                         <h3 class="font-bold text-sm text-slate-900 dark:text-white" data-i18n="def_sgb_title">Grundsicherung im Alter (SGB XII)</h3>
                     </div>
                     <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="def_sgb_text">
-                        Means-tested socio-cultural minimum subsistence guarantee (Chapter 4, SGB XII). Guarantees €1,113/month (€578 standard rate + €535 housing/heating costs) for retirees whose income falls below this floor and whose liquid savings do not exceed €10,000 (Schonvermögen).
+                        Means-tested socio-cultural subsistence guarantee (Chapter 4, SGB XII). Modeled at an illustrative single-adult benchmark of €1,113/month (€563 Level 1 standard rate + assumed €550 accommodation/heating benchmark) for retirees whose autonomous income falls below this floor and whose liquid savings do not exceed €10,000 (Schonvermögen § 90).
                     </p>
                 </div>
 
@@ -338,17 +411,17 @@
                         <h3 class="font-bold text-sm text-slate-900 dark:text-white" data-i18n="def_sstar_title">Required Add. Savings (S*)</h3>
                     </div>
                     <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="def_sstar_text">
-                        The extra monthly amount a person must invest from current age until retirement age 67 to close any gap to standard adequacy (€1,450–€1,800/mo). Higher earnings and years of residence compound wealth and eliminate this required savings to €0 (Fully Funded).
+                        The additional monthly amount a worker must save/invest from current age until age 67 to bridge the gap to standard replacement adequacy (€1,450–€1,800/mo, based on 60% of net wages). Reaching adequate income reduces this required savings to €0 (Fully Funded).
                     </p>
                 </div>
 
                 <div id="guide_drawdown" class="p-4 rounded-xl border border-slate-100 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-800/50 hover:bg-slate-50 dark:hover:bg-slate-800 transition space-y-2">
                     <div class="flex items-center space-x-2">
                         <span class="w-7 h-7 rounded-lg bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-300 flex items-center justify-center font-bold text-xs">4%</span>
-                        <h3 class="font-bold text-sm text-slate-900 dark:text-white" data-i18n="def_drawdown_title">Private Wealth Drawdown (4% Rule)</h3>
+                        <h3 class="font-bold text-sm text-slate-900 dark:text-white" data-i18n="def_drawdown_title">Private Wealth Drawdown (4% Decumulation Rule)</h3>
                     </div>
                     <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="def_drawdown_text">
-                        Safe monthly withdrawal rate generated from private liquid savings and ETF portfolios. Allows retirees to generate stable passive cashflow throughout a 20–25 year retirement horizon without exhausting their underlying principal capital.
+                        Stylized monthly withdrawal rate generated from private liquid savings and ETF portfolios. Illustrates cashflow decumulation over a deterministic 20-year retirement horizon (ages 67–87) without exhaustively modeling individual mortality hazards.
                     </p>
                 </div>
 
@@ -482,23 +555,29 @@
         const i18n = {
             en: {
                 badge_platform: "Microsimulation Platform",
-                badge_calibrated: "Calibrated to German Microdata",
-                main_title: "Wealth, Migration & Retirement Sustainability in Germany",
-                main_subtitle: "Dynamic Microsimulation & 5-Way Comparative Policy Engine (2025–2070)",
+                badge_calibrated: "Calibrated with German Empirical Microdata",
+                main_title: "German Wealth, Migration & Retirement Sustainability",
+                main_subtitle: "Dynamic Lifecycle Microsimulation & 5-Cohort Policy Comparison (2025–2070)",
                 per_mo: "/mo",
                 years_unit: "years",
                 lbl_gender_view: "Gender Segmentation:",
-                lbl_gender_desc: "(Disaggregates pensions, wage disparities, and life expectancy)",
-                gender_both: "Both (Combined)",
+                lbl_gender_desc: "(Distinguishes pensions, wage penalties, and life expectancy)",
+                gender_both: "Combined (Both Sexes)",
                 gender_female: "Female",
                 gender_male: "Male",
                 lbl_sim_gender: "Gender & Life Expectancy Profile",
-                card_german: "German Native",
+                card_german: "German Native Reference",
                 card_gen_migrant: "General Migrant",
                 card_gen_refugee: "General Refugee",
                 card_ukr_refugee: "Ukrainian Refugee (2022+)",
-                card_ukr_refugee_sub: "NRR: 50.7% • High Poverty Risk",
+                card_ukr_refugee_sub: "NRR: 48.8% • High Subsistence Gap Risk (<€1,113/mo)",
                 card_ukr_migrant: "Ukrainian Migrant (Pre-2022)",
+                assump_title: "Model Architecture, Statutory Parameters & Assumptions Registry",
+                assump_badge: "Status: Calibrated 2026 Baseline",
+                assump_stat_title: "1. Statutory Rules (2026)",
+                assump_est_title: "2. Econometric Estimates (OLS)",
+                assump_sim_title: "3. Lifecycle Assumptions",
+                assump_policy_title: "4. Policy Counterfactuals",
                 sim_title: "Individual Pension & Gap Simulator",
                 sim_desc: "Select population segment and adjust profile sliders to project pension, safety net, and required savings S*.",
                 lbl_pop_segment: "Population Segment (Profile Baseline)",
@@ -508,27 +587,27 @@
                 opt_ukr_refugee: "Ukrainian War Refugee (2022+ §24)",
                 opt_ukr_migrant: "Ukrainian Migrant (Pre-2022)",
                 lbl_age: "Current Age",
-                note_age_horizon: "* Working-age accumulation window (20–64 years) projecting retirement entry at statutory age 67 (§ 35 SGB VI).",
+                note_age_horizon: "* Working-age accumulation window (20–64 years) projecting retirement entry at statutory age 67 (§ 35 SGB VI; deterministic 20-year horizon).",
                 lbl_years_in_de: "Years of Residence in Germany",
                 lbl_gross_wage: "Gross Annual Earnings (EUR)",
                 lbl_remittances: "Monthly Remittances Abroad (EUR)",
-                out_pension: "Statutory Pension at 67 (GRV):",
-                out_drawdown: "Private Wealth Drawdown (4% Safe):",
+                out_pension: "Net Statutory Pension at 67 (GRV):",
+                out_drawdown: "Private Wealth Drawdown (4% Rule):",
                 out_total_income: "Total Autonomous Income:",
                 out_nrr: "Net Replacement Rate (NRR):",
                 out_sgb_topup: "SGB XII Safety Net Top-Up:",
                 out_s_star: "Required Add. Monthly Savings (S*):",
-                chart1_title: "Projected Retirement Income vs. Poverty Threshold (€1,113/mo)",
+                chart1_title: "Projected Retirement Income vs. Illustrative Subsistence Benchmark (€1,113/mo)",
                 chart2_title: "Destatis 16. BVB Old-Age Dependency Ratio (2024–2070)",
-                chart1_series_pension: "Statutory Pension (GRV)",
-                chart1_series_total: "Total Ret. Income",
+                chart1_series_pension: "Net Statutory Pension (GRV)",
+                chart1_series_total: "Total Net Ret. Income",
                 gender_sec_title: "Gender Pension Dimension & Analytical Limitations",
                 gender_sec_badge: "Academic Sensitivity Protocol",
                 gender_modeled_title: "What Is Explicitly Modeled & Captured",
-                gender_mod_1: "Wage & Part-Time Disparities: Gender wage penalty (–11.4% adjusted) and higher female part-time shares.",
-                gender_mod_2: "Childcare Credits (§ 56 SGB VI): Up to 3.0 Entgeltpunkte (~€126/mo pension) per child born 1992+.",
+                gender_mod_1: "Wage & Part-Time Disparities: Estimated conditional gender wage gap (–11.4%) and higher female part-time shares.",
+                gender_mod_2: "Childcare Credits (§ 56 SGB VI): Up to 3.0 Entgeltpunkte (~€127/mo pension) per child born 1992+.",
                 gender_mod_3: "Longevity Differential (Destatis 16. BVB): Life expectancy at 67 is ~21.5 years for females vs ~18.5 years for males.",
-                gender_mod_4: "Basic Pension (Grundrente § 76g): Minimum pension supplement predominantly elevating female low-earners.",
+                gender_mod_4: "Basic Pension (Grundrente § 76g): Stylized point uplift for low-earners with 33+ qualifying contribution years.",
                 gender_unmodeled_title: "Crucial Boundaries & Unmodeled Variables",
                 gender_unmod_1: "Survivor Pensions (Witwenrente § 46 SGB VI): Up to 55–60% spousal derived pension rights are not modeled at single level.",
                 gender_unmod_2: "Divorce Rights Splitting (Versorgungsausgleich): Equalization of pension rights between spouses upon divorce.",
@@ -540,19 +619,19 @@
                 def_grv_title: "Statutory Pension (GRV - SGB VI)",
                 def_grv_text: "Primary pillar of the German pension system. Workers earn Earnings Points (EP) based on wages relative to the national average (€51,944 preliminary in 2026, capped at BBG €101,400 yielding max 1.952 EP/yr). At age 67, EP is multiplied by the Current Pension Value (AR = €42.52/EP), minus statutory health (KVdR 8.75%) and care (PV 3.6%–4.2%) insurance.",
                 def_nrr_title: "Net Replacement Rate (NRR)",
-                def_nrr_text: "Measures total net retirement income as a percentage of pre-retirement net labor earnings. OECD guidelines establish 60% as the threshold for basic living standard maintenance, and 75%+ for comfortable living.",
+                def_nrr_text: "Measures total net retirement income as a percentage of pre-retirement net labor earnings. Common academic pension adequacy benchmarks evaluate 60% as standard baseline maintenance, and 75%+ as a comfortable standard of living.",
                 def_sgb_title: "Grundsicherung im Alter (SGB XII, Chapter 4)",
-                def_sgb_text: "Means-tested socio-cultural subsistence guarantee (Chapter 4, SGB XII). Illustrated at €1,113/month (€563 standard rate + €550 housing/heating benchmark) for retirees whose income falls below this floor and whose liquid savings do not exceed €10,000 (Schonvermögen § 90).",
+                def_sgb_text: "Means-tested socio-cultural subsistence guarantee (Chapter 4, SGB XII). Modeled at an illustrative single-adult benchmark of €1,113/month (€563 Level 1 standard rate + assumed €550 accommodation/heating benchmark) for retirees whose autonomous income falls below this floor and whose liquid savings do not exceed €10,000 (Schonvermögen § 90).",
                 def_sstar_title: "Required Add. Savings (S*)",
-                def_sstar_text: "The extra monthly amount a person must invest from current age until retirement age 67 to close any gap to standard adequacy (€1,450–€1,800/mo). Higher earnings and years of residence compound wealth and eliminate this required savings to €0 (Fully Funded).",
-                def_drawdown_title: "Private Wealth Drawdown (4% Rule)",
-                def_drawdown_text: "Safe monthly withdrawal rate generated from private liquid savings and ETF portfolios. Allows retirees to generate stable passive cashflow throughout a 20–25 year retirement horizon without exhausting their underlying principal capital.",
+                def_sstar_text: "The additional monthly amount a worker must save/invest from current age until age 67 to bridge the gap to standard replacement adequacy (€1,450–€1,800/mo, based on 60% of net wages). Reaching adequate income reduces this required savings to €0 (Fully Funded).",
+                def_drawdown_title: "Private Wealth Drawdown (4% Decumulation Rule)",
+                def_drawdown_text: "Stylized monthly withdrawal rate generated from private liquid savings and ETF portfolios. Illustrates cashflow decumulation over a deterministic 20-year retirement horizon (ages 67–87) without exhaustively modeling individual mortality hazards.",
                 def_oadr_title: "Old-Age Dependency Ratio (OADR)",
                 def_oadr_text: "Ratio of retirement-age population (67+) to working-age population (20–66). Destatis projects the OADR to increase from ~34% (2024) to over 50% (2040–2050), triggering the statutory Sustainability Factor.",
                 ref_title: "Official Data Sources & Institutional Provenance",
                 ref_subtitle: "All baseline distributions and simulation parameters are calibrated against open official databases of the Federal Republic of Germany and European institutions.",
                 disc_title: "Methodological Provenance, AI Assistance & Scientific Transparency Disclosure",
-                disc_text: "This research platform, econometric regression suite, and dynamic microsimulation engine were designed, engineered, and calibrated by Antigravity (Google DeepMind) under the direct architectural direction, domain guidance, and supervisory oversight of the user. All demographic projections, statutory formulas (SGB VI, SGB XII, EStG), and empirical asset distributions are strictly rooted in official German institutional datasets. To ensure complete academic reproducibility and privacy compliance (SUF regulations), the synthetic microdata (N = 50,000) was generated using parametric Copula methods with exact marginal and covariance preservation.",
+                disc_text: "This research platform, econometric regression suite, and dynamic microsimulation engine were designed, engineered, and calibrated by Antigravity (Google DeepMind) under the direct architectural direction, domain guidance, and supervisory oversight of the user. All demographic projections, statutory formulas (SGB VI, SGB XII), and empirical asset distributions are calibrated against published empirical moments and statutory regulations from official German institutions (Destatis, Bundesbank PHF, DRV, IAB-BAMF-SOEP). To ensure complete academic reproducibility and privacy compliance (SUF regulations), the synthetic microdata (N = 50,000) was generated using parametric Copula methods calibrated to closely reproduce empirical moments and rank dependencies.",
                 footer_text: "German Wealth, Migration & Retirement Microsimulation Framework • Calibrated to Destatis 16. BVB, DRV & Bundesbank PHF • August 2026",
                 none_eligible: "None (€0 - Income Adequate)",
                 adequate_savings: "€0 (Adequate / Fully Funded)"
@@ -574,8 +653,14 @@
                 card_gen_migrant: "Arbeitsmigranten (1. Gen)",
                 card_gen_refugee: "Geflüchtete (2015/16)",
                 card_ukr_refugee: "Ukrainische Geflüchtete (2022+)",
-                card_ukr_refugee_sub: "Nettoersatzquote: 50,7% • Hohes Armutsrisiko",
+                card_ukr_refugee_sub: "Nettoersatzquote: 48,8% • Hohes Grundsicherungsrisiko (<1.113 €)",
                 card_ukr_migrant: "Ukrainische Migranten (vor 2022)",
+                assump_title: "Modellarchitektur, Gesetzliche Parameter & Annahmen-Register",
+                assump_badge: "Status: Kalibrierte Basis 2026",
+                assump_stat_title: "1. Gesetzliche Regeln (2026)",
+                assump_est_title: "2. Ökonometrische Schätzungen",
+                assump_sim_title: "3. Lebenszyklus-Annahmen",
+                assump_policy_title: "4. Politik-Kontrafaktik",
                 sim_title: "Individueller Renten- & Vorsorgelücken-Rechner",
                 sim_desc: "Wählen Sie eine Bevölkerungsgruppe und passen Sie die Schieberegler an, um Rente, Grundsicherung und Sparbedarf S* zu berechnen.",
                 lbl_pop_segment: "Bevölkerungsgruppe (Profil-Basis)",
@@ -585,27 +670,27 @@
                 opt_ukr_refugee: "Ukrainische Kriegsflüchtlinge (2022+ §24)",
                 opt_ukr_migrant: "Ukrainische Migranten (vor 2022)",
                 lbl_age: "Aktuelles Alter",
-                note_age_horizon: "* Erwerbsphase (20–64 Jahre) zur Projektion des Renteneintritts mit 67 Jahren (§ 35 SGB VI).",
+                note_age_horizon: "* Erwerbsphase (20–64 Jahre) zur Projektion des Renteneintritts mit 67 Jahren (§ 35 SGB VI; deterministischer 20-Jahres-Horizont).",
                 lbl_years_in_de: "Aufenthaltsdauer in Deutschland",
                 lbl_gross_wage: "Bruttojahresgehalt (EUR)",
                 lbl_remittances: "Monatliche Rücküberweisungen (EUR)",
-                out_pension: "Gesetzliche Rente mit 67 (GRV):",
-                out_drawdown: "Privater Vermögensverzehr (4% p.a.):",
-                out_total_income: "Autonomes Alterseinkommen:",
+                out_pension: "Gesetzliche Nettorente mit 67 (GRV):",
+                out_drawdown: "Privater Vermögensverzehr (4%-Regel):",
+                out_total_income: "Autonomes Netto-Alterseinkommen:",
                 out_nrr: "Netto-Ersatzquote (NRR):",
                 out_sgb_topup: "Grundsicherung im Alter (SGB XII):",
                 out_s_star: "Erforderliche zusätzliche monatliche Ersparnis (S*):",
-                chart1_title: "Projiziertes Alterseinkommen vs. Grundsicherungsbedarf (1.113 €/Monat)",
+                chart1_title: "Projiziertes Alterseinkommen vs. Grundsicherungs-Referenzwert (1.113 €/Monat)",
                 chart2_title: "Destatis 16. BVB Altenquotient (2024–2070)",
-                chart1_series_pension: "Gesetzliche Rente (GRV)",
-                chart1_series_total: "Gesamtes Alterseinkommen",
+                chart1_series_pension: "Gesetzliche Nettorente (GRV)",
+                chart1_series_total: "Gesamtes Netto-Alterseinkommen",
                 gender_sec_title: "Gender-Pension-Dimension & Methodische Grenzen",
                 gender_sec_badge: "Wissenschaftliches Sensitivitätsprotokoll",
                 gender_modeled_title: "Was explizit modelliert und erfasst wird",
-                gender_mod_1: "Lohn- & Teilzeitunterschiede: Bereinigter Gender Wage Gap (–11,4%) und höhere Teilzeitquoten bei Frauen.",
-                gender_mod_2: "Kindererziehungszeiten (§ 56 SGB VI): Bis zu 3,0 Entgeltpunkte (~126 €/Monat Rente) pro Kind ab 1992.",
+                gender_mod_1: "Lohn- & Teilzeitunterschiede: Geschätzter bedingter Gender Wage Gap (–11,4%) und höhere Teilzeitquoten bei Frauen.",
+                gender_mod_2: "Kindererziehungszeiten (§ 56 SGB VI): Bis zu 3,0 Entgeltpunkte (~127 €/Monat Rente) pro Kind ab 1992.",
                 gender_mod_3: "Lebenserwartungsdifferenz (Destatis 16. BVB): Frauen leben mit 67 Jahren im Schnitt ~21,5 Jahre vs. ~18,5 Jahre bei Männern.",
-                gender_mod_4: "Grundrente (§ 76g SGB VI): Zuschlag für langjährige Geringverdiener, der zu über 80% Frauen zugutekommt.",
+                gender_mod_4: "Grundrente (§ 76g SGB VI): Stilisierter Punktaufschlag für langjährige Geringverdiener (33+ Beitragsjahre).",
                 gender_unmodeled_title: "Wichtige methodische Grenzen & unberücksichtigte Faktoren",
                 gender_unmod_1: "Hinterbliebenenrenten (Witwenrente § 46 SGB VI): Bis zu 55–60% abgeleitete Rentenansprüche nicht im Einzelmodell.",
                 gender_unmod_2: "Versorgungsausgleich im Scheidungsfall: Gesetzliche Aufteilung erworbener Rentenanrechte.",
@@ -617,19 +702,19 @@
                 def_grv_title: "Gesetzliche Rentenversicherung (GRV - SGB VI)",
                 def_grv_text: "Die 1. Säule des deutschen Alterssicherungssystems. Beschäftigte erwerben Entgeltpunkte (EP) relativ zum Durchschnittsentgelt (51.944 € vorläufig in 2026, gedeckelt bei BBG 101.400 € = max 1,952 EP/Jahr). Mit 67 Jahren wird die EP-Summe mit dem Aktuellen Rentenwert (AR = 42,52 €) multipliziert, abzüglich Beiträgen zur Kranken- (KVdR 8,75%) und Pflegeversicherung (PV 3,6%–4,2%).",
                 def_nrr_title: "Netto-Ersatzquote (NRR / Net Replacement Rate)",
-                def_nrr_text: "Misst das Netto-Alterseinkommen im Verhältnis zum vorherigen Netto-Arbeitsentgelt. OECD-Richtwerte empfehlen mindestens 60% zur Sicherung des bisherigen Lebensstandards und 75%+ für einen komfortablen Ruhestand.",
+                def_nrr_text: "Misst das Netto-Alterseinkommen im Verhältnis zum vorherigen Netto-Arbeitsentgelt. Gängige wissenschaftliche Referenzwerte sehen 60% als Standard-Basissicherung und 75%+ als komfortablen Ruhestand.",
                 def_sgb_title: "Grundsicherung im Alter (SGB XII, 4. Kapitel)",
-                def_sgb_text: "Bedarfsorientierte Mindestsicherung im Alter (4. Kapitel SGB XII). Illustriert bei 1.113 €/Monat (563 € Regelbedarf + 550 € Unterkunftskosten KdU) bei geringem Einkommen und maximal 10.000 € Schonvermögen (§ 90).",
+                def_sgb_text: "Bedarfsorientierte Mindestsicherung im Alter (4. Kapitel SGB XII). Modelliert bei einem illustrativen Referenzbedarf von 1.113 €/Monat (563 € Regelbedarf + 550 € Unterkunftskosten KdU) bei geringem Einkommen und maximal 10.000 € Schonvermögen (§ 90).",
                 def_sstar_title: "Erforderliche monatliche Sparrate (S*)",
-                def_sstar_text: "Der monatliche Zusatzbetrag, der ab dem aktuellen Alter bis 67 angelegt werden muss, um eine Versorgungslücke zum Standard-Bedarf (1.450–1.800 €/Monat) zu schließen. Steigendes Gehalt reduziert diesen Betrag auf 0 €.",
-                def_drawdown_title: "Privater Vermögensverzehr (4%-Regel)",
-                def_drawdown_text: "Die nachhaltige monatliche Entnahmerate aus privaten Bankeinlagen und ETF/Wertpapierdepots, die über 20–25 Jahre stabiles Einkommen liefert, ohne das Grundkapital aufzubrauchen.",
+                def_sstar_text: "Der monatliche Zusatzbetrag, der ab dem aktuellen Alter bis 67 angelegt werden muss, um eine Versorgungslücke zum Standard-Ersatzbedarf (1.450–1.800 €/Monat, 60% Netto) zu schließen. Ausreichendes Einkommen reduziert diesen Betrag auf 0 €.",
+                def_drawdown_title: "Privater Vermögensverzehr (4%-Entnahmeregel)",
+                def_drawdown_text: "Stilisierte monatliche Entnahmerate aus privaten Bankeinlagen und ETF/Wertpapierdepots über einen deterministischen 20-jährigen Ruhestandshorizont (Alter 67–87) ohne individuelle Mortalitätsmodellierung.",
                 def_oadr_title: "Altenquotient (OADR / Old-Age Dependency Ratio)",
                 def_oadr_text: "Das Verhältnis der Personen im Rentenalter (67+) zur Bevölkerung im Erwerbsalter (20–66). Destatis projiziert einen Anstieg von ~34% (2024) auf über 50% (2040–2050), was den Nachhaltigkeitsfaktor aktiviert.",
                 ref_title: "Offizielle Datenquellen & Institutionelle Herkunft",
                 ref_subtitle: "Alle Basisverteilungen und Simulationsparameter sind anhand offener amtlicher Datenbanken der Bundesrepublik Deutschland und europäischer Institutionen kalibriert.",
                 disc_title: "Methodische Herkunft, KI-Unterstützung & Wissenschaftliche Transparenzerklärung",
-                disc_text: "Diese Forschungsplattform, die ökonometrische Regressionssuite und die dynamische Mikrosimulationsengine wurden von Antigravity (Google DeepMind) unter der direkten fachlichen Leitung und Aufsicht des Benutzers konzipiert, programmiert und kalibriert. Alle Berechnungen beruhen auf amtlichen deutschen Datensätzen. Synthetische Mikrodaten (N = 50.000) wurden mittels parametrischer Copula-Methoden unter Erhalt aller Kovarianzen generiert.",
+                disc_text: "Diese Forschungsplattform, die ökonometrische Regressionssuite und die dynamische Mikrosimulationsengine wurden von Antigravity (Google DeepMind) unter der direkten fachlichen Leitung und Aufsicht des Benutzers konzipiert, programmiert und kalibriert. Alle Berechnungen beruhen auf amtlichen deutschen Datensätzen. Synthetische Mikrodaten (N = 50.000) wurden mittels parametrischer Copula-Methoden kalibriert, um empirische Momente und Rangabhängigkeiten präzise abzubilden.",
                 footer_text: "Forschungsplattform Vermögen, Migration & Rente • Kalibriert mit Destatis 16. BVB, DRV & Bundesbank PHF • August 2026",
                 none_eligible: "Keine (0 € - Einkommen ausreichend)",
                 adequate_savings: "0 € (Bedarf gedeckt / Voll finanziert)"
@@ -651,8 +736,14 @@
                 card_gen_migrant: "Трудові мігранти (1-е пок.)",
                 card_gen_refugee: "Біженці (2015/16)",
                 card_ukr_refugee: "Українські біженці (2022+)",
-                card_ukr_refugee_sub: "Коефіцієнт заміщення: 50.7% • Високий ризик бідності",
+                card_ukr_refugee_sub: "Коефіцієнт заміщення: 48.8% • Високий ризик дефіциту (<€1,113/міс)",
                 card_ukr_migrant: "Українські мігранти (до 2022)",
+                assump_title: "Архітектура моделі, законодавчі параметри та реєстр припущень",
+                assump_badge: "Статус: Відкалібрована база 2026 р.",
+                assump_stat_title: "1. Законодавчі правила (2026)",
+                assump_est_title: "2. Економетричні оцінки (OLS)",
+                assump_sim_title: "3. Припущення життєвого циклу",
+                assump_policy_title: "4. Політичні контрфактичні сценарії",
                 sim_title: "Індивідуальний калькулятор пенсії та дефіциту заощаджень",
                 sim_desc: "Оберіть групу населення та налаштуйте параметри для розрахунку майбутньої пенсії, соціальної допомоги та необхідних заощаджень S*.",
                 lbl_pop_segment: "Група населення (базовий профіль)",
@@ -662,27 +753,27 @@
                 opt_ukr_refugee: "Українські біженці від війни (2022+ §24)",
                 opt_ukr_migrant: "Українські мігранти (прибулі до 2022)",
                 lbl_age: "Поточний вік",
-                note_age_horizon: "* Період трудової діяльності (20–64 роки) для прогнозування виходу на пенсію у 67 років (§ 35 SGB VI).",
+                note_age_horizon: "* Період трудової діяльності (20–64 роки) для прогнозування виходу на пенсію у 67 років (§ 35 SGB VI; 20-річний горизонт).",
                 lbl_years_in_de: "Років проживання в Німеччині",
                 lbl_gross_wage: "Річний валовий дохід (EUR)",
                 lbl_remittances: "Щомісячні грошові перекази в Україну (EUR)",
-                out_pension: "Державна пенсія в 67 років (GRV):",
-                out_drawdown: "Дохід від власних заощаджень (4%):",
+                out_pension: "Державна чиста пенсія в 67 років (GRV):",
+                out_drawdown: "Дохід від власних заощаджень (Правило 4%):",
                 out_total_income: "Загальний автономний дохід:",
                 out_nrr: "Коефіцієнт заміщення доходу (NRR):",
                 out_sgb_topup: "Соціальна допомога у похилому віці (SGB XII):",
                 out_s_star: "Необхідні додаткові щомісячні заощадження (S*):",
-                chart1_title: "Прогноз пенсійного доходу у порівнянні з прожитковим мінімумом (€1,113/міс)",
+                chart1_title: "Прогноз пенсійного доходу vs. орієнтовний прожитковий мінімум (€1,113/міс)",
                 chart2_title: "Коефіцієнт демографічного навантаження похилого віку Destatis 16. BVB (2024–2070)",
-                chart1_series_pension: "Державна пенсія (GRV)",
-                chart1_series_total: "Загальний пенсійний дохід",
+                chart1_series_pension: "Державна чиста пенсія (GRV)",
+                chart1_series_total: "Загальний чистий пенсійний дохід",
                 gender_sec_title: "Гендерний аспект пенсій та аналітичні обмеження",
                 gender_sec_badge: "Академічний протокол чутливості",
                 gender_modeled_title: "Що безпосередньо змодельовано та враховано",
-                gender_mod_1: "Різниця в оплаті праці: Скоргований гендерний розрив (–11.4%) та більша частка неповної зайнятості у жінок.",
-                gender_mod_2: "Пенсійні бали за виховання дітей (§ 56 SGB VI): До 3.0 балів (~€126/міс) за кожну дитину після 1992 р.",
+                gender_mod_1: "Різниця в оплаті праці: Оцінений гендерний розрив (–11.4%) та більша частка неповної зайнятості у жінок.",
+                gender_mod_2: "Пенсійні бали за виховання дітей (§ 56 SGB VI): До 3.0 балів (~€127/міс) за кожну дитину після 1992 р.",
                 gender_mod_3: "Різниця тривалості життя (Destatis 16. BVB): У 67 років тривалість життя жінок становить ~21.5 р. проти ~18.5 р. у чоловіків.",
-                gender_mod_4: "Базова пенсія (Grundrente § 76g): Доплата для осіб з низьким доходом, понад 80% отримувачів якої — жінки.",
+                gender_mod_4: "Базова пенсія (Grundrente § 76g): Стилізована надбавка для осіб з низьким доходом (33+ років стажу).",
                 gender_unmodeled_title: "Важливі методологічні обмеження та невраховані фактори",
                 gender_unmod_1: "Пенсії у зв'язку з втратою годувальника (Witwenrente § 46 SGB VI): До 55–60% пенсії померлого подружжя не включено в індивідуальну модель.",
                 gender_unmod_2: "Розподіл пенсійних прав при розлученні (Versorgungsausgleich): Юридичний поділ накопичених прав.",
@@ -694,19 +785,19 @@
                 def_grv_title: "Державне пенсійне страхування (GRV - SGB VI)",
                 def_grv_text: "Основний стовп пенсійної системи Німеччини. Бали множаться на вартість балу (AR = €42.52) за вирахуванням внесків на медстрахування (KVdR 8.75%) та догляд (PV 3.6%–4.2%).",
                 def_nrr_title: "Коефіцієнт заміщення доходу (NRR)",
-                def_nrr_text: "Відсоток чистого пенсійного доходу відносно зарплати до виходу на пенсію (нормативи ОЕСР: 60% базовий рівень, 75%+ комфортний).",
+                def_nrr_text: "Відсоток чистого пенсійного доходу відносно зарплати до виходу на пенсію (академічний стандарт: 60% базовий рівень, 75%+ комфортний).",
                 def_sgb_title: "Базова соціальна допомога у похилому віці (SGB XII)",
-                def_sgb_text: "Гарантований прожитковий мінімум для літніх людей (€1,113/міс у 2026 р.) за умови, що ліквідні заощадження не перевищують €10,000.",
+                def_sgb_text: "Гарантований прожитковий мінімум для літніх людей (ілюстративний орієнтир €1,113/міс у 2026 р.: €563 ставка + €550 житло) за умови ліквідних заощаджень до €10,000.",
                 def_sstar_title: "Необхідні додаткові щомісячні заощадження (S*)",
-                def_sstar_text: "Сума, яку необхідно щомісяця інвестувати до 67 років для покриття дефіциту до стандарту достатності (€1,450–€1,800/міс).",
+                def_sstar_text: "Сума, яку необхідно щомісяця інвестувати до 67 років для покриття дефіциту до стандарту достатності заміщення (€1,450–€1,800/міс, 60% доходу).",
                 def_drawdown_title: "Використання приватних заощаджень (Правило 4%)",
-                def_drawdown_text: "Безпечна щомісячна частка зняття коштів з накопичених банківських депозитів та портфелів ETF/акцій протягом 20–25 років.",
+                def_drawdown_text: "Стилізована щомісячна частка зняття коштів з накопичених банківських депозитів та ETF на 20-річному горизонті (67–87 років) без моделювання смертності.",
                 def_oadr_title: "Демографічне навантаження літніх людей (OADR)",
                 def_oadr_text: "Співвідношення населення пенсійного віку (67+) до працездатного (20–66). За прогнозом Destatis, зросте з ~34% до понад 50%.",
                 ref_title: "Офіційні джерела даних та інституційне походження",
                 ref_subtitle: "Всі базові розподіли відкалібровані за відкритими офіційними базами даних ФРН та європейських інституцій.",
                 disc_title: "Методологічне походження, використання ШІ та декларація наукової прозорості",
-                disc_text: "Ця дослідницька платформа спроєктована та відкалібрована Antigravity (Google DeepMind) під безпосереднім науковим керівництвом користувача. Усі розрахунки ґрунтуються на офіційних німецьких джерелах.",
+                disc_text: "Ця дослідницька платформа спроєктована та відкалібрована Antigravity (Google DeepMind) під безпосереднім науковим керівництвом користувача. Усі розрахунки ґрунтуються на офіційних німецьких джерелах та параметричних копулах.",
                 footer_text: "Платформа дослідження активів, міграції та пенсій • Дані Destatis 16. BVB, DRV та Бундесбанку • Серпень 2026",
                 none_eligible: "Немає (€0 - Дохід достатній)",
                 adequate_savings: "€0 (Достатньо / Повністю забезпечено)"
@@ -728,8 +819,14 @@
                 card_gen_migrant: "Трудовые мигранты (1-е пок.)",
                 card_gen_refugee: "Беженцы (2015/16)",
                 card_ukr_refugee: "Украинские беженцы (2022+)",
-                card_ukr_refugee_sub: "Коэффициент замещения: 50.7% • Высокий риск бедности",
+                card_ukr_refugee_sub: "Коэффициент замещения: 48.8% • Риск дефицита (<€1,113/мес)",
                 card_ukr_migrant: "Украинские мигранты (до 2022)",
+                assump_title: "Архитектура модели, законодательные параметры и реестр допущений",
+                assump_badge: "Статус: Откалиброванная база 2026 г.",
+                assump_stat_title: "1. Законодательные правила (2026)",
+                assump_est_title: "2. Эконометрические оценки (OLS)",
+                assump_sim_title: "3. Допущения жизненного цикла",
+                assump_policy_title: "4. Политические сценарии",
                 sim_title: "Индивидуальный калькулятор пенсии и дефицита накоплений",
                 sim_desc: "Выберите группу населения и настройте параметры для расчета будущей пенсии, пособия Grundsicherung и необходимых сбережений S*.",
                 lbl_pop_segment: "Группа населения (базовый профиль)",
@@ -739,27 +836,27 @@
                 opt_ukr_refugee: "Украинские военные беженцы (2022+ §24)",
                 opt_ukr_migrant: "Украинские мигранты (прибывшие до 2022)",
                 lbl_age: "Текущий возраст",
-                note_age_horizon: "* Период трудовой деятельности (20–64 года) для расчета выхода на пенсию в 67 лет (§ 35 SGB VI).",
+                note_age_horizon: "* Период трудовой деятельности (20–64 года) для расчета выхода на пенсию в 67 лет (§ 35 SGB VI; 20-летний горизонт).",
                 lbl_years_in_de: "Лет проживания в Германии",
                 lbl_gross_wage: "Годовой доход брутто (EUR)",
                 lbl_remittances: "Ежемесячные денежные переводы на родину (EUR)",
-                out_pension: "Государственная пенсия в 67 лет (GRV):",
-                out_drawdown: "Доход от личных накоплений (4%):",
+                out_pension: "Государственная чистая пенсия в 67 лет (GRV):",
+                out_drawdown: "Доход от личных накоплений (Правило 4%):",
                 out_total_income: "Общий автономный доход:",
                 out_nrr: "Коэффициент замещения дохода (NRR):",
                 out_sgb_topup: "Социальное пособие по старости (SGB XII):",
                 out_s_star: "Необходимые доп. ежемесячные накопления (S*):",
-                chart1_title: "Прогноз пенсионного дохода в сравнении с прожиточным минимумом (€1,113/мес)",
+                chart1_title: "Прогноз пенсионного дохода vs. ориентировочный минимум (€1,113/мес)",
                 chart2_title: "Коэффициент демографической нагрузки пожилых Destatis 16. BVB (2024–2070)",
-                chart1_series_pension: "Гос. пенсия (GRV)",
-                chart1_series_total: "Общий доход на пенсии",
+                chart1_series_pension: "Гос. чистая пенсия (GRV)",
+                chart1_series_total: "Общий чистый доход на пенсии",
                 gender_sec_title: "Гендерный аспект пенсий и аналитические ограничения",
                 gender_sec_badge: "Академический протокол чувствительности",
                 gender_modeled_title: "Что непосредственно смоделировано и учтено",
-                gender_mod_1: "Разница в оплате труда: Скорректированный гендерный разрыв (–11.4%) и высокая доля неполной занятости у женщин.",
-                gender_mod_2: "Пенсионные баллы за воспитание детей (§ 56 SGB VI): До 3.0 баллов (~€126/мес) за каждого ребенка после 1992 г.",
+                gender_mod_1: "Разница в оплате труда: Оцененный гендерный разрыв (–11.4%) и высокая доля неполной занятости у женщин.",
+                gender_mod_2: "Пенсионные баллы за воспитание детей (§ 56 SGB VI): До 3.0 баллов (~€127/мес) за каждого ребенка после 1992 г.",
                 gender_mod_3: "Разница продолжительности жизни (Destatis 16. BVB): В 67 лет продолжительность жизни женщин составляет ~21.5 лет против ~18.5 лет у мужчин.",
-                gender_mod_4: "Базовая пенсия (Grundrente § 76g): Надбавка для работников с низким доходом (более 80% получателей — женщины).",
+                gender_mod_4: "Базовая пенсия (Grundrente § 76g): Стилизованная надбавка для работников с низким доходом (33+ лет стажа).",
                 gender_unmodeled_title: "Важные методологические границы и неучтенные факторы",
                 gender_unmod_1: "Пенсии по потере кормильца (Witwenrente § 46 SGB VI): До 55–60% пенсии умершего супруга не включены в модель.",
                 gender_unmod_2: "Раздел пенсионных прав при разводе (Versorgungsausgleich): Юридический раздел накопленных прав.",
@@ -771,13 +868,13 @@
                 def_grv_title: "Государственное пенсионное страхование (GRV - SGB VI)",
                 def_grv_text: "Основной уровень пенсионной системы Германии. Баллы умножаются на стоимость балла (AR = €42.52) за вычетом взносов на медстрахование (KVdR 8.75%) и уход (PV 3.6%–4.2%).",
                 def_nrr_title: "Коэффициент замещения дохода (NRR)",
-                def_nrr_text: "Процент чистого пенсионного дохода относительно зарплаты до выхода на пенсию.",
+                def_nrr_text: "Процент чистого пенсионного дохода относительно зарплаты до выхода на пенсию (академический стандарт: 60% базовый, 75%+ комфортный).",
                 def_sgb_title: "Базовое социальное пособие в старости (SGB XII)",
-                def_sgb_text: "Гарантированный прожиточный минимум для пожилых (€1,113/месяц в 2026 г.) при сбережениях до €10,000.",
+                def_sgb_text: "Гарантированный прожиточный минимум для пожилых (иллюстративный ориентир €1,113/месяц в 2026 г.: €563 ставка + €550 жилье) при сбережениях до €10,000.",
                 def_sstar_title: "Необходимые доп. ежемесячные накопления (S*)",
-                def_sstar_text: "Сумма, которую необходимо ежемесячно инвестировать до 67 лет для покрытия дефицита до стандарта достаточности (€1,450–€1,800/мес).",
+                def_sstar_text: "Сумма, которую необходимо ежемесячно инвестировать до 67 лет для покрытия дефицита до стандарта достаточности замещения (€1,450–€1,800/мес, 60% зарплаты).",
                 def_drawdown_title: "Использование частных накоплений (Правило 4%)",
-                def_drawdown_text: "Безопасная ежемесячная доля снятия средств с банковских депозитов и портфелей ETF/акций в течение 20–25 лет.",
+                def_drawdown_text: "Стилизованная ежемесячная доля снятия средств с депозитов и ETF на 20-летнем горизонте (67–87 лет) без индивидуального моделирования смертности.",
                 def_oadr_title: "Демографическая нагрузка пожилых (OADR)",
                 def_oadr_text: "Отношение числа людей пенсионного возраста (67+) к трудоспособному населению (20–66).",
                 ref_title: "Официальные источники данных и институциональное происхождение",
@@ -805,8 +902,14 @@
                 card_gen_migrant: "Migrantes Generales",
                 card_gen_refugee: "Refugiados Generales",
                 card_ukr_refugee: "Refugiados Ucranianos (2022+)",
-                card_ukr_refugee_sub: "Tasa de reemplazo: 50.7% • Alto riesgo de pobreza",
+                card_ukr_refugee_sub: "Tasa de reemplazo: 48.8% • Alto riesgo de déficit (<€1.113/mes)",
                 card_ukr_migrant: "Migrantes Ucranianos (Pre-2022)",
+                assump_title: "Arquitectura del Modelo, Parámetros Legales y Registro de Supuestos",
+                assump_badge: "Estado: Base Calibrada 2026",
+                assump_stat_title: "1. Marco Legal (2026)",
+                assump_est_title: "2. Estimaciones Econométricas",
+                assump_sim_title: "3. Supuestos del Ciclo Vital",
+                assump_policy_title: "4. Contrafácticos de Política",
                 sim_title: "Simulador Individual de Pensión y Brecha de Ahorro",
                 sim_desc: "Seleccione el grupo poblacional y ajuste los controles para proyectar la pensión, Grundsicherung y el ahorro adicional requerido S*.",
                 lbl_pop_segment: "Segmento Poblacional (Perfil Base)",
@@ -816,27 +919,27 @@
                 opt_ukr_refugee: "Refugiados Ucranianos (§ 24 AufenthG)",
                 opt_ukr_migrant: "Migrantes Ucranianos (Previos a 2022)",
                 lbl_age: "Edad Actual",
-                note_age_horizon: "* Etapa de actividad laboral (20–64 años) para proyectar el retiro a la edad legal de 67 años (§ 35 SGB VI).",
+                note_age_horizon: "* Etapa de actividad laboral (20–64 años) para proyectar el retiro a la edad legal de 67 años (§ 35 SGB VI; horizonte determinista de 20 años).",
                 lbl_years_in_de: "Años de Residencia en Alemania",
                 lbl_gross_wage: "Salario Bruto Anual (EUR)",
                 lbl_remittances: "Remesas Mensuales al Extranjero (EUR)",
-                out_pension: "Pensión Pública a los 67 años (GRV):",
+                out_pension: "Pensión Pública Neta a los 67 años (GRV):",
                 out_drawdown: "Desahorro de Patrimonio Privado (Regla 4%):",
                 out_total_income: "Ingreso Autónomo Total de Jubilación:",
                 out_nrr: "Tasa Neta de Reemplazo (NRR):",
                 out_sgb_topup: "Complemento de Asistencia Social (SGB XII):",
                 out_s_star: "Ahorro Mensual Adicional Requerido (S*):",
-                chart1_title: "Ingreso Proyectado de Jubilación vs. Umbral de Pobreza (€1.113/mes)",
+                chart1_title: "Ingreso Proyectado vs. Umbral Ilustrativo de Subsistencia (€1.113/mes)",
                 chart2_title: "Tasa de Dependencia de Vejez Destatis 16. BVB (2024–2070)",
-                chart1_series_pension: "Pensión Pública (GRV)",
-                chart1_series_total: "Ingreso Total de Jubilación",
+                chart1_series_pension: "Pensión Pública Neta (GRV)",
+                chart1_series_total: "Ingreso Neto Total de Jubilación",
                 gender_sec_title: "Dimensión de Género en Pensiones y Límites Analíticos",
                 gender_sec_badge: "Protocolo de Rigor y Sensibilidad Académica",
                 gender_modeled_title: "Factores Explícitamente Modelados y Capturados",
-                gender_mod_1: "Brechas Salariales y Jornada Parcial: Penalización salarial ajustada (–11.4%) y mayor tasa femenina de trabajo a tiempo parcial.",
-                gender_mod_2: "Créditos por Cuidado Infantil (§ 56 SGB VI): Hasta 3.0 Puntos de Pensión (~€126/mes) por hijo nacido a partir de 1992.",
+                gender_mod_1: "Brechas Salariales y Jornada Parcial: Brecha salarial condicional estimada (–11.4%) y mayor tasa femenina de trabajo a tiempo parcial.",
+                gender_mod_2: "Créditos por Cuidado Infantil (§ 56 SGB VI): Hasta 3.0 Puntos de Pensión (~€127/mes) por hijo nacido a partir de 1992.",
                 gender_mod_3: "Diferencial de Longevidad (Destatis 16. BVB): Esperanza de vida a los 67 años de ~21.5 años en mujeres vs ~18.5 años en hombres.",
-                gender_mod_4: "Pensión Básica Solidaria (Grundrente § 76g): Suplemento que beneficia en más del 80% a mujeres con carreras de salarios bajos.",
+                gender_mod_4: "Pensión Básica Solidaria (Grundrente § 76g): Suplemento estilizado que beneficia a trabajadores con 33+ años cotizados.",
                 gender_unmodeled_title: "Límites Metodológicos Fundamentales y Variables no Modeladas",
                 gender_unmod_1: "Pensiones de Viudedad (Witwenrente § 46 SGB VI): Hasta el 55–60% de la pensión del cónyuge fallecido no se modela individualmente.",
                 gender_unmod_2: "Compensación de Derechos por Divorcio (Versorgungsausgleich): División legal de puntos acumulados durante el matrimonio.",
@@ -848,13 +951,13 @@
                 def_grv_title: "Pensión Pública Obligatoria (GRV - SGB VI)",
                 def_grv_text: "Primer pilar del sistema alemán. A los 67 años, los EP se multiplican por el Valor del Punto (AR = €42.52), deduciendo las cotizaciones legales de seguro médico (KVdR 8.75%) y dependencia (PV 3.6%–4.2%).",
                 def_nrr_title: "Tasa Neta de Reemplazo (NRR / Net Replacement Rate)",
-                def_nrr_text: "Mide el ingreso neto de jubilación como porcentaje del salario neto previo al retiro.",
+                def_nrr_text: "Mide el ingreso neto de jubilación como porcentaje del salario neto previo al retiro (estándar académico: 60% nivel base, 75%+ nivel confortable).",
                 def_sgb_title: "Grundsicherung im Alter (SGB XII, Capítulo 4)",
-                def_sgb_text: "Red de seguridad asistencial que garantiza €1.113/mes en 2026 para ingresos insuficientes y patrimonio líquido menor a €10.000 (Schonvermögen).",
+                def_sgb_text: "Red de seguridad asistencial que garantiza un umbral ilustrativo de €1.113/mes en 2026 (€563 importe estándar + €550 vivienda) para ingresos insuficientes y patrimonio líquido menor a €10.000 (Schonvermögen).",
                 def_sstar_title: "Ahorro Mensual Adicional Requerido (S*)",
-                def_sstar_text: "Monto mensual extra que se debe invertir hasta los 67 años para cubrir el déficit hasta el estándar de suficiencia (€1.450–€1.800/mes).",
+                def_sstar_text: "Monto mensual extra que se debe invertir hasta los 67 años para cubrir el déficit hasta el estándar de reemplazo (€1.450–€1.800/mes, 60% del salario neto).",
                 def_drawdown_title: "Desahorro Privado (Regla del 4% Anual)",
-                def_drawdown_text: "Tasa segura de retiro mensual de depósitos bancarios y carteras de inversión (ETFs/acciones) durante 20–25 años de retiro.",
+                def_drawdown_text: "Tasa de retiro mensual estilizada de depósitos bancarios y carteras de inversión durante un horizonte determinista de 20 años (67–87 años) sin modelar mortalidad.",
                 def_oadr_title: "Tasa de Dependencia de Vejez (OADR)",
                 def_oadr_text: "Proporción de población de 67+ años respecto a la población activa (20–66).",
                 ref_title: "Fuentes Oficiales de Datos y Procedencia Institucional",
