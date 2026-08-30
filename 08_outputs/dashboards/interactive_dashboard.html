@@ -221,7 +221,7 @@
                             <span id="valAge" class="text-blue-600 dark:text-blue-400 font-bold">39 years</span>
                         </div>
                         <input type="range" id="simAge" min="20" max="64" value="39" class="w-full mt-1.5 accent-blue-600 cursor-pointer">
-                        <p class="text-[10px] text-slate-400 dark:text-slate-500 mt-0.5" data-i18n="note_age_horizon">* Working-age accumulation window (20–64 years) projecting retirement entry at statutory age 67 (§ 35 SGB VI).</p>
+                        <p class="text-[10px] text-slate-400 dark:text-slate-500 mt-0.5" data-i18n="note_age_horizon">* Working-age accumulation window (20–64 years) projecting retirement entry at statutory age 67 (§ 35 SGB VI; deterministic 20-year horizon, ages 67–87).</p>
                     </div>
 
                     <!-- Years in Germany Slider -->
@@ -256,35 +256,35 @@
                 <div class="bg-slate-50 dark:bg-slate-800/80 p-5 rounded-xl border border-slate-200 dark:border-slate-700 space-y-3">
                     <div class="flex justify-between items-center text-sm">
                         <span class="text-slate-600 dark:text-slate-300 flex items-center">
-                            <span data-i18n="out_pension">Statutory Pension at 67 (GRV):</span>
+                            <span data-i18n="out_pension">Net Statutory Pension at 67 (GRV):</span>
                             <a href="#guide_grv" class="text-blue-500 hover:text-blue-700 ml-1 text-xs" title="GRV Info"><i class="fa-solid fa-circle-info"></i></a>
                         </span>
-                        <span id="resPension" class="font-bold text-slate-900 dark:text-white">€797 / mo</span>
+                        <span id="resPension" class="font-bold text-slate-900 dark:text-white">€759 / mo</span>
                     </div>
                     <div class="flex justify-between items-center text-sm">
                         <span class="text-slate-600 dark:text-slate-300 flex items-center">
-                            <span data-i18n="out_drawdown">Private Wealth Drawdown (4% Safe):</span>
+                            <span data-i18n="out_drawdown">Private Wealth Drawdown (4% Rule):</span>
                             <a href="#guide_drawdown" class="text-blue-500 hover:text-blue-700 ml-1 text-xs" title="4% Rule Info"><i class="fa-solid fa-circle-info"></i></a>
                         </span>
                         <span id="resDrawdown" class="font-bold text-slate-900 dark:text-white">€218 / mo</span>
                     </div>
                     <div class="flex justify-between items-center text-sm border-t border-slate-200 dark:border-slate-700 pt-2">
                         <span class="text-slate-700 dark:text-slate-200 font-bold" data-i18n="out_total_income">Total Autonomous Income:</span>
-                        <span id="resTotal" class="font-bold text-blue-700 dark:text-blue-400 text-base">€1,015 / mo</span>
+                        <span id="resTotal" class="font-bold text-blue-700 dark:text-blue-400 text-base">€977 / mo</span>
                     </div>
                     <div class="flex justify-between items-center text-sm">
                         <span class="text-slate-600 dark:text-slate-300 flex items-center">
                             <span data-i18n="out_nrr">Net Replacement Rate (NRR):</span>
                             <a href="#guide_nrr" class="text-blue-500 hover:text-blue-700 ml-1 text-xs" title="NRR Info"><i class="fa-solid fa-circle-info"></i></a>
                         </span>
-                        <span id="resNRR" class="font-bold text-amber-600 dark:text-amber-400">50.7%</span>
+                        <span id="resNRR" class="font-bold text-amber-600 dark:text-amber-400">48.8%</span>
                     </div>
                     <div class="flex justify-between items-center text-sm">
                         <span class="text-slate-600 dark:text-slate-300 flex items-center">
                             <span data-i18n="out_sgb_topup">SGB XII Safety Net Top-Up:</span>
                             <a href="#guide_sgb" class="text-blue-500 hover:text-blue-700 ml-1 text-xs" title="SGB XII Info"><i class="fa-solid fa-circle-info"></i></a>
                         </span>
-                        <span id="resSGB" class="font-bold text-emerald-600 dark:text-emerald-400">€98 / mo</span>
+                        <span id="resSGB" class="font-bold text-emerald-600 dark:text-emerald-400">€136 / mo</span>
                     </div>
                     <div class="flex justify-between items-center text-sm border-t border-slate-200 dark:border-slate-700 pt-2 bg-red-50/50 dark:bg-red-950/30 p-2.5 rounded-lg border border-red-100 dark:border-red-900/40">
                         <span class="text-red-800 dark:text-red-300 font-bold text-xs flex items-center">
@@ -301,7 +301,7 @@
                 <!-- 5-Way Comparison Chart -->
                 <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
                     <h3 class="text-base font-bold text-slate-900 dark:text-white mb-4 flex items-center">
-                        <i class="fa-solid fa-chart-column text-blue-600 dark:text-blue-400 mr-2"></i> <span data-i18n="chart1_title">Projected Retirement Income vs. Poverty Threshold (€1,113/mo)</span>
+                        <i class="fa-solid fa-chart-column text-blue-600 dark:text-blue-400 mr-2"></i> <span data-i18n="chart1_title">Projected Retirement Income vs. Illustrative Subsistence Benchmark (€1,113/mo)</span>
                     </h3>
                     <div class="h-64">
                         <canvas id="chartIncomeComparison"></canvas>
@@ -338,10 +338,10 @@
                         <span data-i18n="gender_modeled_title">What Is Explicitly Modeled & Captured</span>
                     </div>
                     <ul class="space-y-1.5 text-slate-600 dark:text-slate-300 list-disc list-inside">
-                        <li data-i18n="gender_mod_1"><strong>Wage & Part-Time Disparities:</strong> Gender wage penalty (–11.4% adjusted) and higher female part-time shares.</li>
-                        <li data-i18n="gender_mod_2"><strong>Childcare Credits (§ 56 SGB VI):</strong> Up to 3.0 Entgeltpunkte (~€126/mo pension) per child born 1992+.</li>
+                        <li data-i18n="gender_mod_1"><strong>Wage & Part-Time Disparities:</strong> Estimated adjusted gender wage difference (–11.4%) and higher female part-time shares.</li>
+                        <li data-i18n="gender_mod_2"><strong>Childcare Credits (§ 56 SGB VI):</strong> Up to 3.0 Entgeltpunkte (~€127/mo pension) for primary caregiver per child born 1992+.</li>
                         <li data-i18n="gender_mod_3"><strong>Longevity Differential (Destatis 16. BVB):</strong> Life expectancy at 67 is ~21.5 years for females vs ~18.5 years for males.</li>
-                        <li data-i18n="gender_mod_4"><strong>Basic Pension (Grundrente § 76g):</strong> Minimum pension supplement predominantly elevating female low-earners.</li>
+                        <li data-i18n="gender_mod_4"><strong>Basic Pension (Grundrente § 76g):</strong> Stylized point uplift for low-earners with 33+ qualifying contribution years.</li>
                     </ul>
                 </div>
 
@@ -1316,18 +1316,18 @@
                 accumulatedWealth = (accumulatedWealth * (1.0 + r_portfolio)) + (monthlySavings * 12.0);
             }
             
-            // Safe annual drawdown (accounting for longevity differential: 21.5 yrs female vs 18.5 yrs male)
+            // Stylized annual decumulation (4% rule scenario over deterministic 20-year horizon)
             const drawdownRate = genderVal === 'Female' ? 0.038 : (genderVal === 'Male' ? 0.043 : 0.040);
             const safeDrawdown = (accumulatedWealth * drawdownRate) / 12.0;
             const totalAutonomousIncome = netPension + safeDrawdown;
             const nrr = netWageMonthly > 0 ? (totalAutonomousIncome / netWageMonthly) * 100.0 : 80.0;
 
-            // 3. SGB XII Safety Net (€1,113 poverty threshold)
-            const povertyLine = 1113.0;
-            const sgbTopup = Math.max(0, povertyLine - totalAutonomousIncome);
+            // 3. SGB XII Safety Net (€1,113 illustrative subsistence benchmark)
+            const subsistenceBenchmark = 1113.0;
+            const sgbTopup = Math.max(0, subsistenceBenchmark - totalAutonomousIncome);
 
-            // 4. Required Additional Savings (S*) to reach Standard Adequacy (€1,450 - €1,800/mo benchmark)
-            const standardAdequacyTarget = Math.max(povertyLine, Math.min(1800.0, netWageMonthly * 0.60));
+            // 4. Required Additional Savings (S*) to reach 60% Replacement Adequacy Target (€1,113 - €1,800/mo)
+            const standardAdequacyTarget = Math.max(subsistenceBenchmark, Math.min(1800.0, netWageMonthly * 0.60));
             const adequacyShortfall = Math.max(0, standardAdequacyTarget - totalAutonomousIncome);
             const sStar = adequacyShortfall > 0 ? (adequacyShortfall * 180.0) / (yearsToRet * 12.0 * 1.5) : 0.0;
 
