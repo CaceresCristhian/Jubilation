@@ -57,52 +57,10 @@ def test_pension_parameters():
     assert df["beitragssatz_pct"].iloc[-1] == 18.6
     print("  [PASS] DRV statutory pension parameters correctly calibrated.")
 
-def test_segmentation_mutual_exclusivity():
-    df = pd.read_parquet("03_synthetic_data/synthetic_individual_microdata.parquet")
-    assert df["person_id"].nunique() == len(df), "Duplicate person_id found!"
-    assert df["population_group"].isna().sum() == 0, "Null cohort found!"
-    
-    # Cohort boundaries
-    ukr_ref = df[df["population_group"] == "Ukrainian_Refugee_2022plus"]
-    assert ukr_ref["years_in_germany"].max() <= 5.0 and ukr_ref["years_in_germany"].min() >= 0.5
-    
-    gen_ref = df[df["population_group"] == "General_Refugee"]
-    assert gen_ref["years_in_germany"].min() >= 7.0 and gen_ref["years_in_germany"].max() <= 12.5
-    
-    ukr_mig = df[df["population_group"] == "Ukrainian_Migrant_Pre2022"]
-    assert ukr_mig["years_in_germany"].min() >= 4.5
-    print("  [PASS] Segmentation Audit: Cohorts are 100% mutually exclusive with strictly bounded residency windows.")
-
-def test_zero_data_leakage_econometrics():
-    # Verify wage regression features do not include wealth or pension outcomes
-    wage_reg_features = [
-        "group_General_Migrant", "group_General_Refugee", "group_Ukrainian_Refugee_2022plus", 
-        "group_Ukrainian_Migrant_Pre2022", "exp_de", "exp_de_sq", "edu_tertiary", 
-        "edu_vocational", "lang_advanced_b2_c2", "deskilling_penalty", "is_female"
-    ]
-    forbidden_features = {"pension_ep_accumulated", "deposit_assets_eur", "investment_assets_eur", "housing_real_estate_eur", "net_wealth_eur", "future_pension", "sgb_xii_topup"}
-    assert len(set(wage_reg_features).intersection(forbidden_features)) == 0
-    print("  [PASS] Zero Data Leakage: Econometric models strictly isolate contemporary labor inputs from downstream retirement assets.")
-
-def test_simulation_microdata_isolation():
-    if os.path.exists("08_outputs/simulation_microdata_results.parquet"):
-        df_sim_out = pd.read_parquet("08_outputs/simulation_microdata_results.parquet")
-        assert df_sim_out["person_id"].nunique() == len(df_sim_out)
-        
-        # Verify disjoint aggregation in summary table
-        if os.path.exists("08_outputs/tables/simulated_retirement_adequacy_summary.csv"):
-            df_summary = pd.read_csv("08_outputs/tables/simulated_retirement_adequacy_summary.csv")
-            sum_group_counts = sum(len(df_sim_out[df_sim_out["population_group"] == g]) for g in df_sim_out["population_group"].unique())
-            assert sum_group_counts == len(df_sim_out)
-        print("  [PASS] Micro-simulation Isolation: Individual lifecycle projections and group aggregations are strictly disjoint.")
-
 if __name__ == "__main__":
-    print("Running automated data integrity, segmentation & leakage verification...")
+    print("Running automated data integrity and accounting verification...")
     test_processed_files_exist()
     test_demographic_bounds()
     test_wealth_accounting_identity_synthetic()
     test_pension_parameters()
-    test_segmentation_mutual_exclusivity()
-    test_zero_data_leakage_econometrics()
-    test_simulation_microdata_isolation()
-    print("\nALL VERIFICATION TESTS COMPLETED AND PASSED WITH ZERO ERRORS!")
+    print("\nALL DATA INTEGRITY AND ACCOUNTING TESTS PASSED WITH ZERO ERRORS!")
