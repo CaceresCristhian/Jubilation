@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>German Retirement, Wealth & Migration Microsimulation Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind = {
+        tailwind.config = {
             darkMode: 'class'
+        };
+        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
         }
     </script>
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -1043,42 +1048,78 @@
         let chartIncome = null;
         let chartDemog = null;
 
-        // Theme Toggle Controller
+        // Theme Controller (Light / Dark Mode)
+        function initTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark' || (!savedTheme && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                isDarkMode = true;
+                document.documentElement.classList.add('dark');
+                document.documentElement.classList.remove('light');
+                if (themeIcon) {
+                    themeIcon.className = 'fa-solid fa-sun text-sm text-amber-400';
+                }
+            } else {
+                isDarkMode = false;
+                document.documentElement.classList.remove('dark');
+                document.documentElement.classList.add('light');
+                if (themeIcon) {
+                    themeIcon.className = 'fa-solid fa-moon text-sm text-slate-200';
+                }
+            }
+            updateChartColors();
+        }
+
         function toggleTheme() {
             isDarkMode = !isDarkMode;
             if (isDarkMode) {
                 document.documentElement.classList.add('dark');
                 document.documentElement.classList.remove('light');
-                themeIcon.classList.remove('fa-moon');
-                themeIcon.classList.add('fa-sun');
-                themeIcon.classList.add('text-amber-400');
+                if (themeIcon) {
+                    themeIcon.className = 'fa-solid fa-sun text-sm text-amber-400';
+                }
+                localStorage.setItem('theme', 'dark');
             } else {
                 document.documentElement.classList.remove('dark');
                 document.documentElement.classList.add('light');
-                themeIcon.classList.remove('fa-sun');
-                themeIcon.classList.remove('text-amber-400');
-                themeIcon.classList.add('fa-moon');
+                if (themeIcon) {
+                    themeIcon.className = 'fa-solid fa-moon text-sm text-slate-200';
+                }
+                localStorage.setItem('theme', 'light');
             }
             updateChartColors();
         }
 
         function updateChartColors() {
-            const gridColor = isDarkMode ? '#334155' : '#E2E8F0';
+            const gridColor = isDarkMode ? 'rgba(51, 65, 85, 0.6)' : 'rgba(226, 232, 240, 0.8)';
             const textColor = isDarkMode ? '#94A3B8' : '#64748B';
 
             if (chartIncome) {
-                chartIncome.options.scales.x.ticks.color = textColor;
-                chartIncome.options.scales.x.grid.color = gridColor;
-                chartIncome.options.scales.y.ticks.color = textColor;
-                chartIncome.options.scales.y.grid.color = gridColor;
+                if (chartIncome.options.scales.x) {
+                    chartIncome.options.scales.x.ticks.color = textColor;
+                    chartIncome.options.scales.x.grid.color = gridColor;
+                }
+                if (chartIncome.options.scales.y) {
+                    chartIncome.options.scales.y.ticks.color = textColor;
+                    chartIncome.options.scales.y.grid.color = gridColor;
+                    if (chartIncome.options.scales.y.title) {
+                        chartIncome.options.scales.y.title.color = textColor;
+                    }
+                }
                 chartIncome.update();
             }
 
             if (chartDemog) {
-                chartDemog.options.scales.x.ticks.color = textColor;
-                chartDemog.options.scales.x.grid.color = gridColor;
-                chartDemog.options.scales.y.ticks.color = textColor;
-                chartDemog.options.scales.y.grid.color = gridColor;
+                if (chartDemog.options.scales.x) {
+                    chartDemog.options.scales.x.ticks.color = textColor;
+                    chartDemog.options.scales.x.grid.color = gridColor;
+                }
+                if (chartDemog.options.scales.y) {
+                    chartDemog.options.scales.y.ticks.color = textColor;
+                    chartDemog.options.scales.y.grid.color = gridColor;
+                    if (chartDemog.options.scales.y.title) {
+                        chartDemog.options.scales.y.title.color = textColor;
+                    }
+                }
                 chartDemog.update();
             }
         }
@@ -1363,6 +1404,7 @@
         simRemit.addEventListener('input', updateSim);
 
         // Initial setup
+        initTheme();
         initCharts();
         onGroupChange();
         setGender('All');
