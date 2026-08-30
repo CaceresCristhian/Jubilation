@@ -12,7 +12,7 @@ import numpy as np
 
 class GRVPensionCalculator:
     def __init__(self,
-                 aktueller_rentenwert: float = 42.15,
+                 aktueller_rentenwert: float = 42.52, # Official statutory pension value (post-July 2026)
                  durchschnittsentgelt: float = 51944.0,
                  beitragsbemessungsgrenze: float = 101400.0,
                  kvdr_rate: float = 0.0875, # 7.3% base + 1.45% (half of 2.9% official avg Zusatzbeitrag)
@@ -98,12 +98,12 @@ class GRVPensionCalculator:
         total_ep = accumulated_ep + grundrente_ep
         gross_monthly_pension = total_ep * zf * self.ar * 1.0 # RAF = 1.0 for Altersrente
         
-        # KVdR and PV Deductions
+        # KVdR and PV Deductions (rounded to cents per statutory payroll standard)
         pv_rate = self.pv_rate_children if has_children else self.pv_rate_childless
-        kvdr_deduction = gross_monthly_pension * self.kvdr_rate
-        pv_deduction = gross_monthly_pension * pv_rate
+        kvdr_deduction = round(gross_monthly_pension * self.kvdr_rate, 2)
+        pv_deduction = round(gross_monthly_pension * pv_rate, 2)
         
-        net_monthly_pension_before_tax = gross_monthly_pension - kvdr_deduction - pv_deduction
+        net_monthly_pension_before_tax = round(gross_monthly_pension - kvdr_deduction - pv_deduction, 2)
         
         return {
             "accumulated_ep": round(accumulated_ep, 3),
@@ -111,7 +111,7 @@ class GRVPensionCalculator:
             "total_ep": round(total_ep, 3),
             "zugangsfaktor_zf": round(zf, 4),
             "gross_monthly_pension_eur": round(gross_monthly_pension, 2),
-            "kvdr_deduction_eur": round(kvdr_deduction, 2),
-            "pv_deduction_eur": round(pv_deduction, 2),
-            "net_monthly_pension_eur": round(net_monthly_pension_before_tax, 2)
+            "kvdr_deduction_eur": kvdr_deduction,
+            "pv_deduction_eur": pv_deduction,
+            "net_monthly_pension_eur": net_monthly_pension_before_tax
         }

@@ -12,20 +12,20 @@ from wealth_accumulation import WealthAccumulationEngine
 from adequacy_evaluator import RetirementAdequacyEvaluator
 
 def test_grv_standard_pension():
-    calc = GRVPensionCalculator(aktueller_rentenwert=42.15, durchschnittsentgelt=51944.0, beitragsbemessungsgrenze=101400.0)
+    calc = GRVPensionCalculator(aktueller_rentenwert=42.52, durchschnittsentgelt=51944.0, beitragsbemessungsgrenze=101400.0)
     # Standard pensioner with 45 EP at age 67 with children (KV 8.75% + PV 3.6% = 12.35% deduction)
     res_parent = calc.calculate_pension(accumulated_ep=45.0, contribution_years=45.0, retirement_age=67.0, has_children=True)
-    assert res_parent["gross_monthly_pension_eur"] == 1896.75
-    assert res_parent["kvdr_deduction_eur"] == 165.97
-    assert res_parent["pv_deduction_eur"] == 68.28
-    assert res_parent["net_monthly_pension_eur"] == 1662.50
+    assert res_parent["gross_monthly_pension_eur"] == 1913.40
+    assert res_parent["kvdr_deduction_eur"] == 167.42
+    assert res_parent["pv_deduction_eur"] == 68.88
+    assert res_parent["net_monthly_pension_eur"] == 1677.10
     assert res_parent["zugangsfaktor_zf"] == 1.0
 
     # Childless pensioner (KV 8.75% + PV 4.2% = 12.95% deduction)
     res_childless = calc.calculate_pension(accumulated_ep=45.0, contribution_years=45.0, retirement_age=67.0, has_children=False)
-    assert res_childless["pv_deduction_eur"] == 79.66
-    assert res_childless["net_monthly_pension_eur"] == 1651.12
-    print("  [PASS] Standard GRV Eckrente (45 EP) exactly reconciled: €1,896.75 gross -> €1,662.50 net (parent) / €1,651.12 net (childless).")
+    assert res_childless["pv_deduction_eur"] == 80.36
+    assert res_childless["net_monthly_pension_eur"] == 1665.62
+    print("  [PASS] Standard GRV Eckrente (45 EP) exactly reconciled: €1,913.40 gross -> €1,677.10 net (parent) / €1,665.62 net (childless).")
 
 def test_grv_early_and_delayed_retirement():
     calc = GRVPensionCalculator()

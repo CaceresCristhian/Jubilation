@@ -23,7 +23,7 @@ print("RUNNING FULL GERMAN WEALTH, MIGRATION & RETIREMENT MICROSIMULATION PIPELI
 print("=" * 80)
 
 # Initialize engines
-pension_calc = GRVPensionCalculator(aktueller_rentenwert=42.15, durchschnittsentgelt=51944.0, beitragsbemessungsgrenze=101400.0)
+pension_calc = GRVPensionCalculator(aktueller_rentenwert=42.52, durchschnittsentgelt=51944.0, beitragsbemessungsgrenze=101400.0)
 safety_net = SGBXIISafetyNet(regelbedarf_stufe1=563.0, avg_kdu_housing=550.0)
 wealth_engine = WealthAccumulationEngine(real_return_equity=0.050, real_return_cash=-0.005)
 adequacy_eval = RetirementAdequacyEvaluator(target_replacement_rate_basic=0.60, target_replacement_rate_comfortable=0.75, poverty_threshold_monthly=1113.0)

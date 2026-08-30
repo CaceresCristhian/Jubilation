@@ -34,13 +34,13 @@ class RetirementAdequacyEvaluator:
         r_m_post = real_post_return / 12.0
         n_months_ret = expected_retirement_duration_years * 12
         
-        # Present value factor of retirement annuity at retirement age
+        # Present value factor of retirement annuity-due (beginning of month withdrawals)
         if r_m_post > 0:
-            pv_annuity = (1.0 - (1.0 + r_m_post) ** (-n_months_ret)) / r_m_post
+            pv_annuity_due = (1.0 + r_m_post) * (1.0 - (1.0 + r_m_post) ** (-n_months_ret)) / r_m_post
         else:
-            pv_annuity = float(n_months_ret)
+            pv_annuity_due = float(n_months_ret)
             
-        capital_needed_at_67 = monthly_income_gap * pv_annuity
+        capital_needed_at_67 = monthly_income_gap * pv_annuity_due
         
         # Future value accumulation factor during working years
         r_m_pre = real_pre_return / 12.0

@@ -4,11 +4,11 @@
 
 | Population Cohort | Sample (N) | Median Projected Pension at 67 (EUR/mo) | Median Wealth at 67 (EUR) | Median Total Ret. Income (EUR/mo) | Median Net Replacement Rate (NRR) | Poverty Avoidance Rate (%) | Basic Adequacy (>=60% NRR) (%) | Comfortable (>=75% NRR) (%) | SGB XII Social Assistance Reliance (%) | Median Required Add. Savings S* (EUR/mo) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| German_Native | 25643 | €1,985 | €142,068 | €2,530 | 84.4% | 99.6% | 99.4% | 83.3% | 0.0% | €0 |
-| General_Migrant | 7097 | €1,483 | €131,710 | €1,946 | 76.7% | 85.5% | 72.9% | 53.1% | 0.3% | €0 |
-| General_Refugee | 2481 | €1,230 | €95,124 | €1,553 | 72.4% | 88.4% | 76.7% | 43.9% | 0.0% | €0 |
-| Ukrainian_Refugee_2022plus | 1328 | €752 | €65,530 | €1,018 | 48.5% | 45.3% | 33.7% | 16.3% | 1.7% | €95 |
-| Ukrainian_Migrant_Pre2022 | 927 | €1,411 | €142,457 | €1,892 | 73.4% | 87.4% | 72.3% | 46.5% | 0.1% | €0 |
+| German_Native | 25643 | €2,003 | €142,068 | €2,547 | 85.0% | 99.6% | 99.5% | 84.8% | 0.0% | €0 |
+| General_Migrant | 7097 | €1,496 | €131,710 | €1,959 | 77.2% | 85.8% | 73.5% | 54.0% | 0.3% | €0 |
+| General_Refugee | 2481 | €1,241 | €95,124 | €1,564 | 72.9% | 88.6% | 77.4% | 45.0% | 0.0% | €0 |
+| Ukrainian_Refugee_2022plus | 1328 | €759 | €65,530 | €1,025 | 48.8% | 45.6% | 34.2% | 16.6% | 1.7% | €94 |
+| Ukrainian_Migrant_Pre2022 | 927 | €1,424 | €142,457 | €1,905 | 73.9% | 87.5% | 72.7% | 47.6% | 0.1% | €0 |
 
 ### Key Policy Takeaways:
 1. **Ukrainian War Refugees (§ 24 AufenthG):** Show a **high risk of reliance on SGB XII Grundsicherung** (due to late career arrival and caregiving burdens) unless qualification recognition and full-time employment conversion accelerate.

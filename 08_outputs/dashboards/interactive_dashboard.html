@@ -538,7 +538,7 @@
                 guide_subtitle: "Detailed explanation of German statutory pension formulas, adequacy thresholds, and economic definitions.",
                 guide_badge: "Legal Basis: SGB VI & SGB XII",
                 def_grv_title: "Statutory Pension (GRV - SGB VI)",
-                def_grv_text: "Primary pillar of the German pension system. Workers earn Earnings Points (EP) based on wages relative to the national average (€51,944 preliminary in 2026, capped at BBG €101,400 yielding max 1.952 EP/yr). At age 67, EP is multiplied by the Current Pension Value (AR = €42.15/EP), minus statutory health (KVdR ~8.15%) and care (PV 3.4%–4.0%) insurance.",
+                def_grv_text: "Primary pillar of the German pension system. Workers earn Earnings Points (EP) based on wages relative to the national average (€51,944 preliminary in 2026, capped at BBG €101,400 yielding max 1.952 EP/yr). At age 67, EP is multiplied by the Current Pension Value (AR = €42.52/EP), minus statutory health (KVdR 8.75%) and care (PV 3.6%–4.2%) insurance.",
                 def_nrr_title: "Net Replacement Rate (NRR)",
                 def_nrr_text: "Measures total net retirement income as a percentage of pre-retirement net labor earnings. OECD guidelines establish 60% as the threshold for basic living standard maintenance, and 75%+ for comfortable living.",
                 def_sgb_title: "Grundsicherung im Alter (SGB XII, Chapter 4)",
@@ -615,7 +615,7 @@
                 guide_subtitle: "Detaillierte Erläuterung der deutschen Rentenformeln, Bedarfsstufen und ökonomischen Kennzahlen.",
                 guide_badge: "Rechtsgrundlage: SGB VI & SGB XII",
                 def_grv_title: "Gesetzliche Rentenversicherung (GRV - SGB VI)",
-                def_grv_text: "Die 1. Säule des deutschen Alterssicherungssystems. Beschäftigte erwerben Entgeltpunkte (EP) relativ zum Durchschnittsentgelt (51.944 € vorläufig in 2026, gedeckelt bei BBG 101.400 € = max 1,952 EP/Jahr). Mit 67 Jahren wird die EP-Summe mit dem Aktuellen Rentenwert (AR = 42,15 €) multipliziert, abzüglich Beiträgen zur Kranken- (KVdR ~8,15%) und Pflegeversicherung (PV 3,4%–4,0%).",
+                def_grv_text: "Die 1. Säule des deutschen Alterssicherungssystems. Beschäftigte erwerben Entgeltpunkte (EP) relativ zum Durchschnittsentgelt (51.944 € vorläufig in 2026, gedeckelt bei BBG 101.400 € = max 1,952 EP/Jahr). Mit 67 Jahren wird die EP-Summe mit dem Aktuellen Rentenwert (AR = 42,52 €) multipliziert, abzüglich Beiträgen zur Kranken- (KVdR 8,75%) und Pflegeversicherung (PV 3,6%–4,2%).",
                 def_nrr_title: "Netto-Ersatzquote (NRR / Net Replacement Rate)",
                 def_nrr_text: "Misst das Netto-Alterseinkommen im Verhältnis zum vorherigen Netto-Arbeitsentgelt. OECD-Richtwerte empfehlen mindestens 60% zur Sicherung des bisherigen Lebensstandards und 75%+ für einen komfortablen Ruhestand.",
                 def_sgb_title: "Grundsicherung im Alter (SGB XII, 4. Kapitel)",
@@ -1190,7 +1190,7 @@
             const futureEP = yearsToRet * epPerYear;
             const totalEP = pastEP + futureEP;
             
-            const grossPension = totalEP * 42.15; // 2026 Aktueller Rentenwert
+            const grossPension = totalEP * 42.52; // 2026 Aktueller Rentenwert (post-July 2026)
             const netPension = grossPension * (1.0 - (0.0875 + 0.036)); // deduct KVdR (8.75%) and PV (3.6%)
 
             // 2. Wealth Accumulation & Portfolio Returns

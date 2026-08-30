@@ -182,13 +182,13 @@ print("\n[4/7] Compiling Deutsche Rentenversicherung (DRV) Actuarial Constants &
 
 drv_constants = {
     "year": [2020, 2021, 2022, 2023, 2024, 2025, 2026],
-    "aktueller_rentenwert_eur": [34.19, 34.19, 36.02, 37.60, 39.32, 40.79, 42.15],
+    "aktueller_rentenwert_eur": [34.19, 34.19, 36.02, 37.60, 39.32, 40.79, 42.52],
     "durchschnittsentgelt_eur": [40551, 41541, 42053, 43142, 45358, 47400, 51944],
     "beitragsbemessungsgrenze_west_eur_yr": [82800, 85200, 84600, 87600, 90600, 96600, 101400],
     "beitragssatz_pct": [18.6, 18.6, 18.6, 18.6, 18.6, 18.6, 18.6],
-    "standardrente_45_ep_brutto_eur_mo": [1538.55, 1538.55, 1620.90, 1692.00, 1769.40, 1835.55, 1896.75],
-    "kvdr_contribution_retiree_pct": [7.3 + 0.65, 7.3 + 0.65, 7.3 + 0.65, 7.3 + 0.80, 7.3 + 0.85, 7.3 + 0.95, 7.3 + 0.85],
-    "pv_contribution_retiree_pct": [3.05, 3.05, 3.05, 3.40, 3.40, 3.40, 3.40]
+    "standardrente_45_ep_brutto_eur_mo": [1538.55, 1538.55, 1620.90, 1692.00, 1769.40, 1835.55, 1913.40],
+    "kvdr_contribution_retiree_pct": [7.3 + 0.65, 7.3 + 0.65, 7.3 + 0.65, 7.3 + 0.80, 7.3 + 0.85, 7.3 + 0.95, 7.3 + 1.45],
+    "pv_contribution_retiree_pct": [3.05, 3.05, 3.05, 3.40, 3.40, 3.40, 3.60]
 }
 df_drv_params = pd.DataFrame(drv_constants)
 df_drv_params.to_csv("04_processed/drv_pension_parameters_and_outcomes.csv", index=False)
