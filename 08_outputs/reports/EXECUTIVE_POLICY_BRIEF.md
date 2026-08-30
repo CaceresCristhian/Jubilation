@@ -15,13 +15,13 @@ This study provides the first comprehensive, dynamically coupled microsimulation
 
 ```
    ========================================================================================
-   POPULATION SEGMENT             PROJECTED MEDIAN PENSION   MEDIAN WEALTH   NRR      POVERTY RISK
+   POPULATION SEGMENT             PROJECTED MEDIAN PENSION   MEDIAN WEALTH   NRR      BELOW €1,113
    ========================================================================================
-   1. German Native Reference     €2,108 / mo                €142,068        87.5%    0.3%
-   2. General Migrant (1st Gen)   €1,552 / mo                €131,710        79.6%    13.2%
-   3. Ukrainian Migrant (Pre-22)  €1,480 / mo                €142,457        76.4%    11.7%
-   4. General Refugee (2015/16)   €1,272 / mo                €95,124         74.8%    10.1%
-   5. Ukrainian Refugee (2022+)   €797 / mo                  €65,530         50.7%    52.1%
+   1. German Native Reference     €2,126 / mo                €142,068        87.5%    0.3%
+   2. General Migrant (1st Gen)   €1,565 / mo                €131,710        79.6%    13.2%
+   3. Ukrainian Migrant (Pre-22)  €1,493 / mo                €142,457        76.4%    11.7%
+   4. General Refugee (2015/16)   €1,283 / mo                €95,124         74.8%    10.1%
+   5. Ukrainian Refugee (2022+)   €804 / mo                  €65,530         50.7%    52.1%
    ========================================================================================
 ```
 
@@ -71,7 +71,7 @@ In Germany, administrative individual-level microdata from Destatis, DRV (FDZ), 
 1. **Marginal Quantile Calibration**: Direct moment-matching ($p_{10}, p_{25}, p_{50}, p_{75}, p_{90}$) from Destatis 16. BVB, Bundesbank PHF Wave 4 / DWA 2024, DRV Rentenatlas 2024/2025, and IAB-BAMF-SOEP (2023–2025).
 2. **Vine Copula Rank-Correlation Preservation**: Preserves real-world joint dependencies between education, qualification mismatch, wage levels, and portfolio allocations.
 3. **Deterministic Statutory Logic (Zero AI Hallucination)**: Statutory public pensions ($R = \sum EP \times ZF \times AR \times RAF$, §§ 64–68 SGB VI) and SGB XII Chapter 4 means-tested social assistance (€1,113/mo) are computed deterministically under the exact statutory formulas of German law.
-4. **Empirical Actuarial Unit Testing**: Validated against standard government reference cases (e.g. 45-EP *Standardrentner* yields exactly €1,675.25 net, matching official DRV benchmarks to €0.01).
+4. **Empirical Actuarial Unit Testing**: Validated against standard government reference cases (e.g. 45-EP *Standardrentner* yields exactly €1,913.40 gross -> €1,677.10 net for parents / €1,665.62 net for childless pensioners, matching official statutory benchmarks to €0.01).
 5. **Dual-Track Execution**: External researchers can reproduce all results instantly using the open synthetic sandbox, while institutional researchers can drop authorized FDZ-RV / PHF Scientific Use Files (SUF) into `02_raw_data/` to execute on confidential administrative records without any code modification.
 
 ---

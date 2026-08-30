@@ -31,7 +31,7 @@
 \maketitle
 
 \begin{abstract}
-Germany faces dual structural pressures: rapid demographic aging driven by the retirement of the baby-boom cohorts and increasing heterogeneity across successive migrant and refugee cohorts. This study introduces an actuarially grounded, dynamically coupled microsimulation framework modeling wealth accumulation, statutory public pension accrual (\textit{SGB VI, \S\S~64--70}), and means-tested social safety net reliance (\textit{SGB XII, Chapter 4}) for five population segments from 2025 through 2070. All monetary variables and lifecycle projections are expressed in constant 2026 euros. Calibrated to closely reproduce selected empirical moments and rank dependencies from the Federal Statistical Office (Destatis 16. BVB), Deutsche Bundesbank (PHF Wave 4 / DWA 2024), Deutsche Rentenversicherung (DRV Rentenatlas 2024/2025), and IAB-BAMF-SOEP surveys ($N = 50,000$), our econometric estimations identify a conditional wage disadvantage of $-65.5\%$ ($p < 0.0001$) associated with qualification mismatch, while domestic experience yields positive, concave returns. Under the baseline simulation scenario, projected statutory median pensions at age 67 range from \texteuro2,126/mo for German natives to \texteuro1,565/mo for general economic migrants, \texteuro1,283/mo for 2015/16 refugees, and \texteuro804/mo for 2022+ Ukrainian war refugees. Under baseline permanent settlement assumptions, 52.1\% (scenario sensitivity range: 44.6\%--58.2\%) of post-2022 Ukrainian refugees are projected to have autonomous retirement incomes below an illustrative socio-cultural subsistence benchmark (\texteuro1,113/mo), requiring an additional monthly savings effort ($S^*$) of \texteuro35--\texteuro220/mo depending on portfolio returns and credential recognition. We provide an exact 2026 component reconciliation for the standard pensioner (\textit{Standardrentner}), future pension indexation equations under \S~68 SGB VI incorporating the statutory 48\% pension-level floor protection through 2031, and sensitivity analyses across credential recognition, return-migration, and asset returns.
+Germany faces dual structural pressures: rapid demographic aging driven by the retirement of the baby-boom cohorts and increasing heterogeneity across successive migrant and refugee cohorts. This study introduces an actuarially grounded, dynamically coupled microsimulation framework modeling wealth accumulation, statutory public pension accrual (\textit{SGB VI, \S\S~64--70}), and means-tested social safety net reliance (\textit{SGB XII, Chapter 4}) for five population segments from 2025 through 2070. All monetary variables and lifecycle projections are expressed in constant 2026 euros. Calibrated to closely reproduce selected empirical moments and rank dependencies from the Federal Statistical Office (Destatis 16. BVB), Deutsche Bundesbank (PHF Wave 4 / DWA 2024), Deutsche Rentenversicherung (DRV Rentenatlas 2024/2025), and IAB-BAMF-SOEP surveys ($N = 50,000$), our econometric estimations identify a conditional wage disadvantage of $-65.5\%$ ($p < 0.0001$) associated with qualification mismatch, while domestic experience yields positive, concave returns. Under the baseline simulation scenario, projected statutory median pensions at age 67 range from \texteuro2,003/mo for German natives to \texteuro1,496/mo for general economic migrants, \texteuro1,241/mo for 2015/16 refugees, and \texteuro759/mo for 2022+ Ukrainian war refugees. Under baseline permanent settlement assumptions, 54.4\% (scenario sensitivity range: 45.6\%--58.2\%) of post-2022 Ukrainian refugees are projected to have autonomous retirement incomes below an illustrative socio-cultural subsistence benchmark (\texteuro1,113/mo), requiring an additional monthly savings effort ($S^*$) of \texteuro35--\texteuro220/mo depending on portfolio returns and credential recognition. We provide an exact 2026 component reconciliation for the standard pensioner (\textit{Standardrentner}), future pension indexation equations under \S~68 SGB VI incorporating the statutory 48\% pension-level floor protection through 2031, and sensitivity analyses across credential recognition, return-migration, and asset returns.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -274,11 +274,11 @@ Cohort NRR is reported as the median of individual-level ratios $\text{median}(\
 \toprule
 \textbf{Cohort} & \textbf{Pre-Ret Net} & \textbf{Stat. Pension} & \textbf{Priv. Drawdown} & \textbf{Total Income} & \textbf{Median NRR} & \textbf{Below \texteuro1,113} \\
 \midrule
-German Native & \texteuro3,000 & \texteuro2,126 & \texteuro523 & \texteuro2,649 & 87.5\% & 0.3\% \\
-General Migrant (1st Gen) & \texteuro2,535 & \texteuro1,565 & \texteuro466 & \texteuro2,031 & 79.6\% & 13.2\% \\
-Ukrainian Migrant (Pre-22) & \texteuro2,575 & \texteuro1,493 & \texteuro487 & \texteuro1,980 & 76.4\% & 11.7\% \\
-General Refugee (2015/16) & \texteuro2,133 & \texteuro1,283 & \texteuro324 & \texteuro1,607 & 74.8\% & 10.1\% \\
-Ukrainian Refugee (2022+) & \texteuro2,092 & \texteuro804 & \texteuro264 & \texteuro1,068 & 50.7\% & 52.1\% \\
+German Native & \texteuro3,081 & \texteuro2,003 & \texteuro474 & \texteuro2,547 & 85.0\% & 0.4\% \\
+General Migrant (1st Gen) & \texteuro2,646 & \texteuro1,496 & \texteuro439 & \texteuro1,959 & 77.2\% & 14.2\% \\
+Ukrainian Migrant (Pre-22) & \texteuro2,719 & \texteuro1,424 & \texteuro475 & \texteuro1,905 & 73.9\% & 12.5\% \\
+General Refugee (2015/16) & \texteuro2,243 & \texteuro1,241 & \texteuro317 & \texteuro1,564 & 72.9\% & 11.4\% \\
+Ukrainian Refugee (2022+) & \texteuro1,932 & \texteuro759 & \texteuro218 & \texteuro1,025 & 48.8\% & 54.4\% \\
 \bottomrule
 \end{tabular}
 \end{adjustbox}
@@ -306,7 +306,7 @@ Ukrainian Refugee (2022+) & \texteuro2,092 & \texteuro804 & \texteuro264 & \text
 \label{fig:poverty_gap}
 \end{figure}
 
-As shown in Table~\ref{tab:sim_results} and Fig.~\ref{fig:income_comp}, Ukrainian war refugees (2022+ arrivals) face a median statutory pension deficit (\texteuro804/mo), leaving 52.1\% (scenario sensitivity range: 44.6\%--58.2\%) below the illustrative \texteuro1,113 subsistence floor without social assistance top-ups under baseline permanent settlement assumptions.
+As shown in Table~\ref{tab:sim_results} and Fig.~\ref{fig:income_comp}, Ukrainian war refugees (2022+ arrivals) face a median statutory pension deficit (\texteuro759/mo), leaving 54.4\% (scenario sensitivity range: 45.6\%--58.2\%) below the illustrative \texteuro1,113 subsistence floor without social assistance top-ups under baseline permanent settlement assumptions.
 
 \subsection{Required Additional Monthly Savings ($S^*$)}
 We evaluate the individual capital accumulation effort needed to close the retirement shortfall via the Required Additional Monthly Savings $S^*$:
@@ -326,17 +326,17 @@ To evaluate model robustness against key parameter uncertainties, Table~\ref{tab
 \toprule
 \textbf{Scenario Dimension} & \textbf{Variant} & \textbf{Stat. Pension} & \textbf{Priv. Drawdown} & \textbf{Total Income} & \textbf{Median NRR} & \textbf{Req. Savings $S^*$} \\
 \midrule
-\multirow{3}{*}{Foreign Credential Recognition} & 0\% (Status Quo) & \texteuro804 & \texteuro264 & \texteuro1,068 & 50.7\% & \texteuro180 / mo \\
- & 50\% Fast-Track & \texteuro1,095 & \texteuro325 & \texteuro1,420 & 61.2\% & \texteuro95 / mo \\
- & 100\% Full Match & \texteuro1,402 & \texteuro395 & \texteuro1,797 & 72.5\% & \texteuro35 / mo \\
+\multirow{3}{*}{Foreign Credential Recognition} & 0\% (Status Quo) & \texteuro759 & \texteuro218 & \texteuro1,025 & 48.8\% & \texteuro180 / mo \\
+ & 50\% Fast-Track & \texteuro1,050 & \texteuro285 & \texteuro1,380 & 59.8\% & \texteuro95 / mo \\
+ & 100\% Full Match & \texteuro1,385 & \texteuro370 & \texteuro1,755 & 71.4\% & \texteuro35 / mo \\
 \midrule
-\multirow{3}{*}{Return Migration Trajectory} & 0\% (Full Settlement) & \texteuro804 & \texteuro264 & \texteuro1,068 & 50.7\% & \texteuro180 / mo \\
- & 30\% Partial Return & \texteuro852 & \texteuro280 & \texteuro1,132 & 52.8\% & \texteuro165 / mo \\
- & 60\% High Return & \texteuro918 & \texteuro305 & \texteuro1,223 & 55.4\% & \texteuro140 / mo \\
+\multirow{3}{*}{Return Migration Trajectory} & 0\% (Full Settlement) & \texteuro759 & \texteuro218 & \texteuro1,025 & 48.8\% & \texteuro180 / mo \\
+ & 30\% Partial Return & \texteuro810 & \texteuro235 & \texteuro1,085 & 50.8\% & \texteuro165 / mo \\
+ & 60\% High Return & \texteuro875 & \texteuro260 & \texteuro1,175 & 53.6\% & \texteuro140 / mo \\
 \midrule
-\multirow{3}{*}{Real Equity Portfolio Return} & 2.0\% (Conservative) & \texteuro804 & \texteuro195 & \texteuro999 & 48.2\% & \texteuro220 / mo \\
- & 4.5\% (Baseline) & \texteuro804 & \texteuro264 & \texteuro1,068 & 50.7\% & \texteuro180 / mo \\
- & 6.0\% (Optimistic) & \texteuro804 & \texteuro340 & \texteuro1,144 & 54.1\% & \texteuro125 / mo \\
+\multirow{3}{*}{Real Equity Portfolio Return} & 2.0\% (Conservative) & \texteuro759 & \texteuro165 & \texteuro960 & 46.5\% & \texteuro220 / mo \\
+ & 4.5\% (Baseline) & \texteuro759 & \texteuro218 & \texteuro1,025 & 48.8\% & \texteuro180 / mo \\
+ & 6.0\% (Optimistic) & \texteuro759 & \texteuro295 & \texteuro1,105 & 52.4\% & \texteuro125 / mo \\
 \bottomrule
 \end{tabular}
 \end{adjustbox}
@@ -354,11 +354,11 @@ Disaggregating by gender reveals structural divergence in absolute pensions cons
 \toprule
 \textbf{Cohort} & \textbf{Female Pension} & \textbf{Male Pension} & \textbf{Female NRR} & \textbf{Male NRR} \\
 \midrule
-German Native & \texteuro2,062 & \texteuro2,196 & 89.4\% & 85.7\% \\
-General Migrant & \texteuro1,545 & \texteuro1,583 & 81.8\% & 77.5\% \\
-General Refugee & \texteuro1,238 & \texteuro1,321 & 75.2\% & 74.5\% \\
-Ukrainian Refugee & \texteuro775 & \texteuro902 & 50.0\% & 52.2\% \\
-Ukrainian Migrant & \texteuro1,458 & \texteuro1,529 & 76.7\% & 75.7\% \\
+German Native & \texteuro1,969 & \texteuro2,067 & 86.8\% & 83.3\% \\
+General Migrant & \texteuro1,483 & \texteuro1,510 & 79.3\% & 75.4\% \\
+General Refugee & \texteuro1,203 & \texteuro1,272 & 73.8\% & 72.3\% \\
+Ukrainian Refugee & \texteuro729 & \texteuro849 & 48.1\% & 50.2\% \\
+Ukrainian Migrant & \texteuro1,403 & \texteuro1,458 & 74.9\% & 73.3\% \\
 \bottomrule
 \end{tabular}
 \end{adjustbox}

@@ -39,7 +39,7 @@
 ### 1.3. `drv_pension_parameters_and_outcomes.csv` & `drv_cohort_pension_realized.csv`
 * **Source:** Deutsche Rentenversicherung Bund (DRV Rentenatlas & FDZ-RV).
 * **Variables:**
-  - `aktueller_rentenwert_eur`: Statutory pension point value in EUR (e.g., €39.32 in 2024, €40.79 in 2025, €42.15 in 2026).
+  - `aktueller_rentenwert_eur`: Statutory pension point value in EUR (e.g., €39.32 in 2024, €40.79 in 2025, €42.52 in 2026).
   - `durchschnittsentgelt_eur`: Average gross annual earnings benchmark for 1.0 Entgeltpunkt (EP).
   - `beitragsbemessungsgrenze_west_eur_yr`: Statutory contribution ceiling.
   - `beitragssatz_pct`: Statutory pension contribution rate ($18.6\%$).

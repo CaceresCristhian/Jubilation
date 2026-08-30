@@ -4,6 +4,7 @@ Generates publication-quality charts for reports and presentations.
 """
 
 import os
+import shutil
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
@@ -17,15 +18,21 @@ plt.rcParams["axes.labelsize"] = 11
 plt.rcParams["figure.dpi"] = 300
 
 os.makedirs("08_outputs/figures", exist_ok=True)
+os.makedirs("10_publication/figures", exist_ok=True)
 
 # 1. Figure 1: 5-Way Comparison of Projected Monthly Retirement Income & NRR
 df_sim = pd.read_csv("08_outputs/tables/simulated_retirement_adequacy_summary.csv")
 
-# Clean numeric values
+# Clean numeric values dynamically from simulation output
+pension_map = dict(zip(df_sim["Population Cohort"], df_sim["Median Projected Pension at 67 (EUR/mo)"].str.replace("€", "").str.replace(",", "").astype(float)))
+total_inc_map = dict(zip(df_sim["Population Cohort"], df_sim["Median Total Ret. Income (EUR/mo)"].str.replace("€", "").str.replace(",", "").astype(float)))
+nrr_map = dict(zip(df_sim["Population Cohort"], df_sim["Median Net Replacement Rate (NRR)"].str.replace("%", "").astype(float)))
+
+cohort_keys = ["German_Native", "General_Migrant", "General_Refugee", "Ukrainian_Refugee_2022plus", "Ukrainian_Migrant_Pre2022"]
 labels = ["German\nNative", "General\nMigrant", "General\nRefugee", "Ukrainian\nRefugee", "Ukrainian\nMigrant"]
-pension_vals = [2108, 1552, 1272, 797, 1480]
-total_inc_vals = [2631, 2018, 1596, 1061, 1967]
-nrr_vals = [87.5, 79.6, 74.8, 50.7, 76.4]
+pension_vals = [pension_map[k] for k in cohort_keys]
+total_inc_vals = [total_inc_map[k] for k in cohort_keys]
+nrr_vals = [nrr_map[k] for k in cohort_keys]
 
 fig, ax1 = plt.subplots(figsize=(10, 5.5))
 
@@ -52,46 +59,49 @@ ax2.grid(False)
 # Add values on top of bars
 for rect in rects1:
     h = rect.get_height()
-    ax1.annotate(f"€{h:,}", xy=(rect.get_x() + rect.get_width()/2, h), xytext=(0, 3), textcoords="offset points", ha="center", va="bottom", fontsize=8)
+    ax1.annotate(f"€{int(h):,}", xy=(rect.get_x() + rect.get_width()/2, h), xytext=(0, 3), textcoords="offset points", ha="center", va="bottom", fontsize=8)
 
 for rect in rects2:
     h = rect.get_height()
-    ax1.annotate(f"€{h:,}", xy=(rect.get_x() + rect.get_width()/2, h), xytext=(0, 3), textcoords="offset points", ha="center", va="bottom", fontsize=8, fontweight="bold")
+    ax1.annotate(f"€{int(h):,}", xy=(rect.get_x() + rect.get_width()/2, h), xytext=(0, 3), textcoords="offset points", ha="center", va="bottom", fontsize=8, fontweight="bold")
 
-# Combine legends
+# Legend combination
 lines1, labels1 = ax1.get_legend_handles_labels()
 lines2, labels2 = ax2.get_legend_handles_labels()
-ax1.legend(lines1 + lines2, labels1 + labels2, loc="upper left", frameon=True, framealpha=0.95)
+ax1.legend(lines1 + lines2, labels1 + labels2, loc="upper left", framealpha=0.9, fontsize=8.5)
 
 plt.tight_layout()
-fig.savefig("08_outputs/figures/fig1_5way_retirement_income_and_nrr.png")
+fig.savefig("08_outputs/figures/fig1_5way_retirement_income_and_nrr.png", bbox_inches="tight")
+shutil.copy2("08_outputs/figures/fig1_5way_retirement_income_and_nrr.png", "10_publication/figures/fig1_5way_retirement_income_and_nrr.png")
 plt.close(fig)
 print("  -> Generated fig1_5way_retirement_income_and_nrr.png")
 
 
-# 2. Figure 2: Destatis 16. BVB Demographic Pressure (2024-2070)
+# 2. Figure 2: Demographic Pressure 2024-2070 (Destatis 16. BVB)
 df_demog = pd.read_csv("04_processed/destatis_demographics_16_bvb_2024_2070.csv")
 
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(13, 5))
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 4.5))
 
-variants = {
-    "V1_Moderate_G2_L2_W2": ("V1: Moderate Base (+250k Net Mig)", "#2563EB"),
-    "V2_AgingShock_G1_L3_W1": ("V2: Aging Shock (+150k Net Mig)", "#DC2626"),
-    "V3_HighMigration_G3_L2_W3": ("V3: High Migration (+400k Net Mig)", "#059669"),
-    "V4_Contraction_G1_L1_W1": ("V4: Low Longevity Contraction", "#6B7280")
-}
+years = df_demog[df_demog["variant"] == "V1_Moderate_G2_L2_W2"]["year"].values
+pop_67_v1 = df_demog[df_demog["variant"] == "V1_Moderate_G2_L2_W2"]["pop_age_67plus_retirement_age_millions"].values
+pop_67_v2 = df_demog[df_demog["variant"] == "V2_AgingShock_G1_L3_W1"]["pop_age_67plus_retirement_age_millions"].values
+pop_67_v3 = df_demog[df_demog["variant"] == "V3_HighMigration_G3_L2_W3"]["pop_age_67plus_retirement_age_millions"].values
 
-for v_key, (v_label, color) in variants.items():
-    df_v = df_demog[df_demog["variant"] == v_key]
-    ax1.plot(df_v["year"], df_v["pop_age_20_66_working_age_millions"], label=v_label, color=color, linewidth=2.0)
-    ax2.plot(df_v["year"], df_v["old_age_dependency_ratio_oadr_pct"], label=v_label, color=color, linewidth=2.0)
-
-ax1.set_title("Working-Age Population (20-66 Years, Millions)", fontweight="bold")
+ax1.plot(years, pop_67_v1, label="V1: Moderate Migration (+250k/yr)", color="#1E3A8A", linewidth=2.5)
+ax1.plot(years, pop_67_v2, label="V2: Aging Shock (Low Mig.)", color="#DC2626", linestyle="--", linewidth=2)
+ax1.plot(years, pop_67_v3, label="V3: High Migration (+400k/yr)", color="#059669", linestyle="-.", linewidth=2)
+ax1.set_title("Retirement Age Population (67+ Years)", fontweight="bold")
 ax1.set_xlabel("Year")
-ax1.set_ylabel("Millions of Persons")
-ax1.set_ylim(35, 55)
-ax1.legend(loc="lower left", fontsize=8.5)
+ax1.set_ylabel("Population (Millions)")
+ax1.legend(loc="lower right", fontsize=8.5)
 
+oadr_v1 = df_demog[df_demog["variant"] == "V1_Moderate_G2_L2_W2"]["old_age_dependency_ratio_oadr_pct"].values
+oadr_v2 = df_demog[df_demog["variant"] == "V2_AgingShock_G1_L3_W1"]["old_age_dependency_ratio_oadr_pct"].values
+oadr_v3 = df_demog[df_demog["variant"] == "V3_HighMigration_G3_L2_W3"]["old_age_dependency_ratio_oadr_pct"].values
+
+ax2.plot(years, oadr_v1, label="V1: Moderate", color="#1E3A8A", linewidth=2.5)
+ax2.plot(years, oadr_v2, label="V2: Aging Shock", color="#DC2626", linestyle="--", linewidth=2)
+ax2.plot(years, oadr_v3, label="V3: High Migration", color="#059669", linestyle="-.", linewidth=2)
 ax2.set_title("Old-Age Dependency Ratio (OADR: Pop 67+ / Pop 20-66)", fontweight="bold")
 ax2.set_xlabel("Year")
 ax2.set_ylabel("OADR (%)")
@@ -102,6 +112,7 @@ ax2.legend(loc="upper left", fontsize=8.5)
 plt.suptitle("Destatis 16. BVB Demographic Projections & System Dependency Pressure (Germany 2024-2070)", fontsize=13, fontweight="bold", y=1.02)
 plt.tight_layout()
 fig.savefig("08_outputs/figures/fig2_demographic_pressure_2070_oadr.png", bbox_inches="tight")
+shutil.copy2("08_outputs/figures/fig2_demographic_pressure_2070_oadr.png", "10_publication/figures/fig2_demographic_pressure_2070_oadr.png")
 plt.close(fig)
 print("  -> Generated fig2_demographic_pressure_2070_oadr.png")
 
@@ -109,8 +120,9 @@ print("  -> Generated fig2_demographic_pressure_2070_oadr.png")
 # 3. Figure 3: Poverty Risk & Required Additional Savings S*
 fig, ax = plt.subplots(figsize=(9, 5))
 
-poverty_rates = [0.3, 13.2, 10.1, 52.1, 11.7] # % below poverty without top-up
-savings_gap = [0, 0, 0, 51, 0]
+# Compute poverty rates (% below 1113 EUR) directly from simulation summary
+poverty_avoidance_map = dict(zip(df_sim["Population Cohort"], df_sim["Poverty Avoidance Rate (%)"].str.replace("%", "").astype(float)))
+poverty_rates = [100.0 - poverty_avoidance_map[k] for k in cohort_keys]
 
 x = np.arange(len(labels))
 bars = ax.bar(x, poverty_rates, color=["#10B981", "#F59E0B", "#F59E0B", "#EF4444", "#F59E0B"], width=0.5, edgecolor="black", linewidth=0.5)
@@ -127,7 +139,8 @@ for bar, rate in zip(bars, poverty_rates):
 
 plt.tight_layout()
 fig.savefig("08_outputs/figures/fig3_poverty_risk_and_savings_gap.png")
+shutil.copy2("08_outputs/figures/fig3_poverty_risk_and_savings_gap.png", "10_publication/figures/fig3_poverty_risk_and_savings_gap.png")
 plt.close(fig)
 print("  -> Generated fig3_poverty_risk_and_savings_gap.png")
 
-print("\nAll publication-grade charts generated successfully in 08_outputs/figures/!")
+print("\nAll publication-grade charts generated successfully in 08_outputs/figures/ and 10_publication/figures/!")
