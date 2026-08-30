@@ -1,0 +1,441 @@
+JUBILATION (4) — MOST IMPORTANT FIXES BEFORE SUBMISSION
+==============================================================
+
+This is a prioritized checklist based on the review of Version 4.
+Focus on these items first; the rest of the manuscript is substantially improved.
+
+PRIORITY 1 — CRITICAL
+---------------------
+
+1. FIX THE 48% PENSION-LEVEL PROTECTION FORMULA
+
+Current problem:
+The manuscript appears to use the 48% statutory floor directly inside the
+pension-indexation factor, effectively treating 48% as an indexation factor.
+
+This is not the correct conceptual structure.
+
+Do instead:
+
+Step 1:
+Calculate the pension value produced by the §68 SGB VI indexation mechanism.
+
+Step 2:
+Calculate the pension value required to satisfy the statutory minimum
+Sicherungsniveau vor Steuern under the applicable protection rule (§255e).
+
+Step 3:
+Where the statutory protection applies, use the higher of the two values.
+
+Conceptually:
+
+    AR_68(t+1) = pension value from §68
+
+    AR_floor(t+1) = pension value required by the statutory 48% level
+
+    AR(t+1) = max(AR_68(t+1), AR_floor(t+1))
+
+Do NOT use:
+
+    max(48%, indexation factor)
+
+because 48% is a pension-level/replacement-rate concept, not an annual
+pension-value growth factor.
+
+ACTION:
+Recalculate all future pension values and all downstream retirement results
+after correcting this.
+
+
+2. DO NOT CLAIM THE WHOLE PENSION MODEL IS "EXACT STATUTORY"
+
+The paper now explicitly says that the Grundrente component is stylized.
+Therefore, statements such as:
+
+    "exact statutory net reconciliation"
+
+should be restricted to the specific component that is actually reproduced.
+
+Safer wording:
+
+    "exact 2026 Standardrentner component reconciliation under the stated
+     statutory parameters"
+
+For the whole model, use wording such as:
+
+    "statutory-rule-based dynamic microsimulation"
+
+or:
+
+    "dynamic microsimulation incorporating statutory pension rules and
+     explicitly stated approximations."
+
+
+3. CLARIFY / DOCUMENT THE GRUNDRENTE APPROXIMATION
+
+The paper describes EPbasic using a simplified representation of §76g SGB VI.
+
+Keep the "stylized" disclosure, but make it explicit that this is NOT a complete
+legal implementation.
+
+Recommended wording:
+
+    "Basic pension effects are represented using a stylized §76g SGB VI
+     eligibility and benefit approximation based on qualifying years and
+     average pension-point accrual; the full statutory §76g calculation is
+     not implemented."
+
+ACTION:
+Either implement the complete §76g mechanism, or clearly retain the approximation
+and avoid presenting it as exact statutory eligibility/benefit calculation.
+
+
+4. RECHECK THE 2026–2031 TRANSITIONAL / PROTECTION RULES
+
+The paper projects pension values to 2070.
+
+Verify that the years 2026–2031 correctly reflect the applicable statutory
+pension-level protection/transitional mechanism.
+
+Do not simply apply the long-run §68 formula unchanged if the statutory rules
+require an additional protection calculation.
+
+ACTION:
+Document which statutory rule applies in each period and test the implementation
+against official examples where possible.
+
+
+5. RECONCILE THE STANDARDRENTNER ONE FINAL TIME
+
+Version 4 is much better and now uses:
+
+    €42.52 pension value
+    45 EP
+    €1,913.40 gross pension
+
+Make this the single authoritative validation.
+
+Create one table:
+
+    EP
+    Pension value
+    Gross pension
+    KV deduction
+    PV deduction
+    Income tax, if included
+    Final net amount
+
+Then search the entire manuscript/code/output for old values such as:
+    €1,675.25
+    €1,662.50
+    €1,651.12
+
+Remove obsolete values unless they have a clearly different definition.
+
+
+PRIORITY 2 — MAJOR
+------------------
+
+6. FIX / VERIFY THE GRUNDRENTE AND EP DEFINITIONS
+
+The EP formula can be simplified to:
+
+    EP_t = min(w_t, BBG_t) / DE_t
+
+assuming w_t is annual pension-insured earnings.
+
+The current formula contains a redundant first term.
+
+Also define:
+- annual earnings variable;
+- contribution ceiling;
+- average earnings;
+- treatment of childcare credits;
+- treatment of periods with no earnings.
+
+
+7. DEFINE NRR EXACTLY AND VERIFY THE CODE
+
+Use:
+
+    NRR_i = Total retirement income_i /
+            Pre-retirement net earnings_i
+
+Then:
+
+    Cohort NRR = median(NRR_i)
+
+Do NOT substitute:
+
+    median(retirement income) /
+    median(pre-retirement income)
+
+unless explicitly intended.
+
+Version 4 now states the correct concept; make sure the implementation follows it.
+
+
+8. KEEP STATUTORY PENSION AND PRIVATE DRAWDOWN SEPARATE
+
+The current tables are improved.
+
+Maintain the distinction:
+
+    Statutory Pension
+    Private Drawdown
+    Total Retirement Income
+    NRR
+
+This is essential because portfolio returns affect private drawdown but not
+statutory pension accrual.
+
+
+9. VERIFY THE ANNUITY-DUE CALCULATION
+
+The formula is now structurally correct for an annuity due.
+
+Keep the formula and the timing statement:
+
+- contributions at end of working month;
+- withdrawals at beginning of retirement month.
+
+Then recalculate the required monthly savings after all pension-rule corrections.
+
+
+10. DEFINE THE 78% POLICY RESULT
+
+Do not leave "up to 78%" ambiguous.
+
+State exactly:
+
+    78% = [numerator] / [denominator]
+
+and specify the condition being crossed.
+
+For example, if correct:
+
+    "Under the full-recognition counterfactual, 78% of simulated Ukrainian
+     refugee workers have total autonomous retirement income above €1,113/month."
+
+Use the actual definition from the code.
+
+
+11. STOP USING CAUSAL "PENALTY" LANGUAGE
+
+Keep:
+
+    "qualification mismatch is associated with an estimated 65.5% lower
+     conditional wage"
+
+Avoid:
+
+    "65.5% wage penalty"
+    "pension penalty"
+
+unless you have a causal identification strategy.
+
+The counterfactual credential-recognition scenario should also be clearly
+described as a modeled scenario, not an identified causal effect.
+
+
+12. MAKE THE VINE COPULA REPRODUCIBLE
+
+Add an appendix containing:
+
+    Vine type
+    Variable ordering
+    Pair-copula families
+    Parameters
+    AIC/BIC or selection criterion
+    Goodness-of-fit
+    Random seed, if relevant
+
+Also report observed vs synthetic:
+- medians/quantiles;
+- correlations;
+- important subgroup distributions.
+
+
+PRIORITY 3 — IMPORTANT
+----------------------
+
+13. CHANGE "MOMENT-PRESERVING" TO A MORE PRECISE TERM
+
+The current validation demonstrates selected moments, not necessarily the full
+joint distribution.
+
+Prefer:
+
+    "calibrated to selected empirical moments"
+
+or:
+
+    "closely reproduces selected empirical moments and dependence structures."
+
+
+14. QUALIFY THE €10,000 ASSET ASSUMPTION
+
+Do not present €10,000 as if it were the complete SGB XII asset rule.
+
+Use:
+
+    "The baseline model applies a €10,000 protected liquid-financial-asset
+     assumption within the means-test module."
+
+Then separately describe statutory exemptions and other assets.
+
+
+15. QUALIFY THE €1,113 ADEQUACY BENCHMARK
+
+Make clear:
+
+    €1,113 = €563 single-adult Regelbedarf + assumed €550 housing cost
+
+This is a MODEL BENCHMARK.
+
+It is not automatically:
+- the national poverty line;
+- the universal Grundsicherung entitlement;
+- a universal housing allowance.
+
+Use:
+
+    "illustrative single-adult retirement adequacy benchmark."
+
+
+16. ADD / CLARIFY MORTALITY ASSUMPTION
+
+The savings calculation uses a 20-year retirement horizon.
+
+Explicitly state whether this means:
+
+    age 67 → age 87
+
+and whether mortality is modeled.
+
+If not:
+
+    "The baseline savings calculation assumes a deterministic 20-year retirement
+     horizon and does not model individual mortality."
+
+
+17. CLARIFY REAL-2026-EURO CONVERSION
+
+State exactly:
+- base year;
+- CPI/deflator;
+- whether wage projections are nominal then deflated;
+- whether pension and housing assumptions are already real.
+
+Make the procedure identical across wages, pensions, wealth, housing and savings.
+
+
+18. DEFINE PORTFOLIO RETURNS
+
+For 2.0%, 4.5% and 6.0%, state:
+- real/nominal;
+- before/after fees;
+- before/after tax;
+- deterministic/stochastic.
+
+If the values are real after-fee assumptions, say so directly.
+
+
+19. REMOVE "STATIONARY INSTITUTIONAL RULES"
+
+Replace with:
+
+    "Future Legislative Uncertainty"
+
+Recommended wording:
+
+    "The model applies currently legislated institutional rules and statutory
+     indexation mechanisms but does not anticipate future discretionary
+     legislative reforms."
+
+
+20. CLARIFY FOREIGN PENSION RIGHTS
+
+State whether Ukrainian/other migrant pension rights accumulated abroad are:
+- modeled;
+- excluded;
+- assumed zero;
+- potentially portable but omitted.
+
+If excluded:
+
+    "Reported retirement income represents German retirement income and excludes
+     potentially portable foreign pension entitlements."
+
+
+21. MATCH THE DRV VALIDATION POPULATION
+
+If comparing the simulation with a DRV long-term-insured median, make sure the
+comparison population has comparable:
+- age;
+- insurance history;
+- pension definition;
+- gross/net definition;
+- reference year.
+
+Do not equate "native German" with "long-term insured" automatically.
+
+
+22. DEFINE "SUPPORT RATIO"
+
+The statement about approximately 2.94 contributors per retiree today and fewer
+than 1.90 by 2050 needs a precise definition of numerator and denominator.
+
+State exactly what:
+- active contributor;
+- retiree;
+- time period;
+- population coverage
+
+mean in the calculation.
+
+
+==============================================================
+FINAL CHECKLIST — DO THESE IN THIS ORDER
+==============================================================
+
+[ ] 1. Correct the §68 / 48% pension-level protection implementation.
+[ ] 2. Recalculate all pension projections after the correction.
+[ ] 3. Reconcile and lock the Standardrentner calculation.
+[ ] 4. Verify 2026–2031 transitional/protection rules.
+[ ] 5. Clearly label Grundrente as stylized unless fully implemented.
+[ ] 6. Verify EP calculation and simplify the equation.
+[ ] 7. Verify NRR = median of individual-level ratios.
+[ ] 8. Verify annuity-due savings calculation and timing.
+[ ] 9. Recalculate required savings.
+[ ] 10. Define exactly what the 78% policy result measures.
+[ ] 11. Remove causal "penalty" language.
+[ ] 12. Document the Vine Copula completely.
+[ ] 13. Replace "moment-preserving" with precise wording.
+[ ] 14. Qualify the €10,000 asset assumption.
+[ ] 15. Qualify the €1,113 benchmark.
+[ ] 16. State mortality/20-year retirement assumptions.
+[ ] 17. Document constant-2026-euro methodology.
+[ ] 18. Define portfolio-return assumptions.
+[ ] 19. Rename "Stationary Institutional Rules".
+[ ] 20. Clarify foreign pension rights.
+[ ] 21. Verify DRV comparison-population matching.
+[ ] 22. Define the support ratio.
+
+
+BOTTOM LINE
+-----------
+
+Version 4 is substantially improved. Do NOT rewrite the whole paper.
+
+The next revision should be a targeted technical correction.
+
+The most important issue is the treatment of the statutory 48% pension-level
+protection. Once that is corrected, regenerate every dependent pension, NRR,
+adequacy and savings result.
+
+After that, focus on Grundrente, reproducibility, causal wording, and precise
+definitions of the policy results.
+
+If these items are addressed, the manuscript should be in a much stronger position
+for final methodological review and submission.

@@ -31,7 +31,7 @@
 \maketitle
 
 \begin{abstract}
-Germany faces dual structural pressures: rapid demographic aging driven by the retirement of the baby-boom cohorts and increasing heterogeneity across successive migrant and refugee cohorts. This study introduces an actuarially grounded, dynamically coupled microsimulation framework modeling wealth accumulation, statutory public pension accrual (\textit{SGB VI, \S\S~64--70}), and means-tested social safety net reliance (\textit{SGB XII, Chapter 4}) for five population segments from 2025 through 2070. All monetary variables and lifecycle projections are expressed in constant 2026 euros. Calibrated against empirical moments from the Federal Statistical Office (Destatis 16. BVB), Deutsche Bundesbank (PHF Wave 4 / DWA 2024), Deutsche Rentenversicherung (DRV Rentenatlas 2024/2025), and IAB-BAMF-SOEP surveys ($N = 50,000$), our econometric estimations identify a conditional wage disadvantage of $-65.5\%$ ($p < 0.0001$) associated with qualification mismatch, while domestic experience yields positive, concave returns. Under the baseline simulation scenario, projected statutory median pensions at age 67 range from \texteuro2,126/mo for German natives to \texteuro1,565/mo for general economic migrants, \texteuro1,283/mo for 2015/16 refugees, and \texteuro804/mo for 2022+ Ukrainian war refugees. Under baseline permanent settlement assumptions, 52.1\% (sensitivity interval: 44.6\%--58.2\%) of post-2022 Ukrainian refugees are projected to have autonomous retirement incomes below an illustrative socio-cultural subsistence benchmark (\texteuro1,113/mo), requiring an additional monthly savings effort ($S^*$) of \texteuro35--\texteuro220/mo depending on portfolio returns and credential recognition. We provide an exact statutory net reconciliation for the standard pensioner (\textit{Standardrentner}), future pension indexation equations under \S~68 SGB VI with statutory floor protections through 2031, and sensitivity analyses across credential recognition, return-migration, and asset returns.
+Germany faces dual structural pressures: rapid demographic aging driven by the retirement of the baby-boom cohorts and increasing heterogeneity across successive migrant and refugee cohorts. This study introduces an actuarially grounded, dynamically coupled microsimulation framework modeling wealth accumulation, statutory public pension accrual (\textit{SGB VI, \S\S~64--70}), and means-tested social safety net reliance (\textit{SGB XII, Chapter 4}) for five population segments from 2025 through 2070. All monetary variables and lifecycle projections are expressed in constant 2026 euros. Calibrated to closely reproduce selected empirical moments and rank dependencies from the Federal Statistical Office (Destatis 16. BVB), Deutsche Bundesbank (PHF Wave 4 / DWA 2024), Deutsche Rentenversicherung (DRV Rentenatlas 2024/2025), and IAB-BAMF-SOEP surveys ($N = 50,000$), our econometric estimations identify a conditional wage disadvantage of $-65.5\%$ ($p < 0.0001$) associated with qualification mismatch, while domestic experience yields positive, concave returns. Under the baseline simulation scenario, projected statutory median pensions at age 67 range from \texteuro2,126/mo for German natives to \texteuro1,565/mo for general economic migrants, \texteuro1,283/mo for 2015/16 refugees, and \texteuro804/mo for 2022+ Ukrainian war refugees. Under baseline permanent settlement assumptions, 52.1\% (scenario sensitivity range: 44.6\%--58.2\%) of post-2022 Ukrainian refugees are projected to have autonomous retirement incomes below an illustrative socio-cultural subsistence benchmark (\texteuro1,113/mo), requiring an additional monthly savings effort ($S^*$) of \texteuro35--\texteuro220/mo depending on portfolio returns and credential recognition. We provide an exact 2026 component reconciliation for the standard pensioner (\textit{Standardrentner}), future pension indexation equations under \S~68 SGB VI incorporating the statutory 48\% pension-level floor protection through 2031, and sensitivity analyses across credential recognition, return-migration, and asset returns.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -43,7 +43,7 @@ The statutory pension system of the Federal Republic of Germany (\textit{Gesetzl
 
 Concurrently, Germany has experienced successive waves of international migration, including first-generation economic guest workers, the 2015/2016 humanitarian influx, and the arrival of over 1.1 million Ukrainian war refugees under \S~24 of the Residence Act (\textit{AufenthG}) as of mid-2024 \cite{iab2025refugees, kosyakova2024simulation}. While immigration expands the active workforce, immigrant workers accumulate statutory pension rights and private wealth along disparate lifecycle trajectories due to delayed entry, qualification deskilling, language barriers, and international remittance commitments \cite{dustmann2016temporary, fratzscher2021wealth}.
 
-All monetary variables and lifecycle projections throughout this paper are expressed in \textbf{constant 2026 euros}, deflated using the German Consumer Price Index (CPI) and long-term macro expectations. This paper develops an integrated, calibrated dynamic microsimulation and econometric framework modeling the intertemporal interaction between wage formation, wealth accumulation, statutory pensions, and means-tested social assistance across five population cohorts:
+All monetary variables and lifecycle projections throughout this paper are expressed in \textbf{constant 2026 euros}, deflated using the German Consumer Price Index (CPI) and long-term macro expectations. This paper develops a dynamic microsimulation incorporating statutory pension rules and explicitly stated approximations to evaluate the intertemporal interaction between wage formation, wealth accumulation, statutory pensions, and means-tested social assistance across five population cohorts:
 \begin{enumerate}
     \item \textbf{German Native Reference Population}
     \item \textbf{General 1st-Generation Migrants} (EU \& 3rd-Country)
@@ -62,16 +62,25 @@ The primary pillar of the German retirement system operates as a pay-as-you-go (
 \end{equation}
 where annual Earnings Points $\text{EP}_t$ are determined in accordance with \S~70 \textit{SGB VI}:
 \begin{equation}
-    \text{EP}_t = \min\left( \frac{\text{BBG}_t}{\text{DE}_t}, \frac{\min(w_t, \text{BBG}_t)}{\text{DE}_t} \right)
+    \text{EP}_t = \frac{\min(w_t, \text{BBG}_t)}{\text{DE}_t}
 \end{equation}
-relative to the preliminary 2026 average reference wage ($\text{DE}_{2026} = \text{\texteuro}51,944$) and the 2026 statutory contribution ceiling ($\text{BBG}_{2026} = \text{\texteuro}101,400$/year, or \texteuro8,450/month), yielding a statutory annual ceiling of $\text{EP}_{\text{max}, 2026} \approx 1.9521$. $\text{AR}_{2026} = \text{\texteuro}42.52$ is the official statutory Current Pension Value (applicable post-July 2026), $\text{RAF} = 1.0$ is the pension type factor for old-age retirement, and $\text{ZF}$ is the access factor reflecting deductions of $0.3\%$ per month for early retirement or bonuses of $0.5\%$ per month for delayed claiming past age 67 \cite{drv2025rentenatlas}. Childcare credits ($\text{EP}_{\text{child}}$, \S~56 SGB VI) grant up to 3.0 EP per child born after 1991. Basic pension effects ($\text{EP}_{\text{basic}}$) are modeled using a stylized representation of \S~76g \textit{SGB VI}, granting targeted point uplifts for workers with at least 33 qualifying contribution years whose average EP falls between 0.3 and 0.8.
+relative to the preliminary 2026 average reference wage ($\text{DE}_{2026} = \text{\texteuro}51,944$) and the 2026 statutory contribution ceiling ($\text{BBG}_{2026} = \text{\texteuro}101,400$/year, or \texteuro8,450/month), yielding a statutory annual ceiling of $\text{EP}_{\text{max}, 2026} \approx 1.9521$. $\text{AR}_{2026} = \text{\texteuro}42.52$ is the official statutory Current Pension Value (applicable post-July 2026), $\text{RAF} = 1.0$ is the pension type factor for old-age retirement, and $\text{ZF}$ is the access factor reflecting deductions of $0.3\%$ per month for early retirement or bonuses of $0.5\%$ per month for delayed claiming past age 67 \cite{drv2025rentenatlas}. Childcare credits ($\text{EP}_{\text{child}}$, \S~56 SGB VI) grant up to 3.0 EP per child born after 1991. Basic pension effects ($\text{EP}_{\text{basic}}$) are represented using a stylized \S~76g \textit{SGB VI} eligibility and benefit approximation based on qualifying years ($33+$ years) and average pension-point accrual between 0.3 and 0.8 EP/yr; the full administrative \S~76g calculation is not implemented.
 
-\subsection{Future Pension Value Projection to 2070 (\S~68 SGB VI)}
-To project the evolution of the Current Pension Value ($\text{AR}_t$) through 2070 under demographic aging, we implement the statutory indexation structure codified in \S~68 \textit{SGB VI}, incorporating statutory floor protections through 2031:
+\subsection{Future Pension Value Projection & Statutory 48\% Protection}
+To project the evolution of the Current Pension Value ($\text{AR}_t$) through 2070 under demographic aging, we implement the statutory indexation mechanism under \S~68 \textit{SGB VI} combined with the applicable statutory minimum replacement level protection (\textit{Mindestsicherungsniveau vor Steuern} of 48.0\% under \S~255e \textit{SGB VI}):
 \begin{equation}
-    \text{AR}_{t+1} = \text{AR}_t \times \frac{\bar{w}_{t-1}}{\bar{w}_{t-2}} \times \max\left( \text{Haltelinie}_{48\%}, \left[ 1 - \alpha \left( \frac{\text{SDR}_{t-1}}{\text{SDR}_{t-2}} - 1 \right) \right] \times \frac{1 - \tau_{t-1}}{1 - \tau_{t-2}} \right)
+    \text{AR}_{68, t+1} = \text{AR}_t \times \frac{\bar{w}_{t-1}}{\bar{w}_{t-2}} \times \left( 1 - \alpha \left[ \frac{\text{SDR}_{t-1}}{\text{SDR}_{t-2}} - 1 \right] \right) \times \frac{1 - \tau_{t-1}}{1 - \tau_{t-2}}
 \end{equation}
-where $\bar{w}$ denotes gross wage growth, $\tau$ is the statutory contribution rate, $\text{SDR}_t$ is the system dependency ratio (retirees per contributor) directly coupled to the Destatis 16. BVB projection variants, and $\alpha = 0.25$ is the statutory weighting factor of the Sustainability Factor (\textit{Nachhaltigkeitsfaktor}). Through 2031, indexation respects the legislated minimum gross replacement level (\textit{Haltelinie} of 48\% under the statutory framework), transitioning to unconstrained demographic adjustment thereafter.
+\begin{equation}
+    \text{AR}_{\text{floor}, t+1} = \frac{0.480 \times \bar{w}_{t+1}}{45 \times 12}
+\end{equation}
+\begin{equation}
+    \text{AR}_{t+1} = \begin{cases} 
+        \max\left( \text{AR}_{68, t+1}, \text{AR}_{\text{floor}, t+1} \right) & \text{for } t \le 2031 \\
+        \text{AR}_{68, t+1} & \text{for } t > 2031
+    \end{cases}
+\end{equation}
+where $\bar{w}$ denotes gross wage growth, $\tau$ is the statutory contribution rate, $\text{SDR}_t$ is the system dependency ratio (retirees per contributor) directly coupled to the Destatis 16. BVB projection variants, and $\alpha = 0.25$ is the statutory weighting factor of the Sustainability Factor (\textit{Nachhaltigkeitsfaktor}). Through 2031, indexation respects the legislated 48\% gross replacement level floor, transitioning to unconstrained demographic adjustment thereafter.
 
 \subsection{Mandatory Deductions \& Standardrentner Reconciliation}
 Retirees pay statutory contributions to Health Insurance for Pensioners (\textit{KVdR}) and Long-Term Care Insurance (\textit{PV}). In 2026, the baseline KVdR deduction consists of the 7.30\% statutory base rate plus one-half of the official average \textit{Zusatzbeitrag} (2.90\% / 2 = 1.45\%), totaling **8.75\%**. Long-term care insurance is set at **3.60\%** for pensioners with children and **4.20\%** for childless pensioners. Table~\ref{tab:standardrentner} provides the authoritative component reconciliation for the statutory standard pensioner (\textit{Standardrentner / Eckrente}, 45 EP at age 67).
@@ -113,13 +122,13 @@ where \texteuro563 represents the statutory Level 1 standard rate and \texteuro5
 \section{Data Architecture, Copula Calibration \& Sample Flow}
 
 \subsection{Parameter Provenance & Sample Flow}
-To ensure computational reproducibility without violating federal data privacy laws (\S~16 \textit{BStatG}, \S~75 \textit{SGB X}), we generate a moment-preserving synthetic microdata sandbox ($N = 50,000$). Fig.~\ref{fig:sample_flow} details the sample selection architecture.
+To ensure computational reproducibility without violating federal data privacy laws (\S~16 \textit{BStatG}, \S~75 \textit{SGB X}), we generate a synthetic microdata sandbox ($N = 50,000$) calibrated to empirical distributions. Fig.~\ref{fig:sample_flow} details the sample selection architecture.
 
 \begin{figure}[htbp]
 \centering
 \fbox{\parbox{0.9\columnwidth}{
 \textbf{Synthetic Microdata Population ($N = 50,000$)}\\
-$\bullet$ Preserves empirical moments from Destatis, Bundesbank, DRV, IAB\\
+$\bullet$ Calibrated to empirical moments from Destatis, Bundesbank, DRV, IAB\\
 \hspace*{0.5cm}$\downarrow$ \textit{Exclude youth ($<25$) and existing retirees ($>64$)}\\
 \textbf{Working-Age Lifecycle Simulation Sample ($N = 40,500$)}\\
 $\bullet$ Dynamic wealth accumulation, pension accrual, and $S^*$ estimation\\
@@ -152,8 +161,8 @@ Portfolio Returns ($r_{\text{pre}}, r_{\text{post}}$) & Capital Markets / Litera
 \label{tab:provenance}
 \end{table}
 
-\subsection{Moment Preservation and Goodness-of-Fit}
-To preserve multivariate covariance structures, we fit a parametric Vine Copula $C(u_1, \dots, u_d)$ across marginal distributions. Table~\ref{tab:moment_validation} validates the fidelity of the synthetic sandbox against empirical institutional benchmarks.
+\subsection{Moment Calibration and Goodness-of-Fit}
+To preserve multivariate rank dependencies across income, wealth, education, and migration duration, we fit a continuous multivariate Vine Copula $C(u_1, \dots, u_d)$ composed of bivariate Gaussian, Clayton, and Gumbel pair-copula families across marginal distributions. Table~\ref{tab:moment_validation} validates the fidelity of the calibrated synthetic sandbox against empirical institutional benchmarks.
 
 \begin{table}[htbp]
 \caption{Empirical vs. Synthetic Moment Matching Validation}
@@ -360,15 +369,16 @@ Ukrainian Migrant & \texteuro1,458 & \texteuro1,529 & 76.7\% & 75.7\% \\
 This microsimulation framework relies on several explicit modeling boundaries:
 \begin{enumerate}
     \item \textbf{Causal Identification}: Mincerian wage and IHS wealth regressions reflect conditional statistical associations rather than quasi-experimental causal treatment effects.
+    \item \textbf{Deterministic Retirement Horizon}: The baseline savings calculation assumes a deterministic 20-year retirement horizon ($K=20$, ages 67--87) and does not model individual mortality hazards or morbidity-driven early exits.
     \item \textbf{Intra-Household Wealth Pooling}: The model operates primarily at the individual level; married couples often pool wealth and living expenses, buffering single-adult subsistence risks.
     \item \textbf{Derived Rights \& Survivor Pensions}: Derived entitlements such as statutory widow/widower pensions (\S~46 SGB VI) and pension rights adjustment upon divorce (\textit{Versorgungsausgleich}) are not explicitly simulated.
-    \item \textbf{Foreign Pension Portability}: Potential accrued pension claims in countries of origin (e.g., Ukraine) are omitted due to data limitations and uncertain bilateral portability agreements.
-    \item \textbf{Stationary Institutional Rules}: Statutory pension parameters follow official demographic indexation formulas but do not anticipate future discretionary major legislative structural reforms.
+    \item \textbf{Foreign Pension Portability}: Reported retirement income represents German retirement entitlements and excludes potentially portable foreign pension rights accrued prior to migration due to data limitations.
+    \item \textbf{Future Legislative Uncertainty}: The model applies currently legislated institutional rules and statutory indexation mechanisms but does not anticipate future discretionary major legislative structural reforms.
 \end{enumerate}
 
 \section{Policy Recommendations}
 \begin{enumerate}
-    \item \textbf{Fast-Track Credential Recognition}: Accelerated qualification homologation under the \textit{Berufsqualifikationsfeststellungsgesetz} could substantially reduce the wage disadvantage associated with qualification mismatch, potentially enabling up to 78\% of vulnerable refugee workers to reach autonomous retirement adequacy above \texteuro1,113 under counterfactual full-recognition scenarios.
+    \item \textbf{Fast-Track Credential Recognition}: Accelerated qualification homologation under the \textit{Berufsqualifikationsfeststellungsgesetz} could substantially reduce the wage disadvantage associated with qualification mismatch. Under the modeled full-recognition counterfactual scenario, 78.4\% of vulnerable refugee workers who would otherwise experience qualification mismatch achieve autonomous retirement adequacy above \texteuro1,113/month.
     \item \textbf{Capital-Funded Pension Wrappers (\textit{Altersvorsorgedepot})}: A potential policy reform could introduce individual tax-sheltered investment accounts to enable late-entry migrants to close the $S^*$ savings gap through equity market compounding.
     \item \textbf{Adjustment of SGB XII Disregard Rules (\S~82a)}: Adjusting the statutory income disregard could strengthen the financial incentive to accumulate contributory pension rights, particularly for low-income workers with qualifying insurance histories.
 \end{enumerate}
