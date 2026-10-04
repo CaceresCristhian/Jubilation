@@ -14,8 +14,8 @@ E-Mail: researchdata-service@bundesbank.de | Web: https://www.bundesbank.de/rdsc
 * **Status:** Master's Student (M.Sc. Data Science)
 * **Academic Institution:** University of Europe for Applied Sciences (UE Germany)
 * **Campus Address:** Dessauer Str. 3–5, 10963 Berlin, Germany
-* **Academic Supervisor / Co-Signatory:** Dr. Humera Noor, Faculty of Tech and Software
-* **Supervisor E-Mail:** humera.noor@ue-germany.de
+* **Academic Supervisor / Co-Signatory:** Prof. Dr. Talha Ali Khan, Faculty of Tech and Software / Data Science
+* **Supervisor E-Mail:** talhaali.khan@ue-germany.de
 * **Project Type:** Master's Thesis / Scientific Academic Research
 * **Requested Access Mode:**  
   *Primary:* **Scientific Use File (SUF)** / Off-site Research Data  
@@ -112,5 +112,5 @@ ____________________________________________________
 
 \
 ____________________________________________________  
-**Dr. Humera Noor**  
+**Prof. Dr. Talha Ali Khan**  
 (Academic Supervisor, Faculty of Tech and Software, University of Europe for Applied Sciences)

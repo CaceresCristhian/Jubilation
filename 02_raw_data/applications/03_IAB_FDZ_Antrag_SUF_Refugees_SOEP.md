@@ -14,8 +14,8 @@ E-Mail: iab.fdz@iab.de | Web: https://fdz.iab.de
 * **Status:** Masterand (M.Sc. Data Science)
 * **Hochschule / Forschungseinrichtung:** University of Europe for Applied Sciences (UE Germany)
 * **Campus-Adresse:** Dessauer Str. 3–5, 10963 Berlin
-* **Betreuende Hochschullehrerin:** Dr. Humera Noor (Faculty of Tech and Software)
-* **E-Mail des Betreuers:** humera.noor@ue-germany.de
+* **Betreuender Hochschullehrer:** Prof. Dr. Talha Ali Khan (Faculty of Tech and Software / Data Science)
+* **E-Mail des Betreuers:** talhaali.khan@ue-germany.de
 * **Art des wissenschaftlichen Projekts:** Masterarbeit im Studiengang M.Sc. Data Science
 * **Beantragte Datenform:** **Scientific Use File (SUF)** zur dezentralen wissenschaftlichen Auswertung an der Hochschule.
 
@@ -105,5 +105,5 @@ ____________________________________________________
 
 \
 ____________________________________________________  
-**Dr. Humera Noor**  
-(Wissenschaftliche Betreuerin, University of Europe for Applied Sciences)
+**Prof. Dr. Talha Ali Khan**  
+(Wissenschaftlicher Betreuer, University of Europe for Applied Sciences)

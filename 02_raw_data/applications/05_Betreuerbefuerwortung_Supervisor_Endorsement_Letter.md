@@ -14,11 +14,11 @@
 * **Hochschule / University:** University of Europe for Applied Sciences (UE Germany)
 * **Campus:** Dessauer Str. 3–5, 10963 Berlin, Germany
 * **Fachbereich / Faculty:** Faculty of Tech and Software / Department of Data Science
-* **Betreuende Dozentin / Academic Supervisor:**  
-  **Dr. Humera Noor**  
-  Faculty of Tech and Software  
+* **Betreuender Dozent / Academic Supervisor:**  
+  **Prof. Dr. Talha Ali Khan**  
+  Faculty of Tech and Software / Department of Data Science  
   University of Europe for Applied Sciences  
-  E-Mail: humera.noor@ue-germany.de  
+  E-Mail: talhaali.khan@ue-germany.de  
 
 ---
 
@@ -56,7 +56,7 @@ Ich befürworte den Antrag auf Bereitstellung der beantragten **Scientific Use F
 
 ### 5. Verpflichtung zu Datenschutz und Datensicherheit / Compliance Commitment
 
-Die University of Europe for Applied Sciences und ich als betreuende Dozentin tragen Sorge dafür, dass:
+Die University of Europe for Applied Sciences und ich als betreuender Dozent tragen Sorge dafür, dass:
 1. Die bereitgestellten Mikrodaten ausschließlich für den Zweck der oben genannten Masterarbeit verwendet werden.
 2. Sämtliche datenschutzrechtlichen Vorgaben der Datenschutz-Grundverordnung (DSGVO), des Bundesdatenschutzgesetzes (BDSG) sowie des § 16 Bundesstatistikgesetzes (BStatG) / Sozialgesetzbuches (SGB X) strikt eingehalten werden.
 3. Die Datenverarbeitung auf gesicherten, passwortgeschützten und verschlüsselten IT-Systemen erfolgt.
@@ -65,16 +65,16 @@ Die University of Europe for Applied Sciences und ich als betreuende Dozentin tr
 
 ---
 
-### 6. Unterschrift der Betreuerin / Signature of Supervisor
+### 6. Unterschrift des Betreuers / Signature of Supervisor
 
 **Berlin, den** ________________________
 
 \
 \
 ____________________________________________________  
-**Dr. Humera Noor**  
+**Prof. Dr. Talha Ali Khan**  
 Faculty of Tech and Software  
 University of Europe for Applied Sciences (UE Germany)  
 Dessauer Str. 3–5, 10963 Berlin  
-E-Mail: humera.noor@ue-germany.de  
+E-Mail: talhaali.khan@ue-germany.de  
 *(Dienststempel / Institutional Stamp)*

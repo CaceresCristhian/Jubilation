@@ -15,8 +15,8 @@ E-Mail: fdz@drv-bund.de | Web: https://www.fdz-rv.de
 * **Wissenschaftliche Einrichtung:** University of Europe for Applied Sciences (UE Germany)
 * **Campus:** Dessauer Str. 3–5, 10963 Berlin, Deutschland
 * **Fachbereich:** Fachbereich Tech & Software / Data Science
-* **Wissenschaftliche Betreuung:** Dr. Humera Noor (Faculty of Tech and Software)
-* **E-Mail des Betreuers:** humera.noor@ue-germany.de
+* **Wissenschaftliche Betreuung:** Prof. Dr. Talha Ali Khan (Faculty of Tech and Software / Data Science)
+* **E-Mail des Betreuers:** talhaali.khan@ue-germany.de
 * **Zweck der Datennutzung:** Masterarbeit / Wissenschaftliches Forschungsprojekt im Rahmen des Masterstudiengangs M.Sc. Data Science.
 
 ---
@@ -105,5 +105,5 @@ ____________________________________________________
 
 \
 ____________________________________________________  
-**Dr. Humera Noor**  
-(Wissenschaftliche Betreuerin, University of Europe for Applied Sciences)
+**Prof. Dr. Talha Ali Khan**  
+(Wissenschaftlicher Betreuer, University of Europe for Applied Sciences)

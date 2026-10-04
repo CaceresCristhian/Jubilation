@@ -11,7 +11,8 @@ This directory contains the complete, ready-to-submit official application dossi
 * **Degree Program:** Master of Science in Data Science (M.Sc. Data Science)
 * **Academic Institution:** University of Europe for Applied Sciences (UE Germany)
 * **Campus:** Berlin, Germany
-* **Academic Supervisor:** Dr. Humera Noor, Faculty of Tech and Software / Data Science
+* **Academic Supervisor:** Prof. Dr. Talha Ali Khan, Faculty of Tech and Software / Data Science
+* **Supervisor E-Mail:** talhaali.khan@ue-germany.de
 * **Research Project Title:**  
   *English:* Wealth, Migration & Retirement Sustainability in Germany: Dynamic Microsimulation and Econometric Policy Analysis (2025–2070)  
   *German:* Vermögen, Migration und Alterssicherung in Deutschland: Dynamische Mikrosimulation und ökonometrische Politikanalyse (2025–2070)
@@ -45,7 +46,7 @@ This directory contains the complete, ready-to-submit official application dossi
 1. **Portal:** Register on the Bundesbank Research Data and Service Centre portal: [https://www.bundesbank.de/en/service/research-data-and-service-centre](https://www.bundesbank.de/en/service/research-data-and-service-centre).
 2. **Documents to submit:**
    - Completed project description based on [`02_Bundesbank_RDSC_Application_PHF.md`](./02_Bundesbank_RDSC_Application_PHF.md).
-   - Co-signature / endorsement from Dr. Humera Noor.
+   - Co-signature / endorsement from Prof. Dr. Talha Ali Khan.
 3. **Contact Email:** `researchdata-service@bundesbank.de`
 4. **Typical Processing Time:** 3 to 5 weeks.
 
