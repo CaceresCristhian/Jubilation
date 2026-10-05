@@ -13,10 +13,10 @@
 
 * **Hochschule / University:** University of Europe for Applied Sciences (UE Germany)
 * **Campus:** Dessauer Str. 3–5, 10963 Berlin, Germany
-* **Fachbereich / Faculty:** Faculty of Tech and Software / Department of Data Science
+* **Fachbereich / Faculty:** Department of Business
 * **Betreuender Dozent / Academic Supervisor:**  
   **Prof. Dr. Talha Ali Khan**  
-  Faculty of Tech and Software / Department of Data Science  
+  Department of Business  
   University of Europe for Applied Sciences  
   E-Mail: talhaali.khan@ue-germany.de  
 
@@ -73,7 +73,7 @@ Die University of Europe for Applied Sciences und ich als betreuender Dozent tra
 \
 ____________________________________________________  
 **Prof. Dr. Talha Ali Khan**  
-Faculty of Tech and Software  
+Department of Business  
 University of Europe for Applied Sciences (UE Germany)  
 Dessauer Str. 3–5, 10963 Berlin  
 E-Mail: talhaali.khan@ue-germany.de  

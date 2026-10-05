@@ -14,7 +14,7 @@ E-Mail: forschungsdatenzentrum@destatis.de | Web: https://www.forschungsdatenzen
 * **Status:** Masterstudent (M.Sc. Data Science)
 * **Wissenschaftliche Institution:** University of Europe for Applied Sciences (UE Germany)
 * **Campus:** Dessauer Str. 3–5, 10963 Berlin
-* **Betreuender Dozent / Erstprüfer:** Prof. Dr. Talha Ali Khan (Faculty of Tech and Software / Data Science)
+* **Betreuender Dozent / Erstprüfer:** Prof. Dr. Talha Ali Khan (Department of Business)
 * **E-Mail des Betreuers:** talhaali.khan@ue-germany.de
 * **Zweck der Nutzung:** Wissenschaftliche Masterarbeit im Rahmen des Masterstudiengangs M.Sc. Data Science.
 

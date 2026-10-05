@@ -11,7 +11,7 @@ This directory contains the complete, ready-to-submit official application dossi
 * **Degree Program:** Master of Science in Data Science (M.Sc. Data Science)
 * **Academic Institution:** University of Europe for Applied Sciences (UE Germany)
 * **Campus:** Berlin, Germany
-* **Academic Supervisor:** Prof. Dr. Talha Ali Khan, Faculty of Tech and Software / Data Science
+* **Academic Supervisor:** Prof. Dr. Talha Ali Khan, Department of Business
 * **Supervisor E-Mail:** talhaali.khan@ue-germany.de
 * **Research Project Title:**  
   *English:* Wealth, Migration & Retirement Sustainability in Germany: Dynamic Microsimulation and Econometric Policy Analysis (2025–2070)  
@@ -21,13 +21,13 @@ This directory contains the complete, ready-to-submit official application dossi
 
 ## 2. Overview of Application Documents in this Directory
 
-| File | Target Institution | Target Dataset | Primary Access Mode |
+| Document / Dossier | Target Institution | Target Dataset | Primary Access Mode |
 |:---|:---|:---|:---|
-| [`01_FDZ_RV_Antrag_Datennutzung_VSKT.md`](./01_FDZ_RV_Antrag_Datennutzung_VSKT.md) | **Forschungsdatenzentrum der Rentenversicherung (FDZ-RV)** | **VSKT (Versichertenkontenstichprobe)** | Scientific Use File (SUF) / Remote Data Execution (JoSuA) |
-| [`02_Bundesbank_RDSC_Application_PHF.md`](./02_Bundesbank_RDSC_Application_PHF.md) | **Deutsche Bundesbank (RDSC)** | **PHF (Panel on Household Finances)** | Scientific Use File / Remote Execution |
-| [`03_IAB_FDZ_Antrag_SUF_Refugees_SOEP.md`](./03_IAB_FDZ_Antrag_SUF_Refugees_SOEP.md) | **FDZ des IAB (Institut für Arbeitsmarkt- und Berufsforschung)** | **IAB-BAMF-SOEP Befragung von Geflüchteten** | Scientific Use File (SUF) |
-| [`04_Destatis_FDZ_Antrag_Mikrozensus_EVS.md`](./04_Destatis_FDZ_Antrag_Mikrozensus_EVS.md) | **Forschungsdatenzentren der Statistischen Ämter des Bundes und der Länder** | **Mikrozensus / EVS Scientific Use Files** | Scientific Use File (SUF) |
-| [`05_Betreuerbefuerwortung_Supervisor_Endorsement_Letter.md`](./05_Betreuerbefuerwortung_Supervisor_Endorsement_Letter.md) | **All Institutions (Standard Co-sign/Endorsement)** | Master's Thesis Project Endorsement | Institutional Endorsement Letter |
+| [Dossier 01: Rentenversicherung (VSKT)](./01_FDZ_RV_Antrag_Datennutzung_VSKT.md) | **Forschungsdatenzentrum der Rentenversicherung (FDZ-RV)** | **VSKT (Versichertenkonten-Stichprobe)** | Scientific Use File (SUF) / Remote Data Execution (JoSuA) |
+| [Dossier 02: Bundesbank (PHF Vermögen)](./02_Bundesbank_RDSC_Application_PHF.md) | **Deutsche Bundesbank (RDSC)** | **PHF (Panel on Household Finances)** | Scientific Use File (SUF) / Remote Data Execution |
+| [Dossier 03: IAB Arbeitsmarkt (Geflüchtete)](./03_IAB_FDZ_Antrag_SUF_Refugees_SOEP.md) | **FDZ des IAB (Institut für Arbeitsmarkt- & Berufsforschung)** | **IAB-BAMF-SOEP Befragung von Geflüchteten** | Scientific Use File (SUF) |
+| [Dossier 04: Statistische Ämter (Mikrozensus)](./04_Destatis_FDZ_Antrag_Mikrozensus_EVS.md) | **Forschungsdatenzentren der Statistischen Ämter** | **Mikrozensus & EVS Scientific Use Files** | Scientific Use File (SUF) |
+| [Dossier 05: Betreuer-Befürwortung (Prof. Talha)](./05_Betreuerbefuerwortung_Supervisor_Endorsement_Letter.md) | **Alle Forschungsdatenzentren (FDZ)** | Master's Thesis Project Endorsement | Institutional Endorsement Letter |
 
 ---
 

@@ -14,8 +14,8 @@ E-Mail: fdz@drv-bund.de | Web: https://www.fdz-rv.de
 * **Status:** Masterstudent (M.Sc. Data Science)
 * **Wissenschaftliche Einrichtung:** University of Europe for Applied Sciences (UE Germany)
 * **Campus:** Dessauer Str. 3–5, 10963 Berlin, Deutschland
-* **Fachbereich:** Fachbereich Tech & Software / Data Science
-* **Wissenschaftliche Betreuung:** Prof. Dr. Talha Ali Khan (Faculty of Tech and Software / Data Science)
+* **Fachbereich:** Fachbereich Wirtschaft / Department of Business
+* **Wissenschaftliche Betreuung:** Prof. Dr. Talha Ali Khan (Department of Business)
 * **E-Mail des Betreuers:** talhaali.khan@ue-germany.de
 * **Zweck der Datennutzung:** Masterarbeit / Wissenschaftliches Forschungsprojekt im Rahmen des Masterstudiengangs M.Sc. Data Science.
 

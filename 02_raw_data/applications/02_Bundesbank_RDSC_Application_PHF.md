@@ -14,7 +14,7 @@ E-Mail: researchdata-service@bundesbank.de | Web: https://www.bundesbank.de/rdsc
 * **Status:** Master's Student (M.Sc. Data Science)
 * **Academic Institution:** University of Europe for Applied Sciences (UE Germany)
 * **Campus Address:** Dessauer Str. 3–5, 10963 Berlin, Germany
-* **Academic Supervisor / Co-Signatory:** Prof. Dr. Talha Ali Khan, Faculty of Tech and Software / Data Science
+* **Academic Supervisor / Co-Signatory:** Prof. Dr. Talha Ali Khan, Department of Business
 * **Supervisor E-Mail:** talhaali.khan@ue-germany.de
 * **Project Type:** Master's Thesis / Scientific Academic Research
 * **Requested Access Mode:**  
@@ -113,4 +113,4 @@ ____________________________________________________
 \
 ____________________________________________________  
 **Prof. Dr. Talha Ali Khan**  
-(Academic Supervisor, Faculty of Tech and Software, University of Europe for Applied Sciences)
+(Academic Supervisor, Department of Business, University of Europe for Applied Sciences)

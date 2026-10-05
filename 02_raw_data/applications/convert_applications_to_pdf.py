@@ -1,11 +1,13 @@
 """
 Convert all Markdown application documents in 02_raw_data/applications/
 into publication-grade, professional PDF documents using xhtml2pdf and markdown.
+Includes robust table formatting with explicit column widths to prevent overlapping text.
 """
 
 import os
 import re
 import markdown
+from bs4 import BeautifulSoup
 from xhtml2pdf import pisa
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -19,7 +21,7 @@ CSS_STYLE = """
     margin-right: 2.0cm;
     
     @top-left {
-        content: "University of Europe for Applied Sciences | M.Sc. Data Science";
+        content: "University of Europe for Applied Sciences | Department of Business";
         font-family: Helvetica, Arial, sans-serif;
         font-size: 7.5pt;
         color: #64748b;
@@ -60,7 +62,7 @@ body {
 }
 
 h1 {
-    font-size: 16pt;
+    font-size: 15.5pt;
     font-weight: bold;
     color: #0f2e5a;
     margin-top: 0;
@@ -69,7 +71,7 @@ h1 {
 }
 
 h2 {
-    font-size: 12.5pt;
+    font-size: 12pt;
     font-weight: bold;
     color: #1e3a8a;
     margin-top: 10px;
@@ -125,15 +127,14 @@ blockquote {
 table {
     width: 100%;
     margin-top: 8px;
-    margin-bottom: 10px;
-    border: 0.5pt solid #cbd5e1;
+    margin-bottom: 12px;
 }
 
 th {
     background-color: #f1f5f9;
     color: #0f2e5a;
     font-weight: bold;
-    font-size: 8.5pt;
+    font-size: 8pt;
     padding: 5px 6px;
     border: 0.5pt solid #cbd5e1;
     text-align: left;
@@ -142,8 +143,9 @@ th {
 td {
     padding: 4.5px 6px;
     border: 0.5pt solid #e2e8f0;
-    font-size: 8.5pt;
+    font-size: 8pt;
     vertical-align: top;
+    line-height: 1.35;
 }
 
 hr {
@@ -155,7 +157,7 @@ hr {
 
 code {
     font-family: Courier, monospace;
-    font-size: 8.5pt;
+    font-size: 8pt;
     background-color: #f1f5f9;
     padding: 1px 3px;
     color: #0f2e5a;
@@ -163,16 +165,12 @@ code {
 
 pre {
     font-family: Courier, monospace;
-    font-size: 8pt;
+    font-size: 7.5pt;
     background-color: #f8fafc;
     border: 0.5pt solid #cbd5e1;
     padding: 6px;
     margin-top: 6px;
     margin-bottom: 6px;
-}
-
-.signature-block {
-    margin-top: 15px;
 }
 
 .avoid-break {
@@ -182,7 +180,6 @@ pre {
 
 def clean_latex_math(text: str) -> str:
     """Transform LaTeX math into clean, readable text/HTML for PDF rendering."""
-    # Common replacements
     replacements = [
         (r'\$\\text\{AR\}_\{2026\} = 42,52\\\$', '<b>AR<sub>2026</sub> = EUR 42.52</b>'),
         (r'\$\\text\{DE\}_\{2026\} = 51\.944\\\$', '<b>DE<sub>2026</sub> = EUR 51,944</b>'),
@@ -249,28 +246,59 @@ def clean_latex_math(text: str) -> str:
         
     return text
 
+def format_html_tables(html_content: str) -> str:
+    """Ensure explicit column widths and wrap cells to prevent text overlapping in xhtml2pdf."""
+    soup = BeautifulSoup(html_content, 'html.parser')
+    for table in soup.find_all('table'):
+        # Enforce table attributes
+        table['style'] = 'width: 100%; margin-top: 8px; margin-bottom: 12px;'
+        
+        # Check column count
+        rows = table.find_all('tr')
+        if not rows:
+            continue
+            
+        first_row_cells = rows[0].find_all(['th', 'td'])
+        num_cols = len(first_row_cells)
+        
+        if num_cols == 4:
+            widths = ['25%', '27%', '24%', '24%']
+        elif num_cols == 3:
+            widths = ['25%', '35%', '40%']
+        elif num_cols == 2:
+            widths = ['32%', '68%']
+        else:
+            widths = [f"{100 // num_cols}%"] * num_cols if num_cols > 0 else []
+            
+        # Assign explicit width attribute to all cells in each row
+        for row in rows:
+            cells = row.find_all(['th', 'td'])
+            for idx, cell in enumerate(cells):
+                if idx < len(widths):
+                    cell['width'] = widths[idx]
+                
+                # Replace inline code tags inside tables with regular styled spans to avoid wide Courier
+                for code_tag in cell.find_all('code'):
+                    code_tag.name = 'span'
+                    code_tag['style'] = 'font-family: Courier, monospace; font-size: 7.5pt; color: #0f2e5a;'
+
+    return str(soup)
+
 def convert_md_to_pdf(md_path: str, pdf_path: str):
     with open(md_path, 'r', encoding='utf-8') as f:
         md_text = f.read()
 
-    # Pre-process math
+    # Pre-process math and font characters
     processed_text = clean_latex_math(md_text)
     
     # Convert Markdown to HTML
-    html_body = markdown.markdown(
+    raw_html_body = markdown.markdown(
         processed_text,
         extensions=['tables', 'fenced_code', 'nl2br']
     )
     
-    # Wrap signature blocks in avoid-break divs
-    html_body = re.sub(
-        r'(<h3[^>]*>.*?Unterschrift.*?</h3>)',
-        r'<div class="avoid-break">\1',
-        html_body,
-        flags=re.IGNORECASE
-    )
-    if 'Unterschrift' in md_text or 'Signature' in md_text:
-        html_body += '</div>'
+    # Fix table widths and cell wrapping with BeautifulSoup
+    html_body = format_html_tables(raw_html_body)
 
     full_html = f"""<!DOCTYPE html>
 <html>
@@ -285,12 +313,21 @@ def convert_md_to_pdf(md_path: str, pdf_path: str):
 </body>
 </html>
 """
-    with open(pdf_path, 'wb') as f_out:
-        pisa_status = pisa.CreatePDF(full_html, dest=f_out)
-        if pisa_status.err:
-            print(f"Error converting {os.path.basename(md_path)}: {pisa_status.err}")
-        else:
-            print(f"Successfully generated: {os.path.basename(pdf_path)}")
+    try:
+        with open(pdf_path, 'wb') as f_out:
+            pisa_status = pisa.CreatePDF(full_html, dest=f_out)
+            if pisa_status.err:
+                print(f"Error converting {os.path.basename(md_path)}: {pisa_status.err}")
+            else:
+                print(f"Successfully generated: {os.path.basename(pdf_path)}")
+    except PermissionError:
+        alt_path = pdf_path.replace('.pdf', '_updated.pdf')
+        with open(alt_path, 'wb') as f_out:
+            pisa_status = pisa.CreatePDF(full_html, dest=f_out)
+            if pisa_status.err:
+                print(f"Error converting {os.path.basename(md_path)} to alt: {pisa_status.err}")
+            else:
+                print(f"File is currently open in your viewer: Generated updated version at {os.path.basename(alt_path)}")
 
 def main():
     files = [
