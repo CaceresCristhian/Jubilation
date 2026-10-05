@@ -23,8 +23,10 @@ E-Mail: forschungsdatenzentrum@destatis.de | Web: https://www.forschungsdatenzen
 ### 2. Beantragter Datensatz und Erhebungsjahre
 
 * **Datensatz:**  
-  1. **Mikrozensus – Scientific Use File (SUF)** (Erhebungsjahre 2019, 2020, 2021, 2022, 2023)  
-  2. *Ergänzend / Alternativ:* **Einkommens- und Verbrauchsstichprobe (EVS) – SUF** (Erhebungsjahre 2018 / 2023).
+  1. **Mikrozensus – Scientific Use File (SUF)** (Erhebungsjahre 2019, 2020, 2021, 2022 / 2023)  
+     *Zweck:* Repräsentative Bevölkerungsgewichtung, Erwerbsquoten, Bildungsstrukturen und Zuwanderungsmerkmale.  
+  2. *Ergänzend / Sekundär:* **Einkommens- und Verbrauchsstichprobe (EVS) – SUF** (Erhebungsjahre 2018 / 2023)  
+     *Zweck:* Analyse privater Konsum- und Wohnkostenbudgets zur Kalibrierung von Alterssicherungs-Bedarfen.
 * **Nutzungsform:** **Scientific Use File (SUF)** zur dezentralen Auswertung auf gesicherten Systemen der Hochschule.
 
 ---
@@ -39,16 +41,16 @@ E-Mail: forschungsdatenzentrum@destatis.de | Web: https://www.forschungsdatenzen
 #### Kurzbeschreibung des Vorhabens (Abstract):
 Die vorliegende Masterarbeit untersucht die sozioökonomischen Determinanten von Alterseinkommensrisiken bei zugewanderten Bevölkerungsgruppen in Deutschland. Während amtliche Aggregatstatistiken auf ein erhöhtes Armutsrisiko von Personen mit Migrationshintergrund hinweisen, bedarf es repräsentativer Individual- und Haushaltsmikrodaten, um die Heterogenität zwischen Arbeitsmigration, EU-Binnenmigration und humanitärer Zuwanderung (Geflüchtete) differenziert nach Bildungsstand, Erwerbsform (Vollzeit, Teilzeit, Minijobs) und Haushaltskontext abzubilden.
 
-Die Mikrodaten des Mikrozensus und der EVS sollen genutzt werden, um:
-1. Repräsentative soziometrische Profile (Alter, Geschlecht, Bildung nach ISCED, Haushaltsgröße, Wohneigentumsquote) für fünf distinkte Bevölkerungsgruppen zu erstellen.
+Die amtlichen Mikrodaten sollen genutzt werden, um:
+1. Repräsentative soziometrische Profile (Alter, Geschlecht, Bildung nach ISCED, Haushaltsgröße, Wohneigentumsquote) für Zuwanderer- und Inländerkohorten zu erstellen.
 2. Die Verteilung von Erwerbseinkommen und Haushaltsnettoeinkommen über Lebenszyklus-Alterskohorten hinweg ökonometrisch zu analysieren.
-3. Die empirische Grundlage für eine dynamische Mikrosimulationsplattform zu schaffen, die den Übergang in den Ruhestand und die Lücke zur Grundsicherung im Alter (SGB XII, 4. Kapitel) prognostiziert.
+3. Repräsentative Gewichtungs- und Kalibrierungsmomente für eine dynamische Mikrosimulationsplattform bereitzustellen, die den Übergang in den Ruhestand und die Interaktion mit dem Grundsicherungsniveau (SGB XII, 4. Kapitel) prognostiziert.
 
 ---
 
 ### 4. Detaillierte Begründung des Datenbedarfs
 
-Für die Kalibrierung des Simulationsmodells reichen publizierte Tabellenwerke der amtlichen Statistik nicht aus, da multivariate Kreuztabellierungen nach exakter Aufenthaltsdauer, Bildungsabschluss im Ausland, Erwerbsstatus und Renteneinkünften nicht in der erforderlichen Granularität frei verfügbar sind. Die Scientific Use Files des Mikrozensus ermöglichen die gleichzeitige statistische Kontrolle von:
+Für die Kalibrierung des Simulationsmodells reichen publizierte Tabellenwerke der amtlichen Statistik nicht aus, da multivariate Kreuztabellierungen nach Zuwanderungsjahr, Bildungsabschluss im Ausland, Erwerbsstatus und Haushaltskonstellation nicht in der erforderlichen Granularität frei verfügbar sind. Die Scientific Use Files des Mikrozensus ermöglichen die gleichzeitige statistische Kontrolle von:
 * Differenzierter Zuwanderungsbiografie (Zuzugsjahr, eigene Zuwanderungserfahrung vs. 2. Generation).
 * Erwerbsumfang (Stundenumfang, befristete Verträge, atypische Beschäftigung).
 * Haushaltsstruktur und Einkommenspooling im Paar- und Familienkontext.
@@ -59,12 +61,12 @@ Für die Kalibrierung des Simulationsmodells reichen publizierte Tabellenwerke d
 
 | Merkmalskategorie | Spezifische Merkmale im Mikrozensus | Relevanz für das Forschungsvorhaben |
 |:---|:---|:---|
-| **Migrationsmerkmale** | Migrationsstatus im engeren und weiteren Sinn, Zuzugsjahr, Aufenthaltsdauer, Geburtsland, Staatsangehörigkeit | Trennung der 5 Untersuchungsgruppen (Deutsche, Migranten 1. Gen, Geflüchtete 2015/16, Ukrainer). |
-| **Bildung & Ausbildung** | Höchster beruflicher und schulischer Abschluss (ISCED-1997 / ISCED-2011), im Ausland erworbener Abschluss | Abbildung des Qualifikationsniveaus und Messung von Bildungsabschlägen. |
-| **Erwerbsleben** | Erwerbsstatus, sozioökonomischer Status, geleistete Arbeitsstunden, Vollzeit/Teilzeit/Geringfügigkeit | Modellierung von Beitragszeiten und Rentenanwartschaften (§§ 35, 56 SGB VI). |
-| **Einkommensklassen** | Individuelles Nettoeinkommen, Haushaltsnettoeinkommen (Klassen und metrische Angaben) | Ermittlung der relativen Einkommensarmutsgrenze (60% Median) und Sparfähigkeit. |
-| **Wohnen & Ausgaben** | Eigentümer vs. Mieter, Wohnfläche, Mietbelastung, Bruttokaltmiete | Schätzung der existenzsichernden Wohnkosten (KdU im Rahmen des SGB XII). |
-| **Alterseinkünfte** | Gesetzliche Rente, Betriebsrente, private Vorsorge (bei Rentnern) | Validierung der simulierten Rentenauszahlungsprofile. |
+| **Migrationsmerkmale** | Migrationsstatus, Zuzugsjahr, Aufenthaltsdauer, Geburtsland, Staatsangehörigkeit | Unterscheidung von Zuwanderungskohorten und inländischer Referenzbevölkerung. |
+| **Bildung & Ausbildung** | Höchster beruflicher und schulischer Abschluss (ISCED), im Ausland erworbener Abschluss | Abbildung des Qualifikationsniveaus und Schätzung von Bildungsabschlägen. |
+| **Erwerbsleben** | Erwerbsstatus, Stellung im Beruf, geleistete Arbeitsstunden, Vollzeit/Teilzeit | Modellierung von Erwerbsbeteiligungs- und Beitragsquoten im Lebenszyklus. |
+| **Einkommensklassen** | Individuelles Nettoeinkommen, Haushaltsnettoeinkommen (Klassen und metrisch) | Ermittlung relativer Einkommensarmutsgrenzen (60% Median) und Sparpotenziale. |
+| **Wohnen & Ausgaben** | Eigentümer vs. Mieter, Wohnfläche, Mietbelastung, Bruttokaltmiete | Empirischer Kontext für Wohnkostenbelastungen (zur Parametrisierung von KdU-Szenarien). |
+| **Alterseinkünfte** | Gesetzliche Rente, Betriebsrente, private Vorsorge (bei Rentnern) | Externe Validierung und Kalibrierungsabgleich für simulierte Alterseinkünfte. |
 
 ---
 

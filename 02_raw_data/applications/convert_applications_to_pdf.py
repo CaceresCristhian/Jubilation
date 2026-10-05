@@ -261,7 +261,11 @@ def format_html_tables(html_content: str) -> str:
         first_row_cells = rows[0].find_all(['th', 'td'])
         num_cols = len(first_row_cells)
         
-        if num_cols == 4:
+        if num_cols == 7:
+            widths = ['12%', '24%', '14%', '14%', '8%', '10%', '18%']
+        elif num_cols == 5:
+            widths = ['18%', '20%', '21%', '21%', '20%']
+        elif num_cols == 4:
             widths = ['25%', '27%', '24%', '24%']
         elif num_cols == 3:
             widths = ['25%', '35%', '40%']
@@ -331,6 +335,7 @@ def convert_md_to_pdf(md_path: str, pdf_path: str):
 
 def main():
     files = [
+        "DATA_REQUEST_SPECIFICATION.md",
         "00_DATA_REQUEST_MASTER_GUIDE.md",
         "01_FDZ_RV_Antrag_Datennutzung_VSKT.md",
         "02_Bundesbank_RDSC_Application_PHF.md",

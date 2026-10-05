@@ -50,7 +50,7 @@ Das Forschungsvorhaben von Herrn Cáceres Mateus befasst sich mit einer hochrele
 
 Für die adäquate empirische Fundierung, ökonometrische Parameterschätzung und versicherungsmathematische Validierung der entwickelten Mikrosimulationsplattform ist der Rückgriff auf Individual- und Haushaltsmikrodaten der amtlichen Forschungsdatenzentren zwingend erforderlich. Aggregierte Tabellenwerke erlauben keine hinreichende multivariate Kontrolle von Zuwanderungszeitpunkt, Bildungsabschlägen (Deskilling), Beitragsverläufen in der Gesetzlichen Rentenversicherung (GRV) und privater Portfoliobildung.
 
-Ich befürworte den Antrag auf Bereitstellung der beantragten **Scientific Use Files (SUF)** bzw. des **Fernrechenzugangs (JoSuA)** ausdrücklich und sichere die kontinuierliche fachliche Begleitung des Forschungsprojekts zu.
+Ich befürworte den Antrag auf Bereitstellung der beantragten **Scientific Use Files (SUF)** bzw. des **gesicherten Fernrechenzugangs** gemäß den institutionsspezifischen Zugangsbestimmungen des jeweiligen Forschungsdatenzentrums ausdrücklich und sichere die kontinuierliche fachliche Begleitung des Forschungsprojekts zu.
 
 ---
 
@@ -61,7 +61,7 @@ Die University of Europe for Applied Sciences und ich als betreuender Dozent tra
 2. Sämtliche datenschutzrechtlichen Vorgaben der Datenschutz-Grundverordnung (DSGVO), des Bundesdatenschutzgesetzes (BDSG) sowie des § 16 Bundesstatistikgesetzes (BStatG) / Sozialgesetzbuches (SGB X) strikt eingehalten werden.
 3. Die Datenverarbeitung auf gesicherten, passwortgeschützten und verschlüsselten IT-Systemen erfolgt.
 4. Alle veröffentlichten Ergebnisse ausschließlich in aggregierter, anonymisierter Form (unter Einhaltung der geltenden Fallzahlschwellenwerte) präsentiert werden.
-5. Nach fristgerechtem Abschluss der Masterarbeit (geplant: Wintersemester 2026/2027) alle überlassenen Mikrodatenbestände und temporären Auswertungsdateien nachweislich gelöscht werden.
+5. Nach fristgerechtem Abschluss der Masterarbeit (Einreichung: Wintersemester 2026/2027; Datenlöschung nach Notenfeststellung spätestens zum 31. Dezember 2027) alle überlassenen Mikrodatenbestände und temporären Auswertungsdateien nachweislich gelöscht werden.
 
 ---
 

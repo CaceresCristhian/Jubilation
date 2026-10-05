@@ -23,8 +23,9 @@ This directory contains the complete, ready-to-submit official application dossi
 
 | Document / Dossier | Target Institution | Target Dataset | Primary Access Mode |
 |:---|:---|:---|:---|
-| [Dossier 01: Rentenversicherung (VSKT)](./01_FDZ_RV_Antrag_Datennutzung_VSKT.md) | **Forschungsdatenzentrum der Rentenversicherung (FDZ-RV)** | **VSKT (Versichertenkonten-Stichprobe)** | Scientific Use File (SUF) / Remote Data Execution (JoSuA) |
-| [Dossier 02: Bundesbank (PHF Vermögen)](./02_Bundesbank_RDSC_Application_PHF.md) | **Deutsche Bundesbank (RDSC)** | **PHF (Panel on Household Finances)** | Scientific Use File (SUF) / Remote Data Execution |
+| [Master-Spezifikation (Blueprint)](./DATA_REQUEST_SPECIFICATION.md) | **Alle Forschungsdatenzentren (FDZ)** | Übergreifende methodische Spezifikation | Methodisches Referenzdokument |
+| [Dossier 01: Rentenversicherung (VSKT)](./01_FDZ_RV_Antrag_Datennutzung_VSKT.md) | **Forschungsdatenzentrum der Rentenversicherung (FDZ-RV)** | **VSKT (Versichertenkonten-Stichprobe)** | Scientific Use File (SUF) / Remote Execution |
+| [Dossier 02: Bundesbank (PHF Vermögen)](./02_Bundesbank_RDSC_Application_PHF.md) | **Deutsche Bundesbank (RDSC)** | **PHF (Panel on Household Finances)** | Scientific Use File (SUF) / Remote Execution |
 | [Dossier 03: IAB Arbeitsmarkt (Geflüchtete)](./03_IAB_FDZ_Antrag_SUF_Refugees_SOEP.md) | **FDZ des IAB (Institut für Arbeitsmarkt- & Berufsforschung)** | **IAB-BAMF-SOEP Befragung von Geflüchteten** | Scientific Use File (SUF) |
 | [Dossier 04: Statistische Ämter (Mikrozensus)](./04_Destatis_FDZ_Antrag_Mikrozensus_EVS.md) | **Forschungsdatenzentren der Statistischen Ämter** | **Mikrozensus & EVS Scientific Use Files** | Scientific Use File (SUF) |
 | [Dossier 05: Betreuer-Befürwortung (Prof. Talha)](./05_Betreuerbefuerwortung_Supervisor_Endorsement_Letter.md) | **Alle Forschungsdatenzentren (FDZ)** | Master's Thesis Project Endorsement | Institutional Endorsement Letter |

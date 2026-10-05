@@ -24,9 +24,11 @@ E-Mail: iab.fdz@iab.de | Web: https://fdz.iab.de
 ### 2. Beantragter Datensatz und Wellen
 
 * **Datensatzbezeichnung:**  
-  1. **IAB-BAMF-SOEP Befragung von Geflüchteten** (Stichproben M3–M5, aktuelle Welle / Längsschnitt 2016–2023/2024).  
-  2. **IAB-SOEP Migrationsstichproben** (Stichproben M1/M2 für historische und Vorkriegs-Zuwanderer).
-* **Zielgruppe:** Erwerbsfähige geflüchtete Personen (insb. Asylzuwanderung 2015/16 sowie ukrainische Geflüchtete unter § 24 AufenthG) und Arbeitsmigranten im erwerbsfähigen Alter (18–65 Jahre).
+  1. **IAB-BAMF-SOEP Befragung von Geflüchteten** (Stichproben M3–M5, Scientific Use File, Längsschnitt ab 2016)  
+     *Zweck:* Untersuchung von Geflüchteten (Asylzuwanderung 2015/16 sowie ukrainische Geflüchtete unter § 24 AufenthG).  
+  2. **IAB-SOEP Migrationsstichproben** (Stichproben M1/M2, Scientific Use File)  
+     *Zweck:* Untersuchung regulärer Arbeits- und Vorkriegszuwanderer zur methodischen Abgrenzung.
+* **Zielgruppe:** Erwerbsfähige zugewanderte und geflüchtete Personen im erwerbsfähigen Alter (18–65 Jahre).
 
 ---
 
@@ -38,34 +40,34 @@ E-Mail: iab.fdz@iab.de | Web: https://fdz.iab.de
   *Labor Market Integration, Qualification Deskilling, and Remittance Dynamics Among Refugees and Migrants in Germany: Econometric Foundations for Long-Term Retirement Microsimulation*
 
 #### Wissenschaftliche Problemstellung (Abstract):
-Die langfristige Alterssicherung von Zuwanderern und Geflüchteten in Deutschland hängt maßgeblich von der Geschwindigkeit und Qualität ihrer Arbeitsmarktintegration in den ersten Dekaden nach dem Zuzug ab. Viele Geflüchtete und Neuzuwanderer – insbesondere aus der Ukraine und den Hauptherkunftsländern der Fluchtmigration 2015/16 – weisen ein hohes formales Bildungsniveau auf (über 65% tertiäre Abschlüsse unter ukrainischen Geflüchteten), sind jedoch in den ersten Jahren mit erheblichen Lohnabschlägen und Beschäftigung unterhalb ihres Qualifikationsniveaus konfrontiert (*Deskilling*). Gleichzeitig mindern regelmäßige Rücküberweisungen an Familienangehörige im Herkunftsland (*Remittances*) das für die private Altersvorsorge und Vermögensbildung verfügbare Nettoeinkommen.
+Die langfristige Alterssicherung von Zuwanderern und Geflüchteten in Deutschland hängt maßgeblich von der Geschwindigkeit und Qualität ihrer Arbeitsmarktintegration in den ersten Dekaden nach dem Zuzug ab. Viele Neuzuwanderer – insbesondere aus der Ukraine und den Hauptherkunftsländern der humanitären Zuwanderung – verfügen über ein beachtliches formales Bildungsniveau (u. a. über 65% tertiäre Abschlüsse unter ukrainischen Geflüchteten), stehen jedoch initial vor Herausforderungen durch verzögerte Berufs- und Bildungsanerkennung (*Deskilling*) und Spracherwerb.
 
-Dieses Forschungsvorhaben nutzt die Mikrodaten der IAB-BAMF-SOEP Befragung von Geflüchteten, um:
-1. Den Zeithorizont und die Determinanten des Übergangs von informeller / geringqualifizierter Tätigkeit in qualifikationsadäquate sozialversicherungspflichtige Beschäftigung ökonometrisch zu schätzen.
-2. Den kausalen Lohnabschlag durch fehlende bzw. verzögerte Berufs- und Bildungsanerkennung unter Berücksichtigung von Sprachkompetenzen (GER-Stufen A1 bis C2) zu isolieren.
-3. Die Höhe und Persistenz privater monatlicher Rücküberweisungen ins Ausland zu quantifizieren.
-4. Die resultierenden Beitragsbiografien als empirische Eingangsparameter in eine dynamische Mikrosimulationsplattform zu überführen, die Rentenlücken bis zum 67. Lebensjahr und die Entlastungswirkung beschleunigter Anerkennungsverfahren evaluiert.
+Dieses Forschungsvorhaben nutzt die Mikrodaten der IAB-BAMF-SOEP Befragung von Geflüchteten und der IAB-SOEP Migrationsstichproben, um:
+1. Den Zeithorizont und die Determinanten des Übergangs in sozialversicherungspflichtige Vollzeit- und Teilzeitbeschäftigung über die Aufenthaltsdauer ökonometrisch zu analysieren.
+2. Den empirischen Zusammenhang zwischen formaler Qualifikationsanerkennung, Sprachkompetenzen (GER-Stufen A1 bis C2) und realisierten Bruttolöhnen zu untersuchen.
+3. Die empirische Relevanz privater monatlicher Rücküberweisungen ins Ausland (*Remittances*) als potentielle Restriktion für die private Altersvorsorge zu prüfen (sekundäres Modul).
+4. Die resultierenden Erwerbs- und Lohntrajektorien zur empirischen Kalibrierung einer dynamischen Mikrosimulationsplattform zu nutzen, die Rentenanwartschaften im deutschen Alterssicherungssystem bis zum 67. Lebensjahr abbildet.
 
 ---
 
 ### 4. Forschungsfragen und ökonometrische Hypothesen
 
-* **Forschungsfrage 1 (Integrationskurve & Aufenthaltsdauer):** Wie entwickelt sich die Wahrscheinlichkeit einer sozialversicherungspflichtigen Vollzeitbeschäftigung über die Aufenthaltsdauer (1 bis 10 Jahre nach Zuzug), und welche Unterschiede bestehen zwischen humanitärer Zuwanderung (Geflüchtete) und regulärer Arbeitsmigration?
-* **Forschungsfrage 2 (Qualifikationsanerkennung & Deskilling-Prämie):** Führt der erfolgreiche Abschluss eines formalen Anerkennungsverfahrens ausländischer Hochschulabschlüsse zu einem signifikanten Lohnsprung, der die jährliche Akkumulation von Entgeltpunkten in der GRV messbar beschleunigt?
-* **Forschungsfrage 3 (Sprachkapital):** Welchen marginalen Ertrag generiert der Erwerb fortgeschrittener Deutschkenntnisse (B2/C1 nach GER) auf das monatliche Bruttoerwerbseinkommen?
-* **Forschungsfrage 4 (Rücküberweisungsverhalten & Sparquote):** In welchem Umfang reduzieren monatliche Rücküberweisungen ins Herkunftsland die Sparfähigkeit der Haushalte für den Aufbau privaten Altersvorsorgevermögens?
+* **Forschungsfrage 1 (Integrationskurve & Aufenthaltsdauer):** Wie entwickelt sich die Wahrscheinlichkeit einer sozialversicherungspflichtigen Beschäftigung über die Aufenthaltsdauer, und welche Unterschiede zeigen sich zwischen humanitärer und regulärer Arbeitsmigration?
+* **Forschungsfrage 2 (Qualifikationsanerkennung & Lohnabstand):** Welcher Zusammenhang besteht zwischen dem formalen Abschluss eines Anerkennungsverfahrens für ausländische Bildungsabschlüsse und der Entwicklung des Erwerbseinkommens?
+* **Forschungsfrage 3 (Sprachkapital):** Welcher statistische Zusammenhang zeigt sich zwischen fortgeschrittenen Deutschkenntnissen (B2/C1 nach GER) und dem monatlichen Bruttoerwerbseinkommen?
+* **Forschungsfrage 4 (Rücküberweisungsverhalten - Optional):** Zeigen sich in den Daten systematische monatliche Rücküberweisungen ins Herkunftsland, die die private Sparfähigkeit für Altersvorsorgevermögen einschränken?
 
 ---
 
 ### 5. Methodik
 
-1. **Mincer'sche Lohnregressionen mit Selektionskorrektur:**  
-   Schätzung erweiterter Lohnfunktionen (Heckman Two-Step zur Berücksichtigung der Erwerbsbeteiligungsselektion):
+1. **Mincer'sche Lohnfunktionen:**  
+   Schätzung erweiterter Lohn- und Erwerbsprofile:
    $$\ln(\text{Wage}_{it}) = \alpha + \beta_1 \text{Duration}_{it} + \beta_2 \text{Duration}_{it}^2 + \beta_3 \text{Tertiary}_i + \beta_4 \text{German\_B2C2}_{it} - \beta_5 \text{Deskilling}_{it} + \mathbf{X}_{it}'\boldsymbol{\gamma} + \varepsilon_{it}$$
-2. **Panel-Ökonometrie (Random / Fixed Effects):**  
-   Analyse individueller Lohn- und Spracherwerbstrajektorien über mehrere Befragungswellen.
+2. **Panel-Ökonometrie:**  
+   Nutzung von Längsschnittmodellen (Fixed Effects und Random Effects, soweit durch die Within-Variation und Panelwellen gestützt) mit robusten Standardfehlern. Explorative Prüfung von Selektionsmodellen (Heckman), sofern valide Ausschlussrestriktionen vorliegen.
 3. **Mikrosimulationskalibrierung:**  
-   Die geschätzten Koeffizienten fließen direkt in das Open-Source-Simulationsmodell des Forschungsprojekts ein, um kontrafaktische Politikreformen (z. B. Fast-Track-Anerkennung ausländischer Abschlüsse) versicherungsmathematisch zu bewerten.
+   Die geschätzten empirischen Parameter und Verteilungen fließen als empirische Eingangsmomente in das Simulationsmodell ein, um alternative Reformpfade (z. B. beschleunigte Anerkennungsverfahren) zu evaluieren.
 
 ---
 

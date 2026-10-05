@@ -25,9 +25,9 @@ E-Mail: fdz@drv-bund.de | Web: https://www.fdz-rv.de
 
 * **Beantragter Datensatz:**  
   **VSKT – Versichertenkontenstichprobe** (Scientific Use File – SUF)  
-  *Alternativ / Ergänzend:* **Fernrechnen via JoSuA** (für detailliertere Variablenmerkmale).
-* **Berichtsjahrgänge / Wellen:** Neueste verfügbare Welle (VSKT 2020–2024).
-* **Zielpopulation:** Aktiv versicherte und rentennahe Kohorten im erwerbsfähigen Alter (20–67 Jahre) mit Differenzierung nach Staatsangehörigkeit, Zuwanderungsstatus und Geschlecht.
+  *Ergänzend / Bei Bedarf:* **Remote Data Execution (Fernrechnen)** gemäß den Standards des FDZ-RV, falls detaillierte Zuwanderungs- bzw. Staatsangehörigkeitsmerkmale dies erfordern.
+* **Berichtsjahrgänge / Wellen:** Neueste regulär freigegebene Fassung der Versichertenkontenstichprobe (z. B. VSKT 2022 / 2023).
+* **Zielpopulation:** Aktiv versicherte und rentennahe Kohorten im erwerbsfähigen Alter (20–67 Jahre) zur Analyse von Beitragsverläufen nach Staatsangehörigkeit und Geschlecht.
 
 ---
 
@@ -39,22 +39,22 @@ E-Mail: fdz@drv-bund.de | Web: https://www.fdz-rv.de
   *Wealth, Migration & Retirement Sustainability in Germany: Dynamic Microsimulation and Econometric Policy Analysis (2025–2070)*
 
 #### Zusammenfassung des Forschungsvorhabens (Abstract):
-Die demografische Alterung Deutschlands stellt das umlagefinanzierte System der Gesetzlichen Rentenversicherung (GRV, SGB VI) vor fundamentale Herausforderungen. Nach der 16. koordinierten Bevölkerungsvorausberechnung des Statistischen Bundesamtes steigt der Altenquotient bis 2070 drastisch an. Gleichzeitig hängt die finanzielle und arbeitsmarktpolitische Stabilisierung des Systems zunehmend von der Integration zugewanderter Arbeitskräfte und Geflüchteter ab.
+Die demografische Alterung Deutschlands stellt das umlagefinanzierte System der Gesetzlichen Rentenversicherung (GRV, SGB VI) vor fundamentale Herausforderungen. Nach der 16. koordinierten Bevölkerungsvorausberechnung des Statistischen Bundesamtes steigt der Altenquotient in den kommenden Jahrzehnten drastisch an. Gleichzeitig hängt die finanzielle und arbeitsmarktpolitische Stabilisierung des Systems wesentlich von der Arbeitsmarkt- und Beitragsintegration zugewanderter Erwerbstätiger ab.
 
-Dieses Forschungsvorhaben untersucht anhand einer dynamischen Mikrosimulationsplattform die langfristigen Rentenanwartschaften, Lohnbiografien und Alterseinkommenslücken von fünf komparativen Bevölkerungsgruppen in Deutschland: (1) deutsche Referenzbevölkerung, (2) Arbeitsmigranten der 1. Generation, (3) Geflüchtete der Asylzuwanderung 2015/16, (4) ukrainische Kriegsflüchtlinge (§ 24 AufenthG) und (5) ukrainische Vorkriegsmigranten. Ziel der Arbeit ist es, auf Basis der realen Erwerbs- und Versicherungskonten der VSKT zu quantifizieren, in welchem Umfang unterbrochene Erwerbsverläufe, späte Zuwanderungszeitpunkte und Qualifikationsentwertungen (Deskilling) zu Rentenlücken führen und wie kompensatorische Mechanismen (Kindererziehungszeiten nach § 56 SGB VI, Grundrente nach § 76g SGB VI sowie private Vermögensakkumulation) die Inanspruchnahme von Grundsicherung im Alter (SGB XII, 4. Kapitel) beeinflussen.
+Dieses Forschungsvorhaben untersucht anhand eines mehrstufigen mikroökonometrischen Modells und einer dynamischen Mikrosimulationsplattform die Rentenanwartschaften, Beitragsbiografien und Alterseinkommensrisiken verschiedener Bevölkerungsgruppen in Deutschland. Die VSKT fungiert dabei als zentrale empirische Säule für die Abbildung realer Versicherungsverläufe, beitragsrelevanter Erwerbseinkommen und der Entgeltpunkteakkumulation. Ergänzt wird die Analyse durch mikrodatenbasierte Arbeitsmarktmuster (IAB-BAMF-SOEP) und Haushaltsvermögensdaten (Bundesbank PHF) in einem methodisch harmonisierten Kalibrierungsansatz (ohne direkten Personenlinkage). Ziel ist es, zu analysieren, wie Zuwanderungszeitpunkt, Beitragsunterbrechungen und Ausgleichselemente (Kindererziehungszeiten nach § 56 SGB VI, Grundrente nach § 76g SGB VI) die spätere Rentenhöhe determinieren und in welchem Maße Lücken zur Grundsicherung im Alter (SGB XII, 4. Kapitel) entstehen.
 
 ---
 
 ### 4. Detaillierte wissenschaftliche Problemstellung und Forschungsfragen
 
 Die zentrale wissenschaftliche Fragestellung lautet:
-> **In welchem Ausmaß determinieren Zuwanderungsalter, Erwerbsbiografien und geschlechtsspezifische Faktoren die realisierten Entgeltpunkte in der GRV, und welche zusätzlichen monatlichen Sparleistungen ($S^*$) sind erforderlich, um das soziokulturelle Existenzminimum (SGB XII) bzw. eine adäquate Nettoersatzquote von 60% im Ruhestand zu gewährleisten?**
+> **In welchem Ausmaß determinieren Zuwanderungsalter, Erwerbsbiografien und geschlechtsspezifische Faktoren die realisierten Entgeltpunkte in der GRV, und wie interagieren diese Rentenanwartschaften mit dem soziokulturellen Existenzminimum (SGB XII) im Alter?**
 
 #### Spezifische Forschungsfragen:
 1. **Erwerbs- und Beitragsdynamik (H1):** Wie unterscheiden sich die kumulierten Beitragsjahre und Entgeltpunkte zwischen Zuwanderergruppen mit unterschiedlicher Aufenthaltsdauer und der inländischen Referenzbevölkerung?
-2. **Qualifikationsentwertung & Lohnregression (H2):** Welcher Anteil des Beitragsrückstands bei tertiär gebildeten Migranten ist auf initiale Lohnabschläge durch fehlende formale Berufs- und Bildungsanerkennung zurückzuführen?
+2. **Erwerbsverläufe & Entgeltpunkteentwicklung (H2):** Welche Zusammenhänge zeigen sich zwischen Zuwanderungsbiografien, beobachteten beitragspflichtigen Erwerbseinkommen und der jährlichen Entgeltpunkteakkumulation in der VSKT?
 3. **Geschlechterdimension & Kindererziehungszeiten (H3):** In welchem Umfang kompensieren Kindererziehungszeiten (§ 56 SGB VI) den geschlechtsspezifischen Rentenabstand (*Gender Pension Gap*) bei zugewanderten Frauen im Vergleich zu Männern?
-4. **Grundsicherungsrisiko & Grundrente (H4):** Wie hoch ist der Anteil der jeweiligen Zuwanderungskohorten, deren autonome GRV-Rente unter dem Grundsicherungsniveau von ca. €1.113/Monat verbleibt, und wie wirkt der Grundrentenzuschlag (§ 76g SGB VI) als Armutspuffer?
+4. **Grundsicherungsinteraktion & Grundrente (H4):** Wie hoch ist der Anteil der Versicherten in den jeweiligen Kohorten, deren autonome GRV-Rente unter dem jeweiligen existenzsichernden Grundsicherungsniveau (SGB XII, 4. Kapitel) verbleibt, und wie wirkt der Grundrentenzuschlag (§ 76g SGB VI) als Puffer?
 
 ---
 
@@ -63,8 +63,8 @@ Die zentrale wissenschaftliche Fragestellung lautet:
 Das Vorhaben nutzt eine mehrstufige mikroökonometrische und versicherungsmathematische Methodik:
 1. **Längsschnittanalyse von Versicherungskonten:** Deskriptive und multivariate Analyse der realen Beitragsverläufe (Pflichtbeitragszeiten, Anrechnungszeiten, Kindererziehungszeiten) aus der VSKT.
 2. **Mincer'sche Lohn- und Entgeltpunkteregressionen:** Schätzung von Panel- und OLS-Modellen mit robusten Standardfehlern (HC1/HC3) zur Modellierung der jährlichen Entgeltpunkteentwicklung in Abhängigkeit von Alter, Aufenthaltsdauer, Bildungsniveau und Geschlecht.
-3. **Dynamische Mikrosimulation (2025–2070):** Fortschreibung individueller Erwerbs- und Rentenbiografien bis zum gesetzlichen Renteneintrittsalter von 67 Jahren (§ 35 SGB VI) unter Zugrundelegung der aktuellen sozialrechtlichen Parameter (Aktueller Rentenwert $\text{AR}_{2026} = 42,52$ €, Durchschnittsentgelt $\text{DE}_{2026} = 51.944$ €, BBG $= 101.400$ €).
-4. **Kopplung an SGB XII & Vermögensabbau:** Simulation des Leistungsanspruchs auf Grundsicherung im Alter unter Beachtung des Vermögensfreibetrags (§ 90 SGB XII, 10.000 €) und des Grundrentenfreibetrags (§ 82a SGB XII).
+3. **Dynamische Mikrosimulation (2025–2070):** Fortschreibung individueller Erwerbs- und Rentenbiografien bis zum gesetzlichen Renteneintrittsalter von 67 Jahren (§ 35 SGB VI) unter flexibler Parametrisierung der gesetzlichen Rechengrößen (wie Aktueller Rentenwert, Durchschnittsentgelt und Beitragsbemessungsgrenzen gemäß den jeweiligen Verordnungsjahren).
+4. **Kopplung an SGB XII & Vermögensabbau:** Simulation des potentiellen Leistungsanspruchs auf Grundsicherung im Alter unter Beachtung der jeweils geltenden Vermögensschonbeträge (§ 90 SGB XII) und Grundrentenfreibeträge (§ 82a SGB XII).
 
 ---
 
@@ -74,13 +74,13 @@ Für die Durchführung der empirischen Analysen werden folgende Merkmalsbereiche
 
 | Merkmalskategorie | Benötigte VSKT-Variablen | Wissenschaftliche Begründung |
 |:---|:---|:---|
-| **Demografie** | Geburtsjahr, Geschlecht, Bundesland (Ost/West) | Alterskohortenabgrenzung, Lebenszeitberechnung, Gender Pension Gap. |
-| **Staatsangehörigkeit / Herkunft** | Staatsangehörigkeitsschlüssel (deutsch, EU, Drittstaat, Asylherkunftsländer, Ukraine) | Differenzierung der 5 Untersuchungsgruppen. |
-| **Versicherungsbiografie** | Versicherungsmonate gesamt, Beitragsmonate, beitragsfreie Zeiten, Anrechnungszeiten | Berechnung der Wartezeit (5 Jahre Regelaltersrente, 35/45 Jahre für langjährig Versicherte). |
-| **Entgeltpunkte (EP)** | Entgeltpunkte gesamt, EP aus Beitragszeiten, EP aus beitragsfreien Zeiten, EP Ost/West | Kernvariable für Bruttomonatsrente ($Rente = EP \times ZF \times AR$). |
-| **Kindererziehungszeiten** | Anzahl der Monate mit Kindererziehungszeiten (§ 56 SGB VI), Berücksichtigungszeiten | Quantifizierung des armutsmindernden Effekts von Erziehungsgutschriften für Frauen. |
-| **Grundrentenzeiten** | Vorhandensein von Grundrentenzeiten (§ 76g SGB VI), Zuschlags-EP | Evaluierung des Anspruchs auf Grundrentenzuschlag und Freibetrag nach § 82a SGB XII. |
-| **Entgelt / Beitragsbemessung** | Gemeldete beitragspflichtige Bruttoarbeitsentgelte pro Kalenderjahr | Kalibrierung der Mincer-Lohnprofile und jährlichen Entgeltpunktezuwächse. |
+| **Demografie** | Geburtsjahr, Geschlecht, Wohnort/Bundesland (Ost/West) | Alterskohortenabgrenzung, Lebenszeitberechnung, Gender Pension Gap. |
+| **Staatsangehörigkeit / Herkunft** | Staatsangehörigkeitsschlüssel (deutsch, EU, Drittstaat, wichtige Herkunftsländer) | Unterscheidung von Zuwanderungs- und Inländergruppen im Rahmen der Datenverfügbarkeit. |
+| **Versicherungsbiografie** | Versicherungsmonate gesamt, Pflichtbeitragszeiten, beitragsfreie Zeiten, Anrechnungszeiten | Berechnung von Wartezeiten (5 Jahre Regelaltersrente, 35/45 Jahre für langjährig Versicherte). |
+| **Entgeltpunkte (EP)** | Entgeltpunkte gesamt, EP aus Beitragszeiten, EP aus beitragsfreien Zeiten, EP Ost/West | Kernvariable für gesetzliche Bruttomonatsrente ($Rente = EP \times ZF \times AR$). |
+| **Kindererziehungszeiten** | Anzahl der Monate mit Kindererziehungszeiten (§ 56 SGB VI), Berücksichtigungszeiten | Quantifizierung des ausgleichenden Effekts von Kindererziehungszeiten für Frauen. |
+| **Grundrentenzeiten** | Grundrentenzeiten (§ 76g SGB VI), Zuschlags-EP | Evaluierung des Anspruchs auf Grundrentenzuschlag und Freibetrag nach § 82a SGB XII. |
+| **Entgelt / Beitragsbemessung** | Gemeldete beitragspflichtige Bruttoarbeitsentgelte pro Kalenderjahr | Kalibrierung von Erwerbsprofilen und jährlichen Entgeltpunktezuwächsen. |
 
 ---
 
