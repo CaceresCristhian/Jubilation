@@ -2,11 +2,11 @@
 ## Wealth, Migration & Retirement Sustainability in Germany (2025–2070)
 
 **Applicant:** Cristhian David Cáceres Mateus (Matriculation No. `93515346`)  
-**Program:** Master of Science in Data Science (M.Sc. Data Science)  
+**Project Framework:** Academic Research Project / Institutional Research  
 **Academic Institution:** University of Europe for Applied Sciences (UE Germany), Potsdam Campus  
-**Faculty Supervisor:** Prof. Dr. Talha Ali Khan, Department of Business  
-**Supervisor E-Mail:** `talhaali.khan@ue-germany.de`  
-**Target Completion:** Wintersemester 2026/2027 (Archival & Data Destruction: December 2027)
+**Faculty Project Director:** Prof. Dr. Talha Ali Khan, Department of Business  
+**Project Director E-Mail:** `talhaali.khan@ue-germany.de`  
+**Target Completion:** Late 2026/2027 (Archival & Data Destruction: December 2027)
 
 ---
 
@@ -23,7 +23,7 @@ Under German data protection legislation (§ 16 BStatG, § 35 SGB I, § 67 SGB X
 5. **Microsimulation Engine (2025–2070):** Synthesizes these empirical moment distributions into forward-looking individual lifecycle paths to evaluate old-age income adequacy under alternative policy reforms.
 
 ### 1.2 Dual-Track Role of Synthetic Microdata
-The pre-existing calibrated synthetic dataset ($N = 50,000$) is preserved as a **development, testing, and open-science reproducibility sandbox**. All preliminary figures derived from synthetic records are explicitly designated as *calibrated baseline simulations*. The real microdata requested from the four FDZs will provide the authoritative empirical parameter estimates for the final thesis.
+The pre-existing calibrated synthetic dataset ($N = 50,000$) is preserved as a **development, testing, and open-science reproducibility sandbox**. All preliminary figures derived from synthetic records are explicitly designated as *calibrated baseline simulations*. The real microdata requested from the four FDZs will provide the authoritative empirical parameter estimates for the research project and publications.
 
 ---
 

@@ -11,12 +11,12 @@ E-Mail: researchdata-service@bundesbank.de | Web: https://www.bundesbank.de/rdsc
 
 * **Primary Researcher / Applicant:** Cristhian David Cáceres Mateus
 * **Matriculation Number:** `93515346`
-* **Status:** Master's Student (M.Sc. Data Science)
+* **Status:** Academic Researcher / Project Member (M.Sc. Data Science)
 * **Academic Institution:** University of Europe for Applied Sciences (UE Germany)
 * **Campus Address:** Potsdam Campus (Think Campus, Konrad-Zuse-Ring 11, 14469 Potsdam, Germany)
-* **Academic Supervisor / Co-Signatory:** Prof. Dr. Talha Ali Khan, Department of Business
+* **Project Director / Faculty Supervisor:** Prof. Dr. Talha Ali Khan, Department of Business
 * **Supervisor E-Mail:** talhaali.khan@ue-germany.de
-* **Project Type:** Master's Thesis / Scientific Academic Research
+* **Project Type:** University Scientific Research Project / Institutional Research
 * **Requested Access Mode:**  
   *Primary:* **Scientific Use File (SUF)** / Off-site Research Data  
   *Secondary:* **Remote Data Execution** via the Bundesbank RDSC secure submission infrastructure.
@@ -92,7 +92,7 @@ This research project investigates the structural determinants of financial and 
 ### 7. Confidentiality, Data Security & Compliance Statement
 
 In accordance with the Deutsche Bundesbank RDSC Data Access Agreement and European GDPR standards:
-1. **Academic Use Only:** Data will be utilized strictly for the academic Master's thesis and associated peer-reviewed scientific publications.
+1. **Academic Use Only:** Data will be utilized strictly for the scientific academic research project and associated peer-reviewed scientific publications.
 2. **Non-Disclosure:** Individual micro-records will never be shared, published, or transmitted to unauthorized parties.
 3. **Aggregation Protocol:** All reporting will strictly comply with RDSC output checking guidelines:
    - Minimum cell count $N \ge 5$ (or $N \ge 3$ where authorized).
@@ -109,9 +109,9 @@ In accordance with the Deutsche Bundesbank RDSC Data Access Agreement and Europe
 \
 ____________________________________________________  
 **Cristhian David Cáceres Mateus**  
-(Applicant / M.Sc. Data Science Candidate, Student ID: 93515346)
+(Applicant / Academic Researcher, Student ID: 93515346)
 
 \
 ____________________________________________________  
 **Prof. Dr. Talha Ali Khan**  
-(Academic Supervisor, Department of Business, University of Europe for Applied Sciences)
+(Project Director / Professor, Department of Business, University of Europe for Applied Sciences)

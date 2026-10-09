@@ -11,12 +11,12 @@ E-Mail: iab.fdz@iab.de | Web: https://fdz.iab.de
 
 * **Name des Forschenden / Antragstellers:** Cristhian David Cáceres Mateus
 * **Matrikelnummer:** `93515346`
-* **Status:** Masterand (M.Sc. Data Science)
+* **Status:** Wissenschaftlicher Forscher / Projektmitarbeiter (M.Sc. Data Science)
 * **Hochschule / Forschungseinrichtung:** University of Europe for Applied Sciences (UE Germany)
 * **Campus-Adresse:** Potsdam Campus (Think Campus, Konrad-Zuse-Ring 11, 14469 Potsdam, Deutschland)
-* **Betreuender Hochschullehrer:** Prof. Dr. Talha Ali Khan (Department of Business)
-* **E-Mail des Betreuers:** talhaali.khan@ue-germany.de
-* **Art des wissenschaftlichen Projekts:** Masterarbeit im Studiengang M.Sc. Data Science
+* **Wissenschaftliche Projektleitung:** Prof. Dr. Talha Ali Khan (Department of Business)
+* **E-Mail der Projektleitung:** talhaali.khan@ue-germany.de
+* **Art des wissenschaftlichen Projekts:** Wissenschaftliches Forschungsprojekt / Institutsinterne universitäre Forschung
 * **Beantragte Datenform:** **Scientific Use File (SUF)** zur dezentralen wissenschaftlichen Auswertung an der Hochschule.
 
 ---
@@ -89,7 +89,7 @@ Dieses Forschungsvorhaben nutzt die Mikrodaten der IAB-BAMF-SOEP Befragung von G
 ### 7. Erklärung zu Datenschutz und Datensicherheit
 
 Der Antragsteller versichert:
-1. Die Daten werden ausschließlich für den wissenschaftlichen Zweck der Masterarbeit an der University of Europe for Applied Sciences verwendet.
+1. Die Daten werden ausschließlich für den wissenschaftlichen Zweck des Forschungsprojekts an der University of Europe for Applied Sciences verwendet.
 2. Der Zugang zu den Daten erfolgt ausschließlich über passwortgeschützte, verschlüsselte IT-Infrastrukturen der Hochschule.
 3. Die Bestimmungen des Bundesdatenschutzgesetzes (BDSG), der DSGVO und des IAB-FDZ-Nutzungsvertrages werden uneingeschränkt eingehalten.
 4. Alle Veröffentlichungen erfolgen in aggregierter Form ohne Ausweisung von Einzelfalldaten (Fallzahlbeschränkung $N \ge 3$).
@@ -103,9 +103,9 @@ Der Antragsteller versichert:
 \
 ____________________________________________________  
 **Cristhian David Cáceres Mateus**  
-(Antragsteller / Masterstudent, Matr.-Nr. 93515346)
+(Antragsteller / Forschender, Matr.-Nr. 93515346)
 
 \
 ____________________________________________________  
 **Prof. Dr. Talha Ali Khan**  
-(Wissenschaftlicher Betreuer, University of Europe for Applied Sciences)
+(Wissenschaftliche Projektleitung / Professor, University of Europe for Applied Sciences)

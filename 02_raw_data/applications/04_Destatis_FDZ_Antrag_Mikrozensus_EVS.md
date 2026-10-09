@@ -11,12 +11,12 @@ E-Mail: forschungsdatenzentrum@destatis.de | Web: https://www.forschungsdatenzen
 
 * **Name des Antragstellers:** Cristhian David Cáceres Mateus
 * **Matrikelnummer:** `93515346`
-* **Status:** Masterstudent (M.Sc. Data Science)
+* **Status:** Wissenschaftlicher Forscher / Projektmitarbeiter (M.Sc. Data Science)
 * **Wissenschaftliche Institution:** University of Europe for Applied Sciences (UE Germany)
 * **Campus:** Potsdam Campus (Think Campus, Konrad-Zuse-Ring 11, 14469 Potsdam, Deutschland)
-* **Betreuender Dozent / Erstprüfer:** Prof. Dr. Talha Ali Khan (Department of Business)
-* **E-Mail des Betreuers:** talhaali.khan@ue-germany.de
-* **Zweck der Nutzung:** Wissenschaftliche Masterarbeit im Rahmen des Masterstudiengangs M.Sc. Data Science.
+* **Wissenschaftliche Projektleitung:** Prof. Dr. Talha Ali Khan (Department of Business)
+* **E-Mail der Projektleitung:** talhaali.khan@ue-germany.de
+* **Zweck der Nutzung:** Wissenschaftliches Forschungsprojekt / Institutsinterne universitäre Forschung.
 
 ---
 
@@ -39,7 +39,7 @@ E-Mail: forschungsdatenzentrum@destatis.de | Web: https://www.forschungsdatenzen
   *Income Distribution, Labor Market Patterns, and Old-Age Poverty Risks Among Immigrant and Refugee Households in Germany: Microcensus and EVS Empirical Foundations*
 
 #### Kurzbeschreibung des Vorhabens (Abstract):
-Die vorliegende Masterarbeit untersucht die sozioökonomischen Determinanten von Alterseinkommensrisiken bei zugewanderten Bevölkerungsgruppen in Deutschland. Während amtliche Aggregatstatistiken auf ein erhöhtes Armutsrisiko von Personen mit Migrationshintergrund hinweisen, bedarf es repräsentativer Individual- und Haushaltsmikrodaten, um die Heterogenität zwischen Arbeitsmigration, EU-Binnenmigration und humanitärer Zuwanderung (Geflüchtete) differenziert nach Bildungsstand, Erwerbsform (Vollzeit, Teilzeit, Minijobs) und Haushaltskontext abzubilden.
+Das vorliegende wissenschaftliche Forschungsprojekt untersucht die sozioökonomischen Determinanten von Alterseinkommensrisiken bei zugewanderten Bevölkerungsgruppen in Deutschland. Während amtliche Aggregatstatistiken auf ein erhöhtes Armutsrisiko von Personen mit Migrationshintergrund hinweisen, bedarf es repräsentativer Individual- und Haushaltsmikrodaten, um die Heterogenität zwischen Arbeitsmigration, EU-Binnenmigration und humanitärer Zuwanderung (Geflüchtete) differenziert nach Bildungsstand, Erwerbsform (Vollzeit, Teilzeit, Minijobs) und Haushaltskontext abzubilden.
 
 Die amtlichen Mikrodaten sollen genutzt werden, um:
 1. Repräsentative soziometrische Profile (Alter, Geschlecht, Bildung nach ISCED, Haushaltsgröße, Wohneigentumsquote) für Zuwanderer- und Inländerkohorten zu erstellen.
@@ -75,7 +75,7 @@ Für die Kalibrierung des Simulationsmodells reichen publizierte Tabellenwerke d
 1. **Datengeheimnis:** Der Antragsteller verpflichtet sich gemäß § 16 Abs. 1 Bundesstatistikgesetz (BStatG) zur uneingeschränkten Wahrung des statistischen Datengeheimnisses.
 2. **Re-Identifikationsverbot:** Jede Handlung, die auf die Re-Identifikation einzelner Befragter oder wirtschaftlicher Einheiten abzielt, ist untersagt.
 3. **Ergebniskontrolle:** Tabellen und Abbildungen, die publiziert werden, unterliegen den Geheimhaltungsregeln der Forschungsdatenzentren (Mindestfallzahl $N \ge 3$, bei sensiblen Merkmalen $N \ge 5$).
-4. **Aufbewahrung & Löschung:** Die Daten werden ausschließlich auf dem verschlüsselten Forschungsserver der University of Europe for Applied Sciences abgelegt. Nach Abschluss der Masterarbeit werden sämtliche SUF-Dateien vollständig und unwiderruflich gelöscht.
+4. **Aufbewahrung & Löschung:** Die Daten werden ausschließlich auf dem verschlüsselten Forschungsserver der University of Europe for Applied Sciences abgelegt. Nach Abschluss des Forschungsprojekts und der wissenschaftlichen Publikation werden sämtliche SUF-Dateien vollständig und unwiderruflich gelöscht.
 
 ---
 
@@ -86,9 +86,9 @@ Für die Kalibrierung des Simulationsmodells reichen publizierte Tabellenwerke d
 \
 ____________________________________________________  
 **Cristhian David Cáceres Mateus**  
-(Antragsteller / Masterstudent, Matr.-Nr. 93515346)
+(Antragsteller / Forschender, Matr.-Nr. 93515346)
 
 \
 ____________________________________________________  
 **Prof. Dr. Talha Ali Khan**  
-(Wissenschaftlicher Betreuer, University of Europe for Applied Sciences)
+(Wissenschaftliche Projektleitung / Professor, University of Europe for Applied Sciences)

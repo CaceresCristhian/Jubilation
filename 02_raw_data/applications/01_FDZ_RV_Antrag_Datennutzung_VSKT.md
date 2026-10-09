@@ -11,13 +11,13 @@ E-Mail: fdz@drv-bund.de | Web: https://www.fdz-rv.de
 
 * **Name des Forschers / Antragstellers:** Cristhian David Cáceres Mateus
 * **Matrikelnummer:** `93515346`
-* **Status:** Masterstudent (M.Sc. Data Science)
+* **Status:** Wissenschaftlicher Forscher / Projektmitarbeiter (M.Sc. Data Science)
 * **Wissenschaftliche Einrichtung:** University of Europe for Applied Sciences (UE Germany)
 * **Campus:** Potsdam Campus (Think Campus, Konrad-Zuse-Ring 11, 14469 Potsdam, Deutschland)
 * **Fachbereich:** Fachbereich Wirtschaft / Department of Business
-* **Wissenschaftliche Betreuung:** Prof. Dr. Talha Ali Khan (Department of Business)
-* **E-Mail des Betreuers:** talhaali.khan@ue-germany.de
-* **Zweck der Datennutzung:** Masterarbeit / Wissenschaftliches Forschungsprojekt im Rahmen des Masterstudiengangs M.Sc. Data Science.
+* **Wissenschaftliche Projektleitung:** Prof. Dr. Talha Ali Khan (Department of Business)
+* **E-Mail der Projektleitung:** talhaali.khan@ue-germany.de
+* **Zweck der Datennutzung:** Wissenschaftliches Forschungsprojekt / Institutsinterne universitäre Forschung an der University of Europe for Applied Sciences.
 
 ---
 
@@ -90,7 +90,7 @@ Der Antragsteller und die betreuende Hochschule verpflichten sich zur strikten E
 1. **Vertraulichkeit:** Die Daten werden ausschließlich für den in diesem Antrag spezifizierten wissenschaftlichen Forschungszweck verwendet. Eine Weitergabe an Dritte oder eine kommerzielle Nutzung ist ausgeschlossen.
 2. **Re-Identifikationsverbot:** Es werden keinerlei Versuche unternommen, anonymisierte Einzeldatensätze mit realen Personen zu verknüpfen. Ergebnisse werden ausschließlich in hochaggregierter Form (Tabellen, Kennzahlen, Grafiken) veröffentlicht, die keine Rückschlüsse auf Einzelfälle zulassen (Mindestfallzahl $N \ge 5$).
 3. **Speicherung & Zugriff:** Die Datenhaltung erfolgt auf einem passwortgeschützten, verschlüsselten Forschungsspeicher der University of Europe for Applied Sciences.
-4. **Löschung:** Nach Abschluss des Forschungsprojekts und der Begutachtung der Masterarbeit (spätestens zum 31. Dezember 2027) werden alle Rohdatensätze und Zwischendateien nachweislich und unwiderruflich gelöscht.
+4. **Löschung:** Nach Abschluss des Forschungsprojekts und der wissenschaftlichen Publikation der Ergebnisse (spätestens zum 31. Dezember 2027) werden alle Rohdatensätze und Zwischendateien nachweislich und unwiderruflich gelöscht.
 
 ---
 
@@ -101,9 +101,9 @@ Der Antragsteller und die betreuende Hochschule verpflichten sich zur strikten E
 \
 ____________________________________________________  
 **Cristhian David Cáceres Mateus**  
-(Antragsteller / Masterstudent, Matr.-Nr. 93515346)
+(Antragsteller / Forschender, Matr.-Nr. 93515346)
 
 \
 ____________________________________________________  
 **Prof. Dr. Talha Ali Khan**  
-(Wissenschaftlicher Betreuer, University of Europe for Applied Sciences)
+(Wissenschaftliche Projektleitung / Professor, University of Europe for Applied Sciences)

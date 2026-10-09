@@ -1,5 +1,5 @@
-# Bestätigung der wissenschaftlichen Betreuung & Befürwortung der Datennutzung
-## Supervisor Endorsement Letter & Institutional Confirmation
+# Bestätigung der wissenschaftlichen Projektleitung & Befürwortung der Datennutzung
+## Institutional Endorsement Letter & Research Project Confirmation
 
 **An das zuständige Forschungsdatenzentrum:**
 * Forschungsdatenzentrum der Rentenversicherung (FDZ-RV)
@@ -14,7 +14,7 @@
 * **Hochschule / University:** University of Europe for Applied Sciences (UE Germany)
 * **Campus:** Potsdam Campus (Think Campus, Konrad-Zuse-Ring 11, 14469 Potsdam, Germany)
 * **Fachbereich / Faculty:** Department of Business
-* **Betreuender Dozent / Academic Supervisor:**  
+* **Wissenschaftliche Projektleitung / Academic Director:**  
   **Prof. Dr. Talha Ali Khan**  
   Department of Business  
   University of Europe for Applied Sciences  
@@ -22,16 +22,16 @@
 
 ---
 
-### 2. Bestätigung zur Person des Studierenden / Student Confirmation
+### 2. Bestätigung zur Person des Forschenden / Researcher Confirmation
 
 Hiermit bestätige ich, dass Herr
 
 > **Herr Cristhian David Cáceres Mateus**  
 > **Matrikelnummer:** `93515346`  
-> **Geburtsdatum / Nationalität:** Im Studierendenverzeichnis der UE hinterlegt  
-> **Studiengang:** Master of Science in Data Science (M.Sc. Data Science)  
+> **Geburtsdatum / Nationalität:** Im Verzeichnis der UE hinterlegt  
+> **Fachbereich / Studiengang:** M.Sc. Data Science / Department of Business  
 
-an der University of Europe for Applied Sciences immatrikuliert ist und seine wissenschaftliche Masterabschlussarbeit unter meiner fachlichen Betreuung anfertigt.
+an der University of Europe for Applied Sciences affiliiert ist und dieses wissenschaftliche Forschungsprojekt unter meiner fachlichen Leitung und Begleitung durchführt.
 
 ---
 
@@ -56,16 +56,16 @@ Ich befürworte den Antrag auf Bereitstellung der beantragten **Scientific Use F
 
 ### 5. Verpflichtung zu Datenschutz und Datensicherheit / Compliance Commitment
 
-Die University of Europe for Applied Sciences und ich als betreuender Dozent tragen Sorge dafür, dass:
-1. Die bereitgestellten Mikrodaten ausschließlich für den Zweck der oben genannten Masterarbeit verwendet werden.
+Die University of Europe for Applied Sciences und ich als wissenschaftliche Projektleitung tragen Sorge dafür, dass:
+1. Die bereitgestellten Mikrodaten ausschließlich für den Zweck des oben genannten wissenschaftlichen Forschungsprojekts verwendet werden.
 2. Sämtliche datenschutzrechtlichen Vorgaben der Datenschutz-Grundverordnung (DSGVO), des Bundesdatenschutzgesetzes (BDSG) sowie des § 16 Bundesstatistikgesetzes (BStatG) / Sozialgesetzbuches (SGB X) strikt eingehalten werden.
 3. Die Datenverarbeitung auf gesicherten, passwortgeschützten und verschlüsselten IT-Systemen erfolgt.
 4. Alle veröffentlichten Ergebnisse ausschließlich in aggregierter, anonymisierter Form (unter Einhaltung der geltenden Fallzahlschwellenwerte) präsentiert werden.
-5. Nach fristgerechtem Abschluss der Masterarbeit (Einreichung: Wintersemester 2026/2027; Datenlöschung nach Notenfeststellung spätestens zum 31. Dezember 2027) alle überlassenen Mikrodatenbestände und temporären Auswertungsdateien nachweislich gelöscht werden.
+5. Nach fristgerechtem Abschluss des Forschungsprojekts (geplante Fertigstellung und Publikation: bis Ende 2027; Datenlöschung spätestens zum 31. Dezember 2027) alle überlassenen Mikrodatenbestände und temporären Auswertungsdateien nachweislich gelöscht werden.
 
 ---
 
-### 6. Unterschrift des Betreuers / Signature of Supervisor
+### 6. Unterschrift der Projektleitung / Signature of Project Director
 
 **Potsdam, den** ________________________
 
@@ -73,6 +73,7 @@ Die University of Europe for Applied Sciences und ich als betreuender Dozent tra
 \
 ____________________________________________________  
 **Prof. Dr. Talha Ali Khan**  
+Vice President for Research | Professor of Data Science  
 Department of Business  
 University of Europe for Applied Sciences (UE Germany)  
 Think Campus, Konrad-Zuse-Ring 11, 14469 Potsdam, Germany  
