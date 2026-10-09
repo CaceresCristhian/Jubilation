@@ -13,7 +13,7 @@ E-Mail: forschungsdatenzentrum@destatis.de | Web: https://www.forschungsdatenzen
 * **Matrikelnummer:** `93515346`
 * **Status:** Masterstudent (M.Sc. Data Science)
 * **Wissenschaftliche Institution:** University of Europe for Applied Sciences (UE Germany)
-* **Campus:** Dessauer Str. 3–5, 10963 Berlin
+* **Campus:** Potsdam Campus (Think Campus, Konrad-Zuse-Ring 11, 14469 Potsdam, Deutschland)
 * **Betreuender Dozent / Erstprüfer:** Prof. Dr. Talha Ali Khan (Department of Business)
 * **E-Mail des Betreuers:** talhaali.khan@ue-germany.de
 * **Zweck der Nutzung:** Wissenschaftliche Masterarbeit im Rahmen des Masterstudiengangs M.Sc. Data Science.
@@ -81,7 +81,7 @@ Für die Kalibrierung des Simulationsmodells reichen publizierte Tabellenwerke d
 
 ### 7. Unterschriften
 
-**Ort, Datum:** Berlin, den ________________________
+**Ort, Datum:** Potsdam, den ________________________
 
 \
 ____________________________________________________  

@@ -13,7 +13,7 @@ E-Mail: researchdata-service@bundesbank.de | Web: https://www.bundesbank.de/rdsc
 * **Matriculation Number:** `93515346`
 * **Status:** Master's Student (M.Sc. Data Science)
 * **Academic Institution:** University of Europe for Applied Sciences (UE Germany)
-* **Campus Address:** Dessauer Str. 3–5, 10963 Berlin, Germany
+* **Campus Address:** Potsdam Campus (Think Campus, Konrad-Zuse-Ring 11, 14469 Potsdam, Germany)
 * **Academic Supervisor / Co-Signatory:** Prof. Dr. Talha Ali Khan, Department of Business
 * **Supervisor E-Mail:** talhaali.khan@ue-germany.de
 * **Project Type:** Master's Thesis / Scientific Academic Research
@@ -104,7 +104,7 @@ In accordance with the Deutsche Bundesbank RDSC Data Access Agreement and Europe
 
 ### 8. Signatures
 
-**Date and Place:** Berlin, ________________________
+**Date and Place:** Potsdam, ________________________
 
 \
 ____________________________________________________  

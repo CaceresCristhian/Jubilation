@@ -10,7 +10,7 @@ This directory contains the complete, ready-to-submit official application dossi
 * **Matriculation Number:** `93515346`
 * **Degree Program:** Master of Science in Data Science (M.Sc. Data Science)
 * **Academic Institution:** University of Europe for Applied Sciences (UE Germany)
-* **Campus:** Berlin, Germany
+* **Campus:** Potsdam Campus (Think Campus, Konrad-Zuse-Ring 11, 14469 Potsdam, Germany)
 * **Academic Supervisor:** Prof. Dr. Talha Ali Khan, Department of Business
 * **Supervisor E-Mail:** talhaali.khan@ue-germany.de
 * **Research Project Title:**  

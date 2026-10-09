@@ -3,7 +3,7 @@
 
 **Applicant:** Cristhian David Cáceres Mateus (Matriculation No. `93515346`)  
 **Program:** Master of Science in Data Science (M.Sc. Data Science)  
-**Academic Institution:** University of Europe for Applied Sciences (UE Germany), Berlin  
+**Academic Institution:** University of Europe for Applied Sciences (UE Germany), Potsdam Campus  
 **Faculty Supervisor:** Prof. Dr. Talha Ali Khan, Department of Business  
 **Supervisor E-Mail:** `talhaali.khan@ue-germany.de`  
 **Target Completion:** Wintersemester 2026/2027 (Archival & Data Destruction: December 2027)

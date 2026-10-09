@@ -13,7 +13,7 @@ E-Mail: iab.fdz@iab.de | Web: https://fdz.iab.de
 * **Matrikelnummer:** `93515346`
 * **Status:** Masterand (M.Sc. Data Science)
 * **Hochschule / Forschungseinrichtung:** University of Europe for Applied Sciences (UE Germany)
-* **Campus-Adresse:** Dessauer Str. 3–5, 10963 Berlin
+* **Campus-Adresse:** Potsdam Campus (Think Campus, Konrad-Zuse-Ring 11, 14469 Potsdam, Deutschland)
 * **Betreuender Hochschullehrer:** Prof. Dr. Talha Ali Khan (Department of Business)
 * **E-Mail des Betreuers:** talhaali.khan@ue-germany.de
 * **Art des wissenschaftlichen Projekts:** Masterarbeit im Studiengang M.Sc. Data Science
@@ -98,7 +98,7 @@ Der Antragsteller versichert:
 
 ### 8. Unterschriften
 
-**Ort, Datum:** Berlin, den ________________________
+**Ort, Datum:** Potsdam, den ________________________
 
 \
 ____________________________________________________  

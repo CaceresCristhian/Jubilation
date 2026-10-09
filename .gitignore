@@ -47,3 +47,6 @@ venv.bak/
 
 # Large intermediate parquet caches (if needed)
 # !03_synthetic_data/*.parquet
+
+*.zip
+

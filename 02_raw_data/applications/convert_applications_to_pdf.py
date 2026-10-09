@@ -21,7 +21,7 @@ CSS_STYLE = """
     margin-right: 2.0cm;
     
     @top-left {
-        content: "University of Europe for Applied Sciences | Department of Business";
+        content: "University of Europe for Applied Sciences | Potsdam Campus";
         font-family: Helvetica, Arial, sans-serif;
         font-size: 7.5pt;
         color: #64748b;

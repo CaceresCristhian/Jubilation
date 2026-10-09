@@ -12,7 +12,7 @@
 ### 1. Angaben zur Hochschule und zur betreuenden Person / Institutional Details
 
 * **Hochschule / University:** University of Europe for Applied Sciences (UE Germany)
-* **Campus:** Dessauer Str. 3–5, 10963 Berlin, Germany
+* **Campus:** Potsdam Campus (Think Campus, Konrad-Zuse-Ring 11, 14469 Potsdam, Germany)
 * **Fachbereich / Faculty:** Department of Business
 * **Betreuender Dozent / Academic Supervisor:**  
   **Prof. Dr. Talha Ali Khan**  
@@ -67,7 +67,7 @@ Die University of Europe for Applied Sciences und ich als betreuender Dozent tra
 
 ### 6. Unterschrift des Betreuers / Signature of Supervisor
 
-**Berlin, den** ________________________
+**Potsdam, den** ________________________
 
 \
 \
@@ -75,6 +75,6 @@ ____________________________________________________
 **Prof. Dr. Talha Ali Khan**  
 Department of Business  
 University of Europe for Applied Sciences (UE Germany)  
-Dessauer Str. 3–5, 10963 Berlin  
+Think Campus, Konrad-Zuse-Ring 11, 14469 Potsdam, Germany  
 E-Mail: talhaali.khan@ue-germany.de  
 *(Dienststempel / Institutional Stamp)*

@@ -13,7 +13,7 @@ E-Mail: fdz@drv-bund.de | Web: https://www.fdz-rv.de
 * **Matrikelnummer:** `93515346`
 * **Status:** Masterstudent (M.Sc. Data Science)
 * **Wissenschaftliche Einrichtung:** University of Europe for Applied Sciences (UE Germany)
-* **Campus:** Dessauer Str. 3–5, 10963 Berlin, Deutschland
+* **Campus:** Potsdam Campus (Think Campus, Konrad-Zuse-Ring 11, 14469 Potsdam, Deutschland)
 * **Fachbereich:** Fachbereich Wirtschaft / Department of Business
 * **Wissenschaftliche Betreuung:** Prof. Dr. Talha Ali Khan (Department of Business)
 * **E-Mail des Betreuers:** talhaali.khan@ue-germany.de
@@ -96,7 +96,7 @@ Der Antragsteller und die betreuende Hochschule verpflichten sich zur strikten E
 
 ### 8. Unterschriften und Bestätigung
 
-**Ort, Datum:** Berlin, den ________________________
+**Ort, Datum:** Potsdam, den ________________________
 
 \
 ____________________________________________________  
